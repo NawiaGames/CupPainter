@@ -7,22 +7,9 @@ public class MoveToMouse : MonoBehaviour
     [SerializeField] private float _speed = 12.0f;
     [SerializeField] private float _distanceFromCamera = 2.0f;
     [SerializeField] private Camera _camera;
-    [SerializeField] private float _limitPositionX = 1f; 
+    [SerializeField] private float _limitPositionX = 1f;
 
-
-     [SerializeField] private Color _color;
-
-     private void Start()
-     {
-         UpdateColor();
-     }
-
-     public void UpdateColor()
-     {
-         _color = Random.ColorHSV(0, 1, 0.75f, 0.75f, 0.75f, 0.75f);
-     }
-
-     void Update()
+    void Update()
     {
         FollowerMouse();
     }
