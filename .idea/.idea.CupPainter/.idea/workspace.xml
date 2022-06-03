@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rotation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,7 @@
       <workItem from="1654075235275" duration="6657000" />
       <workItem from="1654153442296" duration="8354000" />
       <workItem from="1654168053918" duration="8693000" />
-      <workItem from="1654240412501" duration="4517000" />
+      <workItem from="1654240412501" duration="6050000" />
     </task>
     <servers />
   </component>
