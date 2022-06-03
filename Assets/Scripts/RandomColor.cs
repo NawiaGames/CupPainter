@@ -8,7 +8,7 @@ public class RandomColor : MonoBehaviour
     [SerializeField] private P3dPaintSphere _p3dPaintSphere; 
     private Color _color;
 
-    private void Start()
+    private void Awake()
     {
         RandomColorPaintSphere();
     }

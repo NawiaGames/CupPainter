@@ -1,3 +1,4 @@
+using System;
 using PaintIn3D;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ButtonGameUI : MonoBehaviour
 {
     [SerializeField] private P3dPaintSphere _paintSphere;
-    [SerializeField] private Rotation _rotationObject; 
+    [SerializeField] private Rotation _rotationObject;
 
     public void OnOverloadScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     
