@@ -33,7 +33,7 @@ public class MoveToMouse : MonoBehaviour
 
 /*    private Vector3 GetMiddleScreenToWorld()
     {
-        var middle = new Vector3(_camera.pixelWidth + _offsetMiddleScreenX / 2, _camera.pixelHeight / 2, 0); 
+        var middle = new Vector3(_camera.pixelWidth / 2, _camera.pixelHeight / 2, 0); 
         middle = _camera.ScreenToWorldPoint(middle);
         return middle; 
     }*/

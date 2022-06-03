@@ -18624,7 +18624,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 848667437}
         m_TargetAssemblyTypeName: RandomColor, Assembly-CSharp
-        m_MethodName: OnUpdateColor
+        m_MethodName: OnSelectedColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -19,9 +19,9 @@ public class RandomColor : MonoBehaviour
         _imageColor.color = _color; 
     }
 
-    public void OnUpdateColor()
+    public void OnSelectedColor()
     {
         _p3dPaintSphere.Color = _color; 
-        RandomColorPaintSphere();
+//        RandomColorPaintSphere();
     }
 }
