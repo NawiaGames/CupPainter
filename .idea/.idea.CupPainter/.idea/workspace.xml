@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoveToMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoveToMouse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +14,24 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/45/94616550/UnityAction`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/4d/0646d93f/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/c8/3d4f4c3a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/1c/c8982deb/Stack`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95646d41081849d8b71d41c224b049eb7400/cd/3677fc24/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b8be267d809e4320a19ada90c7fbae111a000/74/af0d1066/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DefaultSettingsBrush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveToMouse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/NAWIA/CupPainter/Assets/Scripts/MoveToMouse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/OnCollisionPaint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,10 +79,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17880">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17880" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -90,7 +102,7 @@
       <workItem from="1654153442296" duration="8354000" />
       <workItem from="1654168053918" duration="8693000" />
       <workItem from="1654240412501" duration="6050000" />
-      <workItem from="1654500344814" duration="4291000" />
+      <workItem from="1654500344814" duration="21330000" />
     </task>
     <servers />
   </component>
