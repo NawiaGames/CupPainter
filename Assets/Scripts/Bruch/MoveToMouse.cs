@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Vector2 = UnityEngine.Vector2;
@@ -9,32 +10,68 @@ public class MoveToMouse : MonoBehaviour
     [Header("Settings")] [SerializeField] private float _speed = 12.0f;
     [SerializeField] private float _distanceFromCamera = 2.0f;
     [SerializeField] private float _offestPositionObjectZ = 0.1f;
+    [SerializeField] private float _offestPositionBorder = 0.1f; 
     [SerializeField] private float _positionBruchZ = -1f;
     [Header("Limit position")] [SerializeField]
     private float _limitPositionX = 1f;
-    [SerializeField] private Vector2 _limitPositionY;
     [Header("Raycast")] [SerializeField] private Transform _raycastTransform;
     [SerializeField] private float _maxDistanceRaycast = 0.5f;
     [FormerlySerializedAs("_bruchElements")] [SerializeField]
     private Transform _bruchTransform;
 
     private Vector3 _positionBorder = Vector3.zero;
+    private Vector3 _offestMouse = Vector3.zero;
+    
+    private Vector3 _rightEdge;
+    private Vector3 _upEdge; 
 
-    private Vector3 offestMouse = Vector3.zero;
- 
+    private void Start()
+    {
+        _bruchTransform.position =
+            new Vector3(_bruchTransform.position.x, _bruchTransform.position.y, _positionBruchZ);
+        _rightEdge = _camera.ViewportToWorldPoint(new Vector3(0, -1, _camera.transform.position.z));
+        _upEdge = _camera.ViewportToWorldPoint(new Vector3(0, 1, _camera.transform.position.z));
+        Debug.Log(_rightEdge);
+        Debug.Log(_upEdge);
+
+
+        /* float width = _camera.pixelWidth;
+         float height = _camera.pixelHeight;
+       
+         Vector2 bottomLeft = _camera.ScreenToWorldPoint(new Vector2 (0, 0));
+         Vector2 bottomRight = _camera.ScreenToWorldPoint(new Vector2 (width, 0));
+         Vector2 topLeft = _camera.ScreenToWorldPoint(new Vector2 (0, height));
+         Vector2 topRight = _camera.ScreenToWorldPoint(new Vector2 (width, height));*/
+  
+ /* Debug.Log(bottomLeft);
+  Debug.Log(bottomRight);
+  Debug.Log(topLeft);
+  Debug.Log(topRight);*/
+
+
+
+/* var test1 = _camera.ScreenToWorldPoint(new Vector3(0, 1, - _camera.transform.position.z));
+ var test2 = _camera.ScreenToWorldPoint(new Vector3(1, 0, - _camera.transform.position.z));*/
+
+// Debug.Log(test1 + " - " + test2);
+    }
 
     private void Update()
     {
         FollowerMouse();
+        ControllerMouse();
+    }
 
+    private void ControllerMouse()
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            offestMouse = _bruchTransform.position - transform.position;
+            _offestMouse = _bruchTransform.position - transform.position;
         }
 
         if (Input.GetMouseButton(0))
         {
-            var position = transform.position + offestMouse;
+            var position = transform.position + _offestMouse;
             position = LimitPosition(position);
             _bruchTransform.position = position;
         }
@@ -61,11 +98,14 @@ public class MoveToMouse : MonoBehaviour
         if (position.x < _limitPositionX)
             position.x = _limitPositionX;
 
-   /*     if (position.y < _limitPositionY.x)
-            position.y = _limitPositionY.x;
+        if (position.x > _rightEdge.x - _offestPositionBorder)
+            position.x = _rightEdge.x - _offestPositionBorder;
 
-        if (position.y > _limitPositionY.y)
-            position.y = _limitPositionY.y; */
+        if (position.y > _upEdge.y + _offestPositionBorder)
+            position.y = _upEdge.y + _offestPositionBorder;
+
+        if (position.y < -_upEdge.y + _offestPositionBorder)
+            position.y = -_upEdge.y + _offestPositionBorder;
 
         _positionBorder = MoveBorderPaint();
         if (position.z < _positionBorder.z)
