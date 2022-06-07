@@ -3,7 +3,7 @@ using UnityEngine;
 public class SelectedPaintObjects : MonoBehaviour
 {
     [SerializeField] private int _currentPaintObject = 0;
-    [SerializeField] private Rotation[] _paintObjects;
+    [SerializeField] private GameObject[] _paintObjects;
 
     private void Start()
     {

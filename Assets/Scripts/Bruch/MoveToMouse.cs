@@ -1,4 +1,5 @@
 using System.Collections;
+using PaintIn3D;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -18,27 +19,25 @@ public class MoveToMouse : MonoBehaviour
     [Header("Raycast")] [SerializeField] private Transform _raycastTransform;
     [SerializeField] private float _maxDistanceRaycast = 0.5f;
 
-    [Header("Brush")]
-    [SerializeField] private Transform _brushTransform;
+    [Header("Brush")] [SerializeField] private Transform _brushTransform;
     [SerializeField] private float _positionBruchZ = -1f;
-    [SerializeField] private float _speedBrushZ = 6f; 
+    [SerializeField] private float _speedBrushZ = 6f;
 
     private Vector3 _positionBorder = Vector3.zero;
     private Vector3 _offestMouse = Vector3.zero;
     private Vector3 _rightEdge;
     private Vector3 _upEdge;
     private Vector3 _positionTargetMouse;
-    private bool _isEndBorder; 
-    
+    private bool _isEndBorder;
+
     private void Start()
     {
         _brushTransform.position =
             new Vector3(_brushTransform.position.x, _brushTransform.position.y, _positionBruchZ);
         _rightEdge = _camera.ViewportToWorldPoint(new Vector3(0, -1, _camera.transform.position.z));
         _upEdge = _camera.ViewportToWorldPoint(new Vector3(0, 1, _camera.transform.position.z));
-        
-         _positionTargetMouse = _brushTransform.position;
-        
+
+        _positionTargetMouse = _brushTransform.position;
     }
 
     private void Update()
@@ -49,41 +48,38 @@ public class MoveToMouse : MonoBehaviour
 
     private void ControllerMouse()
     {
-       
         if (Input.GetMouseButtonDown(0))
         {
-       //     StopCoroutine(MoveBrushZ(_positionBruchZ));
             _offestMouse = _brushTransform.position - transform.position;
+            Debug.Log(_offestMouse);
         }
 
         if (Input.GetMouseButton(0))
         {
             _positionTargetMouse = transform.position + _offestMouse;
-            
+
             _positionTargetMouse = LimitPosition(_positionTargetMouse);
 
             if (TryMoveBorderPaintZ(out var result, _positionTargetMouse))
             {
                 _positionTargetMouse = result;
             }
-            //     _brushTransform.position = position;
         }
-        
+
         if (Input.GetMouseButtonUp(0))
         {
             _positionTargetMouse.z = _positionBruchZ;
-            //        StartCoroutine(MoveBrushZ(_positionBruchZ));
         }
 
-        _brushTransform.position = Vector3.Lerp(_brushTransform.position, _positionTargetMouse, _speed * Time.deltaTime);
-
+        _brushTransform.position =
+            Vector3.Lerp(_brushTransform.position, _positionTargetMouse, _speed * Time.deltaTime);
     }
 
     private void FollowerMouse()
     {
         var mousePosition = Input.mousePosition;
         mousePosition.z = _distanceFromCamera;
-        var mouseScreenToWorld = _camera.ScreenToWorldPoint(mousePosition);
+        var mouseScreenToWorld = _camera.ViewportToWorldPoint(_camera.ScreenToViewportPoint(mousePosition));
         var position = Vector3.Lerp(transform.position, mouseScreenToWorld, 1.0f - Mathf.Exp(-_speed * Time.deltaTime));
 
         transform.position = position;
@@ -112,40 +108,17 @@ public class MoveToMouse : MonoBehaviour
         var raycastDirection = _raycastTransform.forward;
         Physics.Raycast(raycastPosition, raycastDirection, out var borderForwardInfo, _maxDistanceRaycast);
         Debug.DrawRay(raycastPosition, raycastDirection * _maxDistanceRaycast, Color.green);
+        
+        result = Vector3.zero;
+        if (borderForwardInfo.collider != true) return false;
 
-        if (borderForwardInfo.collider != true)
-        {
-            result = Vector3.zero; 
-            return false;
-        }
+        if (!borderForwardInfo.collider.gameObject.GetComponent<P3dPaintable>()) return false;
         
         var positionBorder = borderForwardInfo.point;
         position.z = positionBorder.z + _offestPositionObjectZ;
-        result = position; 
+        result = position;
         return true;
-    }
 
-    private IEnumerator MoveBrushZ(float positionZ)
-    {
-        var endPosition = _brushTransform.position;
-        endPosition.z = positionZ;
-        while (_brushTransform.position.z != endPosition.z)
-        {
- //           Debug.Log(Time.deltaTime);
-            var position = Vector3.MoveTowards(_brushTransform.position, endPosition, _speedBrushZ * Time.deltaTime);
-            _brushTransform.position = position; 
-            yield return new WaitForEndOfFrame();
-        }
-    }
-
-    private IEnumerator MoveBrushTarget(Vector3 positionTarget)
-    {
-        while (_brushTransform.position != positionTarget)
-        {
-            var position = Vector3.MoveTowards(_brushTransform.position, positionTarget, _speedBrushZ * Time.deltaTime);
-            _brushTransform.position = position; 
-            yield return new WaitForEndOfFrame();
-        }
     }
 
     private void OnDrawGizmos()
