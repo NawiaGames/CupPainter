@@ -61,11 +61,11 @@ public class MoveToMouse : MonoBehaviour
         if (position.x < _limitPositionX)
             position.x = _limitPositionX;
 
-        if (position.y < _limitPositionY.x)
+   /*     if (position.y < _limitPositionY.x)
             position.y = _limitPositionY.x;
 
         if (position.y > _limitPositionY.y)
-            position.y = _limitPositionY.y; 
+            position.y = _limitPositionY.y; */
 
         _positionBorder = MoveBorderPaint();
         if (position.z < _positionBorder.z)
