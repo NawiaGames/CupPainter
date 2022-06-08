@@ -13099,10 +13099,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 240996461}
   m_HandleRect: {fileID: 1869994904}
   m_Direction: 0
-  m_MinValue: -200
-  m_MaxValue: 200
+  m_MinValue: 0
+  m_MaxValue: 400
   m_WholeNumbers: 1
-  m_Value: 112
+  m_Value: 125
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -20182,9 +20182,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 389952549}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 2.91
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -21223,6 +21223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BuchElements
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511023563920338082, guid: 1af3b5ca7c6f7684ab1935c0272b4479,
+        type: 3}
+      propertyPath: blendMode.Channels.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1af3b5ca7c6f7684ab1935c0272b4479, type: 3}

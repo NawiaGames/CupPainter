@@ -1,6 +1,7 @@
 using System.Collections;
 using PaintIn3D;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 
 
@@ -14,15 +15,13 @@ public class MoveToMouse : MonoBehaviour
 
     [Header("Limit position")] [SerializeField]
     private float _limitPositionX = 1f;
-
-
+    
     [Header("Raycast")] [SerializeField] private Transform _raycastTransform;
     [SerializeField] private float _maxDistanceRaycast = 0.5f;
-
+    
     [Header("Brush")] [SerializeField] private Transform _brushTransform;
-    [SerializeField] private float _positionBruchZ = -1f;
-    [SerializeField] private float _speedBrushZ = 6f;
-
+    [SerializeField] private float _positionBruchZ = -1f
+        ;
     private Vector3 _positionBorder = Vector3.zero;
     private Vector3 _offestMouse = Vector3.zero;
     private Vector3 _rightEdge;
@@ -51,7 +50,6 @@ public class MoveToMouse : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             _offestMouse = _brushTransform.position - transform.position;
-            Debug.Log(_offestMouse);
         }
 
         if (Input.GetMouseButton(0))
@@ -69,8 +67,10 @@ public class MoveToMouse : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             _positionTargetMouse.z = _positionBruchZ;
+            _positionTargetMouse.x = _rightEdge.x - _offestPositionBorder;
         }
 
+        if (!EventSystem.current.IsPointerOverGameObject()) 
         _brushTransform.position =
             Vector3.Lerp(_brushTransform.position, _positionTargetMouse, _speed * Time.deltaTime);
     }
@@ -91,8 +91,8 @@ public class MoveToMouse : MonoBehaviour
         if (position.x > _rightEdge.x - _offestPositionBorder)
             position.x = _rightEdge.x - _offestPositionBorder;
 
-        if (position.y > _upEdge.y + _offestPositionBorder)
-            position.y = _upEdge.y + _offestPositionBorder;
+        if (position.y > _upEdge.y - _offestPositionBorder / 4f)
+            position.y = _upEdge.y - _offestPositionBorder / 4f;
 
         if (position.y < -_upEdge.y + _offestPositionBorder)
             position.y = -_upEdge.y + _offestPositionBorder;
