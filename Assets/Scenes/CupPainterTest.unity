@@ -21313,6 +21313,11 @@ PrefabInstance:
       propertyPath: _raycastTransform
       value: 
       objectReference: {fileID: 1859065048}
+    - target: {fileID: 3209793000650096915, guid: 578620e729dd4fe4ba5b55e440a32dcd,
+        type: 3}
+      propertyPath: _offestPositionBorder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3209793000650096917, guid: 578620e729dd4fe4ba5b55e440a32dcd,
         type: 3}
       propertyPath: _buttonGame
