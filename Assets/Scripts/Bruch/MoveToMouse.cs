@@ -80,9 +80,7 @@ public class MoveToMouse : MonoBehaviour
         var mousePosition = Input.mousePosition;
         mousePosition.z = _distanceFromCamera;
         var mouseScreenToWorld = _camera.ViewportToWorldPoint(_camera.ScreenToViewportPoint(mousePosition));
-        var position = Vector3.Lerp(transform.position, mouseScreenToWorld, 1.0f - Mathf.Exp(-_speed * Time.deltaTime));
-
-        transform.position = position;
+        transform.position = mouseScreenToWorld;
     }
 
     private Vector3 LimitPosition(Vector3 position)
@@ -112,8 +110,6 @@ public class MoveToMouse : MonoBehaviour
         result = Vector3.zero;
         if (borderForwardInfo.collider != true) return false;
 
-        if (!borderForwardInfo.collider.gameObject.GetComponent<P3dPaintable>()) return false;
-        
         var positionBorder = borderForwardInfo.point;
         position.z = positionBorder.z + _offestPositionObjectZ;
         result = position;

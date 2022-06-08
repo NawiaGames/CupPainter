@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Brush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Brush/BuchElements.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Brush/BuchElements.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Brush/Main Camera.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Brush/Main Camera.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Brush/Mouse.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Brush/Mouse.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Cup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Cup.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Statuette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Statuette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Vase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Vase.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Vase2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Vase2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +80,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7988">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7988" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
