@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ProgremmerTest.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ProgremmerTest.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Texture.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/PaintMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PaintMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Cup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/Cup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/PaintObjects.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PaintObjects/PaintObjects.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/background.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/background.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/cup2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/cup2.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
@@ -20,12 +24,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/GenerateTexture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/GenerateTexture.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/0a/753e4e4f/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/45/94616550/UnityAction`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/4d/0646d93f/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/52/5d1ebda8/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/c3/b32f24e8/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/c8/3d4f4c3a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/1c/c8982deb/Stack`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95646d41081849d8b71d41c224b049eb7400/cd/3677fc24/Input.cs" root0="SKIP_HIGHLIGHTING" />
@@ -99,7 +107,8 @@
       <workItem from="1654240412501" duration="6050000" />
       <workItem from="1654500344814" duration="21330000" />
       <workItem from="1654584188733" duration="23574000" />
-      <workItem from="1654685741421" duration="1019000" />
+      <workItem from="1654685741421" duration="2291000" />
+      <workItem from="1654757311175" duration="17083000" />
     </task>
     <servers />
   </component>
