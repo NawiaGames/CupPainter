@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using PaintIn3D;
 using TMPro;
@@ -23,12 +24,12 @@ public class ComparisonTexture : MonoBehaviour
         _pixelPercent = 100f/(float)sizePixels; 
     }
 
-    private void Update()
+ /*   private void Update()
     {
         ComparisonPixelDrawing();
-    }
+    }*/
 
-    private void ComparisonPixelDrawing()
+    public void ComparisonPixelDrawing()
     {
         _comparisonPixel = 0;
         if (_texture2DCurrentDraw != null) _texture2DCurrentDraw = null;
@@ -50,10 +51,11 @@ public class ComparisonTexture : MonoBehaviour
             }
         }
 
-        float successedPrecent = _comparisonPixel * _pixelPercent;
+        var successedPrecent = _comparisonPixel * _pixelPercent;
+        _comparisonText.gameObject.SetActive(true); 
         _comparisonText.text = "Successed: " + successedPrecent.ToString("F1") + "%";
     }
-
+    
     Texture2D toTexture2D(RenderTexture rTex)
     {
         var tex = new Texture2D(_drawingObject.Resoulution, _drawingObject.Resoulution, TextureFormat.RGB24, false);
@@ -62,4 +64,7 @@ public class ComparisonTexture : MonoBehaviour
         tex.Apply();
         return tex;
     }
+
+    public void OnEnableText() => _comparisonText.gameObject.SetActive(false); 
+
 }

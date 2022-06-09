@@ -21,6 +21,6 @@ public class DefaultSettingsBrush : MonoBehaviour
         _buttonGame.OnChangeHardness(_sliderHardness.value);
         _buttonGame.OnChangeRadius(_sliderRadius.value);
         _buttonGame.OnChangeSpeedRotation(_sliderSpeedRotation.value);
-        _randomColor.OnSelectedColor();
+        _randomColor.OnSelectedColor(0);
     }
 }

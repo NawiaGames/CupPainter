@@ -1,31 +1,40 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Renderer))]
 public class GenerateTexture : MonoBehaviour
 {
-    [SerializeField] private Texture2D _texture2D; 
-    private RenderTexture _renderTexture; 
+    [SerializeField] private Renderer _rendererPaintSample;
+    [SerializeField] private RandomColor _randomColors; 
+
+    private Texture2D _texture2D;
+    private RenderTexture _renderTexture;
     private const int RESOLUTION = 512;
     private const int DEPTH = 0;
-    private Color _colorUp = Color.red;
-    private Color _colorMiddle = Color.blue;
-    private Color _colorDown = Color.green; 
+    private Color[] _colors;
     public int Resoulution => RESOLUTION;
-    public RenderTexture RenderTexture => _renderTexture; 
+    public RenderTexture RenderTexture => _renderTexture;
 
-    private void Awake()
+    private void OnEnable()
     {
-        CreateTexture();
+        _colors = new Color[_randomColors.ImageColors.Length];
+        SetColors();
         
-        GetComponent<Renderer>().material.mainTexture = _renderTexture;
+        CreateTexture();
+        _rendererPaintSample.material.mainTexture = _renderTexture;
+    }
+
+    private void SetColors()
+    {
+        for (var i = 0; i < _colors.Length; i++)
+            _colors[i] = _randomColors.ImageColors[i].color; 
+        
     }
 
     private void CreateTexture()
     {
         _texture2D = new Texture2D(RESOLUTION, RESOLUTION);
         SetColorTexture2D();
-        
-        _renderTexture = new RenderTexture(RESOLUTION, RESOLUTION, DEPTH )
+
+        _renderTexture = new RenderTexture(RESOLUTION, RESOLUTION, DEPTH)
         {
             anisoLevel = 0,
             autoGenerateMips = false
@@ -36,15 +45,15 @@ public class GenerateTexture : MonoBehaviour
 
     private void SetColorTexture2D()
     {
-        Color currentColor; 
-        for (int y = 0; y < RESOLUTION; y++)
+        for (var y = 0; y < RESOLUTION; y++)
         {
-            currentColor = GetCurrentColor(y); 
-            for (int x = 0; x < RESOLUTION; x++)
+            var currentColor = GetCurrentColor(y);
+            for (var x = 0; x < RESOLUTION; x++)
             {
                 _texture2D.SetPixel(x, y, currentColor);
             }
         }
+
         _texture2D.Apply();
     }
 
@@ -52,9 +61,9 @@ public class GenerateTexture : MonoBehaviour
     {
         return pixelY switch
         {
-            < RESOLUTION / 3 => _colorDown,
-            > RESOLUTION / 3 and < (2 * RESOLUTION) / 3 => _colorMiddle,
-            _ => _colorUp
+            < RESOLUTION / 3 => _colors[0],
+            > RESOLUTION / 3 and < (2 * RESOLUTION) / 3 => _colors[1],
+            _ => _colors[2]
         };
     }
 }
