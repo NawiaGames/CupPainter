@@ -36,26 +36,23 @@ public class Button3DGameUI : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && _onClickButtonSample)
-        {
-            _onClickButtonSample = false;
-            StopCoroutine(MoveButtonSample(_directionButtonSample));
-            StartCoroutine(MoveButtonSample(_startPositionButtonSample));
-            
-        
-            StopCoroutine(MoveBigSample(_directionBigSample));
-            StartCoroutine(MoveBigSample(_startPositionBigSample));
-        }
+        if (!Input.GetMouseButtonDown(0) || !_onClickButtonSample) return;
+        StarMoveCoroutines(_startPositionButtonSample, _startPositionBigSample);
     }
 
     public void OnButtonSample()
     {
-        _onClickButtonSample = true; 
-        StopCoroutine(MoveButtonSample(_startPositionButtonSample));
-        StartCoroutine(MoveButtonSample(_directionButtonSample));
+        StarMoveCoroutines(_directionButtonSample, _directionBigSample);
+    }
 
-        StopCoroutine(MoveBigSample(_startPositionBigSample));
-        StartCoroutine(MoveBigSample(_directionBigSample));
+    private void StarMoveCoroutines (Vector3 directionButtonSample, Vector3 directionBigSample)
+    {
+        _onClickButtonSample = !_onClickButtonSample; 
+        StopCoroutine("MoveButtonSample");
+        StartCoroutine(MoveButtonSample(directionButtonSample));
+
+        StopCoroutine("MoveBigSample");
+        StartCoroutine(MoveBigSample(directionBigSample));
     }
 
     private IEnumerator MoveButtonSample(Vector3 direction)
@@ -77,9 +74,9 @@ public class Button3DGameUI : MonoBehaviour
             yield return null;
         }
 
-       if (direction == _directionBigSample)
-            _comparisonTexture.ComparisonPixelDrawing();
-        else
+        if (direction != _directionBigSample)
             _comparisonTexture.OnEnableText();
+        else
+            _comparisonTexture.ComparisonPixelDrawing();
     }
 }

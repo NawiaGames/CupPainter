@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <workItem from="1654685741421" duration="2291000" />
       <workItem from="1654757311175" duration="17083000" />
       <workItem from="1654777014145" duration="8499000" />
-      <workItem from="1654843135045" duration="3422000" />
+      <workItem from="1654843135045" duration="4330000" />
     </task>
     <servers />
   </component>
@@ -127,37 +124,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs</url>
-          <line>40</line>
-          <properties documentPath="C:\NAWIA\CupPainter\Assets\Scripts\UI\Button3DGameUI.cs" initialLine="40" containingFunctionPresentation="method 'Update'">
-            <startOffsets>
-              <option value="1488" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1517" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs</url>
-          <line>62</line>
-          <properties documentPath="C:\NAWIA\CupPainter\Assets\Scripts\UI\Button3DGameUI.cs" initialLine="62" containingFunctionPresentation="method 'MoveButtonSample'">
-            <startOffsets>
-              <option value="2248" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2309" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
