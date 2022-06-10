@@ -4,7 +4,8 @@ using UnityEngine.UI;
 
 public class RandomColor : MonoBehaviour
 {
-    [SerializeField] private Image[] _imageColors; 
+    [SerializeField] private Image[] _imageColors;
+    [SerializeField] private ColorPallet[] _colorPallets; 
     [SerializeField] private P3dPaintSphere _p3dPaintSphere;
 
     public Image[] ImageColors => _imageColors; 
@@ -15,10 +16,13 @@ public class RandomColor : MonoBehaviour
 
     private void RandomColorPaintSphere()
     {
+        var countColor = 0; 
         foreach (var imageColor in _imageColors)
         {
             var color = Random.ColorHSV(0, 1, 0.75f, 0.75f, 0.75f, 0.75f);
             imageColor.color = color;
+            _colorPallets[countColor].SetColor(color);
+            countColor++;
         }
     }
 
