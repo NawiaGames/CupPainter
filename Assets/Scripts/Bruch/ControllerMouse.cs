@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(MoveToMouse))]
 public class ControllerMouse : MonoBehaviour
@@ -16,17 +15,20 @@ public class ControllerMouse : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _moveToMouse.СalculateOffestPositionMouseToBrush();
+       //     _moveToMouse.СalculateOffestPositionMouseToBrush();
             _selectedColor.TrySetColorBrush();
         }
 
         if (Input.GetMouseButton(0))
-            _moveToMouse.CalculateMovePositionBrush();
+        {
+            _moveToMouse.FollowerMouse();
+        }
+     //       _moveToMouse.CalculateMovePositionBrush();
 
         if (Input.GetMouseButtonUp(0))
             _moveToMouse.ResetBrushButtonUp();
 
-        if (!EventSystem.current.IsPointerOverGameObject())
-            _moveToMouse.MoveBrush();
+     /*   if (!EventSystem.current.IsPointerOverGameObject()) ;
+              _moveToMouse.MoveBrush();*/
     }
 }
