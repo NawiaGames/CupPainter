@@ -3048,7 +3048,7 @@ MonoBehaviour:
   async: 1
   downsampleSteps: 3
   registeredPaintableTexture: {fileID: 842639280}
-  cooldown: -1143.968
+  cooldown: -1308.5795
   currentReader:
     dirty: 0
     requested: 0
@@ -9022,7 +9022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -530, y: 0}
+  m_AnchoredPosition: {x: -543, y: 0}
   m_SizeDelta: {x: 525, y: 750}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1019297034
@@ -9399,6 +9399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rendererPaintSample: {fileID: 1653887657}
   _randomColors: {fileID: 1561312693}
+  _texture2D: {fileID: 0}
 --- !u!1 &1124206875
 GameObject:
   m_ObjectHideFlags: 0
@@ -16774,6 +16775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rendererPaintSample: {fileID: 1649073391}
   _randomColors: {fileID: 1561312693}
+  _texture2D: {fileID: 0}
 --- !u!1 &1705640197
 GameObject:
   m_ObjectHideFlags: 0
@@ -22531,8 +22533,8 @@ MonoBehaviour:
     Texture: {fileID: 0}
     Kernel: 1
     Channels: {x: 1, y: 1, z: 1, w: 1}
-  texture: {fileID: 2800000, guid: d79258f000b71ab4f8b4f5940f95cefd, type: 3}
-  shape: {fileID: 2800000, guid: 62904e9624c1e48438a0100051efc951, type: 3}
+  texture: {fileID: 2800000, guid: 5a95ea648014799409df9f5f3c44830a, type: 3}
+  shape: {fileID: 2800000, guid: 731c0025b2e8a79408147f3537e4f03a, type: 3}
   shapeChannel: 3
   color: {r: 1, g: 1, b: 1, a: 1}
   opacity: 1
