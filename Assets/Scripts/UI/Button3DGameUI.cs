@@ -38,27 +38,24 @@ public class Button3DGameUI : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && _onClickButtonSample)
         {
+            _onClickButtonSample = false;
             StopCoroutine(MoveButtonSample(_directionButtonSample));
             StartCoroutine(MoveButtonSample(_startPositionButtonSample));
             
         
             StopCoroutine(MoveBigSample(_directionBigSample));
             StartCoroutine(MoveBigSample(_startPositionBigSample));
-
-            _onClickButtonSample = false;
-            
         }
     }
 
     public void OnButtonSample()
     {
-        StopCoroutine(MoveButtonSample(_directionButtonSample));
+        _onClickButtonSample = true; 
+        StopCoroutine(MoveButtonSample(_startPositionButtonSample));
         StartCoroutine(MoveButtonSample(_directionButtonSample));
 
-        StopCoroutine(MoveBigSample(_directionBigSample));
+        StopCoroutine(MoveBigSample(_startPositionBigSample));
         StartCoroutine(MoveBigSample(_directionBigSample));
-
-        _onClickButtonSample = true; 
     }
 
     private IEnumerator MoveButtonSample(Vector3 direction)
@@ -80,7 +77,7 @@ public class Button3DGameUI : MonoBehaviour
             yield return null;
         }
 
-        if (direction == _directionBigSample)
+       if (direction == _directionBigSample)
             _comparisonTexture.ComparisonPixelDrawing();
         else
             _comparisonTexture.OnEnableText();

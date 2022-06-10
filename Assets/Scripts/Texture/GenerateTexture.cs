@@ -1,11 +1,12 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-10)]
 public class GenerateTexture : MonoBehaviour
 {
     [SerializeField] private Renderer _rendererPaintSample;
     [SerializeField] private RandomColor _randomColors; 
 
-    private Texture2D _texture2D;
+    [SerializeField]  private Texture2D _texture2D;
     private RenderTexture _renderTexture;
     private const int RESOLUTION = 512;
     private const int DEPTH = 0;
@@ -13,7 +14,7 @@ public class GenerateTexture : MonoBehaviour
     public int Resoulution => RESOLUTION;
     public RenderTexture RenderTexture => _renderTexture;
 
-    private void OnEnable()
+    private void Start()
     {
         _colors = new Color[_randomColors.ImageColors.Length];
         SetColors();
@@ -25,8 +26,7 @@ public class GenerateTexture : MonoBehaviour
     private void SetColors()
     {
         for (var i = 0; i < _colors.Length; i++)
-            _colors[i] = _randomColors.ImageColors[i].color; 
-        
+            _colors[i] = _randomColors.ImageColors[i].color;
     }
 
     private void CreateTexture()

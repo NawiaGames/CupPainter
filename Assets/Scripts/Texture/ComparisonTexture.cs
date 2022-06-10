@@ -23,11 +23,7 @@ public class ComparisonTexture : MonoBehaviour
         var sizePixels = _drawingObject.Resoulution * _drawingObject.Resoulution;
         _pixelPercent = 100f/(float)sizePixels; 
     }
-
- /*   private void Update()
-    {
-        ComparisonPixelDrawing();
-    }*/
+    
 
     public void ComparisonPixelDrawing()
     {
@@ -46,8 +42,6 @@ public class ComparisonTexture : MonoBehaviour
                     && (colorOne.b <= colorTwo.b + 0.1f && colorOne.b >= colorTwo.b - 0.1f)
                     && (colorOne.a <= colorTwo.a + 0.1f && colorOne.a >= colorTwo.a - 0.1f))
                     _comparisonPixel++;
-       /*    if(colorOne == colorTwo)
-                    _comparisonPixel++;*/
             }
         }
 
