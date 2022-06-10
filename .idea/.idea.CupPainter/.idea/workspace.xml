@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
@@ -14,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -104,7 +106,7 @@
       <workItem from="1654685741421" duration="2291000" />
       <workItem from="1654757311175" duration="17083000" />
       <workItem from="1654777014145" duration="8499000" />
-      <workItem from="1654843135045" duration="7199000" />
+      <workItem from="1654843135045" duration="9004000" />
     </task>
     <servers />
   </component>
