@@ -1,13 +1,11 @@
-using PaintIn3D;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RandomColor : MonoBehaviour
 {
     [SerializeField] private Image[] _imageColors;
-    [SerializeField] private ColorPallet[] _colorPallets; 
-    [SerializeField] private P3dPaintSphere _p3dPaintSphere;
-
+    [SerializeField] private ColorPallet[] _colorPallets;
+    [SerializeField] private SettingsBrush _settingsBrush;
     public Image[] ImageColors => _imageColors; 
     private void Awake()
     {
@@ -24,10 +22,5 @@ public class RandomColor : MonoBehaviour
             _colorPallets[countColor].SetColor(color);
             countColor++;
         }
-    }
-
-    public void OnSelectedColor(int index)
-    {
-        _p3dPaintSphere.Color = _imageColors[index].color;
     }
 }

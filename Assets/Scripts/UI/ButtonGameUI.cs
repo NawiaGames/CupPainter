@@ -1,11 +1,10 @@
-using PaintIn3D;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ButtonGameUI : MonoBehaviour
 {
-    [SerializeField] private P3dPaintSphere _paintSphere;
-    [SerializeField] private P3dPaintDecal _paintDecal;  
+    [SerializeField] private SettingsBrush _settingsBrush;
+    [SerializeField] private RandomColor _randomColor;
     [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
     [SerializeField] private GameObject _debugMenu; 
@@ -13,30 +12,24 @@ public class ButtonGameUI : MonoBehaviour
 
     public void OnOverloadScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-    public void OnChangeOpacity(float value)
-    {
-        _paintSphere.Opacity = value;
-        _paintDecal.Opacity = value; 
-    }
+    public void OnChangeOpacity(float value) => _settingsBrush.SetOpacity(value);
 
-    public void OnChangeHardness(float value)
-    {
-        _paintSphere.Hardness = value;
-        _paintDecal.Hardness = value; 
-    }
+    public void OnChangeHardness(float value) => _settingsBrush.SetHardness(value);
 
-    public void OnChangeRadius(float value)
-    {
-        _paintSphere.Radius = value;
-        _paintDecal.Radius = value; 
-    }
+    public void OnChangeRadius(float value) => _settingsBrush.SetRadius(value); 
 
     public void OnChangeSpeedRotation(float value) => _rotationObject.SetSpeed(value);
 
     public void OnAddIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(1);
 
     public void OnSubtractIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(-1);
-
+    
+    public void OnSelectedColor(int index)
+    {
+        var color = _randomColor.ImageColors[index].color;
+        _settingsBrush.SetColor(color);
+    }
+    
     public void ActivateDebugMenu()
     {
         _isOpenDebugMenu = !_isOpenDebugMenu; 

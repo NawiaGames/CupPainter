@@ -6,7 +6,7 @@ public class GenerateTexture : MonoBehaviour
     [SerializeField] private Renderer _rendererPaintSample;
     [SerializeField] private RandomColor _randomColors; 
 
-    [SerializeField]  private Texture2D _texture2D;
+    private Texture2D _texture2D;
     private RenderTexture _renderTexture;
     private const int RESOLUTION = 512;
     private const int DEPTH = 0;
