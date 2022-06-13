@@ -16,28 +16,24 @@ public class MoveToMouse : MonoBehaviour
 
     [SerializeField] private float _maxDistanceRaycast = 0.5f;
 
-//    [Header("Brush")] [SerializeField] private Transform _brushTransform;
     [SerializeField] private SkinnedMeshRenderer _brushSkinnedMeshRenderer;
+    [SerializeField] private GameObject _paintObject;
     [SerializeField] private float _positionBruchZ = -1f;
 
     private LimitPositionBrush _limitPositionBrush;
     private Vector3 _positionBorder = Vector3.zero;
-    private Vector3 _offestMouse = Vector3.zero;
     private Vector3 _rightEdge;
     private Vector3 _upEdge;
     private Vector3 _positionTargetMouse;
     private float _blendShapesBrush;
     private float _currentBlendShapesBruch;
     private bool _isEndBorder;
+    private bool _canDraw;
 
     private void Start()
     {
-/*        _brushTransform.position =
-            new Vector3(_brushTransform.position.x, _brushTransform.position.y, _positionBruchZ); */
-
         SetLimitPosition();
         ResetBrushButtonUp();
-        //     _positionTargetMouse = _brushTransform.position;
     }
 
     private void SetLimitPosition()
@@ -56,26 +52,16 @@ public class MoveToMouse : MonoBehaviour
         UpdateBlendShapesBrush();
     }
 
-    public void MoveBrush() => transform.position = Vector3.Lerp(transform.position, _positionTargetMouse,
-        1.0f - Mathf.Exp(-_speed * Time.deltaTime));
-    /*_brushTransform.position =  
-    Vector3.Lerp(_brushTransform.position, _positionTargetMouse,  Time.deltaTime);*/
-
-    //   public void СalculateOffestPositionMouseToBrush() => _offestMouse = _brushTransform.position - transform.position;
-
-    /*   public void CalculateMovePositionBrush()
-       {
-           _positionTargetMouse = transform.position; //+ _offestMouse;
-   
-           _positionTargetMouse = _limitPositionBrush.Limit(_positionTargetMouse);
-   
-           if (TryMoveBorderPaintZ(out var result, _positionTargetMouse))
-               _positionTargetMouse = result;
-   
-       }*/
+    private void MoveBrush()
+    {
+        transform.position = Vector3.Lerp(transform.position, _positionTargetMouse,
+            1.0f - Mathf.Exp(-_speed * Time.deltaTime));
+    }
 
     public void ResetBrushButtonUp()
     {
+        _canDraw = false;
+        _paintObject.SetActive(false);
         _positionTargetMouse.z = _positionBruchZ;
         _positionTargetMouse.x = _rightEdge.x - _offestPositionBorder;
         _blendShapesBrush = 0f;
@@ -92,27 +78,38 @@ public class MoveToMouse : MonoBehaviour
         var mousePosition = Input.mousePosition;
         mousePosition.z = _distanceFromCamera;
         _positionTargetMouse = _camera.ViewportToWorldPoint(_camera.ScreenToViewportPoint(mousePosition));
-
+        _positionTargetMouse.z = _positionBruchZ;
         _positionTargetMouse = _limitPositionBrush.Limit(_positionTargetMouse);
-        if (TryMoveBorderPaintZ(out var result, _positionTargetMouse))
-            _positionTargetMouse = result;
+
+        TryMoveBorderPaintZ(out var result, _positionTargetMouse);
+        _positionTargetMouse = result;
+        
+
     }
 
-    private bool TryMoveBorderPaintZ(out Vector3 result, Vector3 position)
+    public void CanDraw()
+    {
+        _canDraw = CheckCanDraw();
+        if (_canDraw)
+            _paintObject.SetActive(true);
+    }
+    private bool CheckCanDraw() => transform.position.y >= _positionTargetMouse.y - 0.05f &&
+                                   transform.position.y <= _positionTargetMouse.y + 0.05f; 
+    
+    private void TryMoveBorderPaintZ(out Vector3 result, Vector3 position)
     {
         var raycastPosition = _raycastTransform.position;
         var raycastDirection = _raycastTransform.forward;
         Physics.Raycast(raycastPosition, raycastDirection, out var borderForwardInfo, _maxDistanceRaycast);
         Debug.DrawRay(raycastPosition, raycastDirection * _maxDistanceRaycast, Color.green);
-        result = Vector3.zero;
+        result = position;
+        result.z = _positionBruchZ;
         _blendShapesBrush = 0f;
-        if (borderForwardInfo.collider != true && EventSystem.current.IsPointerOverGameObject()) return false;
+        if (borderForwardInfo.collider == null) return;
 
         _blendShapesBrush = 100f;
         var positionBorder = borderForwardInfo.point;
-        position.z = positionBorder.z + _offestPositionObjectZ;
-        result = position;
-        return true;
+        result.z = positionBorder.z;
     }
 
     private void OnDrawGizmos()

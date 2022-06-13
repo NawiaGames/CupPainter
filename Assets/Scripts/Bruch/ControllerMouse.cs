@@ -22,6 +22,7 @@ public class ControllerMouse : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             _moveToMouse.FollowerMouse();
+            _moveToMouse.CanDraw();
         }
      //       _moveToMouse.CalculateMovePositionBrush();
 
