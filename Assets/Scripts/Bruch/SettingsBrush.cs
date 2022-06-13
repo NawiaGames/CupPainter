@@ -14,6 +14,8 @@ public class SettingsBrush : MonoBehaviour
     [SerializeField] private Slider _sliderHardness;
     [SerializeField] private Slider _sliderRadius;
     [SerializeField] private Slider _sliderSpeedRotation;
+
+    public float BrushOpacity => _sliderOpacity.value; 
     
     private void Start()
     {

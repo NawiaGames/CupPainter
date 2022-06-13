@@ -12,17 +12,18 @@ public class InputA : MonoBehaviour
     [SerializeField] private Transform _painTransform;
     [SerializeField] private Transform _raycastTransform;
     [SerializeField] private float _maxDistanceRaycast = 4f;
+    [SerializeField] private float _limitOffsetUpDown = 1f;
 
     private Vector3 _positionFollowerY;
     private Vector3 _positionForwardPaint;
-    private float _saveOpacityBrush;
+    private Vector3 _upEdge;
     private float _valueSkinnedMeshBrush;
 
     private void Start()
     {
         _positionFollowerY = _paintAndRaycastTransform.position;
         _positionForwardPaint = _raycastTransform.position;
-        _saveOpacityBrush = _settingsBrush.GetOpacity();
+        _upEdge = _camera.ViewportToWorldPoint(new Vector3(0, 1, _camera.transform.position.z));
     }
 
     private void Update()
@@ -48,7 +49,7 @@ public class InputA : MonoBehaviour
         if (_paintAndRaycastTransform.position.y >= _positionFollowerY.y - _distancBrushToObject &&
             _paintAndRaycastTransform.position.y <= _positionFollowerY.y + _distancBrushToObject)
         {
-            _settingsBrush.SetOpacity(_saveOpacityBrush);
+            _settingsBrush.SetOpacity(_settingsBrush.BrushOpacity);
         }
     }
 
@@ -59,7 +60,7 @@ public class InputA : MonoBehaviour
 
         _painTransform.position =
             Vector3.Lerp(_painTransform.position, _positionForwardPaint, _speedBrush * Time.deltaTime);
-        
+
         var currentSkinned = _skinnedMeshRendererBrush.GetBlendShapeWeight(0);
         var result = Mathf.Lerp(currentSkinned, _valueSkinnedMeshBrush, _speedSkinedBrush * Time.deltaTime);
         _skinnedMeshRendererBrush.SetBlendShapeWeight(0, result);
@@ -70,10 +71,21 @@ public class InputA : MonoBehaviour
         var mousePosition = Input.mousePosition;
         mousePosition.z = -_camera.transform.position.z;
         var mousePositionWorldPoint = _camera.ScreenToWorldPoint(mousePosition);
-
+        mousePositionWorldPoint.y = LimitPositionY(mousePositionWorldPoint.y);
         var position = _paintAndRaycastTransform.position;
         _positionFollowerY = new Vector3(position.x, mousePositionWorldPoint.y,
             position.z);
+    }
+
+    private float LimitPositionY(float positionY)
+    {
+        if (_upEdge.y < positionY)
+            return _upEdge.y;
+
+        if (-_upEdge.y + _limitOffsetUpDown > positionY)
+            return -_upEdge.y + _limitOffsetUpDown;
+
+        return positionY;
     }
 
     private void TryMoveBorder()
@@ -83,6 +95,7 @@ public class InputA : MonoBehaviour
         Physics.Raycast(raycastPosition, raycastDirection, out var borderForwardInfo, _maxDistanceRaycast);
         Debug.DrawRay(raycastPosition, raycastDirection * _maxDistanceRaycast, Color.green);
         _positionForwardPaint = _raycastTransform.position;
+        _valueSkinnedMeshBrush = 0;
         if (borderForwardInfo.collider == null) return;
         CanDraw();
         _valueSkinnedMeshBrush = 100f;

@@ -1304,6 +1304,7 @@ MonoBehaviour:
   _painTransform: {fileID: 1798007183}
   _raycastTransform: {fileID: 1859065048}
   _maxDistanceRaycast: 4
+  _limitOffsetUpDown: 2.5
 --- !u!1 &263209453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3178,7 +3179,7 @@ MonoBehaviour:
   async: 1
   downsampleSteps: 3
   registeredPaintableTexture: {fileID: 842639280}
-  cooldown: -2562.3333
+  cooldown: -2583.7412
   currentReader:
     dirty: 0
     requested: 0
@@ -26056,7 +26057,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8326287709269806529}
   m_LocalRotation: {x: -0, y: 0.7072302, z: 0.7069834, w: 0}
-  m_LocalPosition: {x: 0, y: -3.1000004, z: 12.7}
+  m_LocalPosition: {x: 0, y: -3.61, z: 12.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
