@@ -14,6 +14,7 @@ public class SettingsBrush : MonoBehaviour
     [SerializeField] private Slider _sliderHardness;
     [SerializeField] private Slider _sliderRadius;
     [SerializeField] private Slider _sliderSpeedRotation;
+    
     private void Start()
     {
         SetSettings();
@@ -33,6 +34,8 @@ public class SettingsBrush : MonoBehaviour
         _paintSphere.Opacity = value;
         _paintDecal.Opacity = value; 
     }
+
+    public float GetOpacity() => _paintSphere.Opacity; 
 
     public void SetHardness(float value)
     {

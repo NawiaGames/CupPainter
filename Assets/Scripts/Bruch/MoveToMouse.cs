@@ -54,6 +54,7 @@ public class MoveToMouse : MonoBehaviour
 
     private void MoveBrush()
     {
+    //    transform.position = _positionTargetMouse;
         transform.position = Vector3.Lerp(transform.position, _positionTargetMouse,
             1.0f - Mathf.Exp(-_speed * Time.deltaTime));
     }
@@ -108,6 +109,7 @@ public class MoveToMouse : MonoBehaviour
         if (borderForwardInfo.collider == null) return;
 
         _blendShapesBrush = 100f;
+        Debug.Log(borderForwardInfo.point);
         var positionBorder = borderForwardInfo.point;
         result.z = positionBorder.z;
     }
