@@ -4,7 +4,8 @@ public class InputA : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private Transform _paintAndRaycastTransform;
-    [SerializeField] private float _speedBrush = 24f;
+    [SerializeField] private float _speedBrushY = 12f;
+    [SerializeField] private float _speedBrushX = 12f;
     [SerializeField] private float _distancBrushToObject = 0.1f;
     [SerializeField] private SettingsBrush _settingsBrush;
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRendererBrush;
@@ -55,11 +56,18 @@ public class InputA : MonoBehaviour
 
     private void MoveBrush()
     {
-        _paintAndRaycastTransform.position = Vector3.Lerp(_paintAndRaycastTransform.position, _positionFollowerY,
-            _speedBrush * Time.deltaTime);
+        _paintAndRaycastTransform.position = Vector3.MoveTowards(_paintAndRaycastTransform.position, _positionFollowerY,
+            _speedBrushY * Time.deltaTime);
 
-        _painTransform.position =
-            Vector3.Lerp(_painTransform.position, _positionForwardPaint, _speedBrush * Time.deltaTime);
+        if ((_paintAndRaycastTransform.position.y >= _positionFollowerY.y - _distancBrushToObject &&
+            _paintAndRaycastTransform.position.y <= _positionFollowerY.y + _distancBrushToObject) ||
+            (_painTransform.position.x >= _positionForwardPaint.x - _distancBrushToObject &&
+             _painTransform.position.x <= _positionForwardPaint.x + _distancBrushToObject))
+        {
+            _painTransform.position =
+                Vector3.Lerp(_painTransform.position, _positionForwardPaint, _speedBrushX * Time.deltaTime);
+        }
+
 
         var currentSkinned = _skinnedMeshRendererBrush.GetBlendShapeWeight(0);
         var result = Mathf.Lerp(currentSkinned, _valueSkinnedMeshBrush, _speedSkinedBrush * Time.deltaTime);
@@ -97,7 +105,7 @@ public class InputA : MonoBehaviour
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
         if (borderForwardInfo.collider == null) return;
-        CanDraw();
+    //    CanDraw();
         _valueSkinnedMeshBrush = 100f;
         _positionForwardPaint = borderForwardInfo.point;
     }
@@ -106,6 +114,6 @@ public class InputA : MonoBehaviour
     {
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
-        _settingsBrush.SetOpacity(0);
+  //      _settingsBrush.SetOpacity(0);
     }
 }
