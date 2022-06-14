@@ -15,7 +15,7 @@ public class SettingsBrush : MonoBehaviour
     [SerializeField] private Slider _sliderRadius;
     [SerializeField] private Slider _sliderSpeedRotation;
 
-    public float BrushOpacity => _sliderOpacity.value; 
+    public Color ColorBrush => _paintSphere.Color; 
     
     private void Start()
     {

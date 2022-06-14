@@ -1,20 +1,35 @@
-using PaintIn3D;
 using UnityEngine;
 
-[RequireComponent(typeof(P3dPaintableTexture))]
 public class BlendColor : MonoBehaviour
 {
-    [SerializeField] private Texture2D _texture2D; 
-    private P3dPaintableTexture _pantableTexture;
+    [SerializeField] private Renderer _blendRender;
 
-    private const int SIZE_TEXTURE = 512; 
+    private Texture2D _texture2D;
+    private Color _startColor; 
+    private Color _blendColor;
+    private Color _brushColor;
+
     private void Start()
     {
-        _pantableTexture = GetComponent<P3dPaintableTexture>();
+        _startColor = _blendRender.material.color;
     }
 
-    private void Update()
+    public Color GetColorBlend(Color color)
     {
-        _texture2D = PaintTexture.toTexture2D(_pantableTexture.Current, SIZE_TEXTURE);
+        Debug.Log(" I am work");
+        if (_blendColor == _startColor)
+            _blendColor = color;
+        else
+            _blendColor = (_blendColor + color) / 2;
+        
+        _blendRender.material.color = _blendColor;
+        
+        return _blendColor; 
+    }
+
+    public void Reset()
+    {
+        _blendColor = _startColor;
+        _blendRender.material.color = _blendColor; 
     }
 }

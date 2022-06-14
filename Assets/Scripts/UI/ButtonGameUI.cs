@@ -4,10 +4,12 @@ using UnityEngine.SceneManagement;
 public class ButtonGameUI : MonoBehaviour
 {
     [SerializeField] private SettingsBrush _settingsBrush;
+    [SerializeField] private BlendColor _blendColor; 
     [SerializeField] private RandomColor _randomColor;
     [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
     [SerializeField] private GameObject _debugMenu; 
+    
     private bool _isOpenDebugMenu;
 
     public void OnOverloadScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -35,4 +37,6 @@ public class ButtonGameUI : MonoBehaviour
         _isOpenDebugMenu = !_isOpenDebugMenu; 
         _debugMenu.SetActive(_isOpenDebugMenu);
     }
+
+    public void OnResetBlend() => _blendColor.Reset(); 
 }

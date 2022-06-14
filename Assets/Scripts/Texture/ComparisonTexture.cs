@@ -47,16 +47,6 @@ public class ComparisonTexture : MonoBehaviour
         _comparisonText.gameObject.SetActive(true); 
         _comparisonText.text = "Successed: " + successedPrecent.ToString("F1") + "%";
     }
-    
- /*   private Texture2D toTexture2D(RenderTexture rTex)
-    {
-        var tex = new Texture2D(_drawingObject.Resoulution, _drawingObject.Resoulution, TextureFormat.RGB24, false);
-        RenderTexture.active = rTex;
-        tex.ReadPixels(new Rect(0, 0, rTex.width, rTex.height), 0, 0);
-        tex.Apply();
-        return tex;
-    }
-    */
 
     public void OnEnableText() => _comparisonText.gameObject.SetActive(false); 
 
