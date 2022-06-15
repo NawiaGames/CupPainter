@@ -9,13 +9,15 @@ public class CreatePaintObjects : MonoBehaviour
     [SerializeField] private Transform _bigPaintSampleTransform;
     [SerializeField] private int _scaleBigPaintSampleObject = 150; 
 
-    private GameObject[] _paintObjects;
+    private PaintObject[] _paintObjects;
     private GameObject[] _smallPaintSampleObjects;
     private GameObject[] _bigPaintSampleObjects;
+    private Texture2D[] _texture2DModelsSample;
 
-    public GameObject[] PaintObjects => _paintObjects;
+    public PaintObject[] PaintObjects => _paintObjects;
     public GameObject[] SmallPaintSampleObjects => _smallPaintSampleObjects;
-    public GameObject[] BigPaintSampleObjects => _bigPaintSampleObjects; 
+    public GameObject[] BigPaintSampleObjects => _bigPaintSampleObjects;
+    public Texture2D[] Texture2DModelsSample => _texture2DModelsSample; 
 
     private void Awake()
     {
@@ -24,10 +26,11 @@ public class CreatePaintObjects : MonoBehaviour
 
     private void Initialization()
     {
-        _paintObjects = new GameObject[_levelsSO.Length];
+        _paintObjects = new PaintObject[_levelsSO.Length];
         _smallPaintSampleObjects = new GameObject[_levelsSO.Length];
         _bigPaintSampleObjects = new GameObject[_levelsSO.Length];
-
+        _texture2DModelsSample = new Texture2D[_levelsSO.Length]; 
+        
         for (var i = 0; i < _levelsSO.Length; i++)
         {
             CreatePaintObject(i);
@@ -35,6 +38,8 @@ public class CreatePaintObjects : MonoBehaviour
             CreateSmallPaintSampleObject(i);
 
             CreateBigPaintSampleObject(i);
+
+            _texture2DModelsSample[i] = _levelsSO[i].TextureModel; 
         }
     }
 
@@ -62,10 +67,10 @@ public class CreatePaintObjects : MonoBehaviour
 
     private void CreatePaintObject(int i)
     {
-        var paintObjects = InstantiateObject(_levelsSO[i].ModelObject);
-        paintObjects.transform.SetParent(_paintObjectsTransform);
-        _paintObjects[i] = paintObjects;
-        _paintObjects[i].transform.localPosition = Vector3.zero;
+        var paintObjects = InstantiateObject(_levelsSO[i].ModelObject.gameObject);
+        paintObjects.gameObject.transform.SetParent(_paintObjectsTransform);
+        _paintObjects[i] = paintObjects.GetComponent<PaintObject>();
+        _paintObjects[i].gameObject.transform.localPosition = Vector3.zero;
     }
 
     private GameObject InstantiateObject(GameObject createObject)

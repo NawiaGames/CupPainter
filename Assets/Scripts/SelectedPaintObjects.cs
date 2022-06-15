@@ -7,9 +7,12 @@ public class SelectedPaintObjects : MonoBehaviour
 
     private int _lengthPaintObjects = 0;
 
+    public static int CurrentPaintObjectIndex; 
+    
     private void Start()
     {
         _lengthPaintObjects = _createPaintObjects.PaintObjects.Length;
+        CurrentPaintObjectIndex = _currentPaintObject; 
         ActivateSelectedObject();
     }
 
@@ -17,7 +20,7 @@ public class SelectedPaintObjects : MonoBehaviour
     {
         for (var i = 0; i < _lengthPaintObjects; i++)
         {
-            _createPaintObjects.PaintObjects[i].SetActive(_currentPaintObject == i);
+            _createPaintObjects.PaintObjects[i].gameObject.SetActive(_currentPaintObject == i);
             _createPaintObjects.SmallPaintSampleObjects[i].SetActive(_currentPaintObject == i);
             _createPaintObjects.BigPaintSampleObjects[i].SetActive(_currentPaintObject == i);
         }
@@ -31,7 +34,8 @@ public class SelectedPaintObjects : MonoBehaviour
             index = _lengthPaintObjects - 1;
         else if (_lengthPaintObjects - 1 < index)
             index = 0;
-
+        
+        CurrentPaintObjectIndex = index; 
         _currentPaintObject = index;
         ActivateSelectedObject();
     }
