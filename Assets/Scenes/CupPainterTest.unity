@@ -15100,14 +15100,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337466193}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3d343adf1281bc4e9e4889cf809f756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _comparisonText: {fileID: 1848181147}
-  _drawingObject: {fileID: 0}
-  _currentDrawingObject: {fileID: 0}
+  _createPaintObjects: {fileID: 285762477}
+  _texture2DDraw: {fileID: 0}
+  _texture2DCurrentDraw: {fileID: 0}
+  _accurateBetweenTextures: 0.1
 --- !u!1 &1344146822
 GameObject:
   m_ObjectHideFlags: 0
