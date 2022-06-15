@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/CupPainterTest.unity
     guid: 07f35bcb284c31140beddb1c14b5763b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ProgremmerTest.unity
     guid: 8fbe8a4514eba6346bb1c2475be54e60
   m_configObjects: {}
