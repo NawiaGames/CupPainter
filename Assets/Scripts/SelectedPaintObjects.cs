@@ -9,20 +9,9 @@ public class SelectedPaintObjects : MonoBehaviour
 
     private void Start()
     {
-        //       SetPaintObjects();
         _lengthPaintObjects = _createPaintObjects.PaintObjects.Length;
         ActivateSelectedObject();
     }
-
-/*    private void SetPaintObjects()
-    {
-        _paintObjects = new GameObject[_paintObject.childCount];
-        
-        for (var i = 0; i < _paintObjects.Length; i++)
-            _paintObjects[i] = _paintObject.GetChild(i).gameObject; 
-        
-    }
-*/
 
     private void ActivateSelectedObject()
     {

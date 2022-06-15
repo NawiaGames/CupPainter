@@ -2,67 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/CupSample.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/CupSample.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Materials/Level1Texture.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Materials/Level1Texture.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2Tex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2Tex.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Materials/Level2Tex.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Materials/Level2Tex.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Vase.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Vase.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/VaseSample.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/VaseSample.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level1Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level1Texture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Materials/Level1Texture.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Materials/Level1Texture.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2Sample.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2Sample.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level2Tex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level2Tex.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Materials/Level2Tex.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Materials/Level2Tex.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Statuette.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Statuette.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/StatuetteSample.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/StatuetteSample.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/CreatePaintObjects.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/CreatePaintObjects.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Level.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +116,7 @@
       <workItem from="1655123187729" duration="10579000" />
       <workItem from="1655141888052" duration="1369000" />
       <workItem from="1655189570397" duration="11247000" />
-      <workItem from="1655276910127" duration="10270000" />
+      <workItem from="1655276910127" duration="10522000" />
     </task>
     <servers />
   </component>
