@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f1e5e4c05188249bc2ac9f81743034, type: 3}
+  m_Name: Level3
+  m_EditorClassIdentifier: 
+  _modelObject: {fileID: 1977356697428260402, guid: 2a513753358721741908e3bfa8586990,
+    type: 3}
+  _modelSampleObject: {fileID: 1977356697428260402, guid: 91fca9765a09a6146a4fb71d016551c1,
+    type: 3}
+  _textureModel: {fileID: 2800000, guid: 9911ae327d655e14589d6734a056b19e, type: 3}
+  _colorsPallet: []

@@ -2,11 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/CupSample.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/CupSample.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Materials/Level1Texture.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Materials/Level1Texture.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2Tex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Level2Tex.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Materials/Level2Tex.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Materials/Level2Tex.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Vase.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Vase.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/VaseSample.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/VaseSample.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level1Texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level1Texture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Level3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Materials/Level1Texture.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Materials/Level1Texture.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2Sample.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level3/Vase2Sample.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level2Tex.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level2Tex.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Level4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Materials/Level2Tex.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Materials/Level2Tex.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Statuette.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/Statuette.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/StatuetteSample.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level4/StatuetteSample.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/CreatePaintObjects.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/CreatePaintObjects.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +76,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/SelectedColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorPallet.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/CreatePaintObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MyTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" root0="FORCE_HIGHLIGHTING" />
@@ -30,12 +86,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/0a/753e4e4f/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/12/e383f7de/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/26/4b7a10ed/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/45/94616550/UnityAction`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/4d/0646d93f/Gizmos.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/52/5d1ebda8/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/5f/4d075c8b/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/c3/b32f24e8/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/c8/3d4f4c3a/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/de/5f319a70/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/1c/c8982deb/Stack`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/95646d41081849d8b71d41c224b049eb7400/cd/3677fc24/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b8be267d809e4320a19ada90c7fbae111a000/74/af0d1066/Physics.cs" root0="SKIP_HIGHLIGHTING" />
@@ -117,7 +175,7 @@
       <workItem from="1655123187729" duration="10579000" />
       <workItem from="1655141888052" duration="1369000" />
       <workItem from="1655189570397" duration="11247000" />
-      <workItem from="1655276910127" duration="1244000" />
+      <workItem from="1655276910127" duration="10270000" />
     </task>
     <servers />
   </component>
