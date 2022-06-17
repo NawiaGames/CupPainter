@@ -14822,6 +14822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _createPaintObjects: {fileID: 285762477}
+  _colorsPallet: {fileID: 8702988722654287740}
   _currentPaintObject: 0
 --- !u!114 &1289059995
 MonoBehaviour:
@@ -24427,7 +24428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1994027296277487898
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24681,7 +24682,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8702988722654287739}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4697693264722816662
 MeshRenderer:
@@ -24738,7 +24739,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8702988722654287739}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5239928496346859608
 MeshFilter:
@@ -24768,6 +24769,7 @@ GameObject:
   - component: {fileID: 7768536879676989238}
   - component: {fileID: 5806664846794676306}
   - component: {fileID: 4120560548203275598}
+  - component: {fileID: 7768536879676989239}
   m_Layer: 0
   m_Name: Circle.029
   m_TagString: Untagged
@@ -24905,6 +24907,7 @@ GameObject:
   - component: {fileID: 94178480497387850}
   - component: {fileID: 1994027296277487898}
   - component: {fileID: 7032019517018800139}
+  - component: {fileID: 7032019517018800140}
   m_Layer: 0
   m_Name: Circle.028
   m_TagString: Untagged
@@ -24934,6 +24937,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2810966353409093201, guid: b0a8105672ebdd34dbeeac0bd0ccb87e, type: 3}
+--- !u!114 &7032019517018800140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957442189016497904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ccedbf2eca1b54ea42330f85ffe0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7315540113236102788
 GameObject:
   m_ObjectHideFlags: 0
@@ -25019,6 +25034,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5635275822150417479}
   m_Mesh: {fileID: -5014901743460754363, guid: b0a8105672ebdd34dbeeac0bd0ccb87e, type: 3}
+--- !u!114 &7768536879676989239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5635275822150417479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ccedbf2eca1b54ea42330f85ffe0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &7840922240645912919
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25060,7 +25087,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &8326287709269806529
 GameObject:
   m_ObjectHideFlags: 0
@@ -25072,8 +25099,9 @@ GameObject:
   - component: {fileID: 8702988722654287739}
   - component: {fileID: 5722071503810664670}
   - component: {fileID: 7533421559782173716}
+  - component: {fileID: 8702988722654287740}
   m_Layer: 0
-  m_Name: paintPallet
+  m_Name: paintPallet (ColorsPallet)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25111,9 +25139,9 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 4886470956526026377}
-  - {fileID: 4259365136894360163}
   - {fileID: 4502527050948030152}
+  - {fileID: 4259365136894360163}
+  - {fileID: 4886470956526026377}
   - {fileID: 3834429253070667776}
   - {fileID: 7735677033772610243}
   - {fileID: 451063908286409314}
@@ -25121,6 +25149,24 @@ Transform:
   m_Father: {fileID: 1805037415}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -89.4, y: 90.031, z: 89.963}
+--- !u!114 &8702988722654287740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8326287709269806529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094225dab2b8f77479b37b1206efbfe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _colorsPallets:
+  - {fileID: 9147378616325164326}
+  - {fileID: 6151025582318823371}
+  - {fileID: 8764358439845408402}
+  - {fileID: 7032019517018800140}
+  - {fileID: 7768536879676989239}
 --- !u!64 &8764358439845408401
 MeshCollider:
   m_ObjectHideFlags: 0

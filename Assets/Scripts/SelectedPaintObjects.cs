@@ -3,6 +3,7 @@ using UnityEngine;
 public class SelectedPaintObjects : MonoBehaviour
 {
     [SerializeField] private CreatePaintObjects _createPaintObjects;
+    [SerializeField] private ColorsPallet _colorsPallet; 
     [SerializeField] private int _currentPaintObject = 0;
 
     private int _lengthPaintObjects = 0;
@@ -14,6 +15,7 @@ public class SelectedPaintObjects : MonoBehaviour
         _lengthPaintObjects = _createPaintObjects.PaintObjects.Length;
         CurrentPaintObjectIndex = _currentPaintObject; 
         ActivateSelectedObject();
+        _colorsPallet.SetColorsPallet(_createPaintObjects.ColorsPallet[_currentPaintObject].ColorsPallet);
     }
 
     private void ActivateSelectedObject()
@@ -38,5 +40,6 @@ public class SelectedPaintObjects : MonoBehaviour
         CurrentPaintObjectIndex = index; 
         _currentPaintObject = index;
         ActivateSelectedObject();
+        _colorsPallet.SetColorsPallet(_createPaintObjects.ColorsPallet[_currentPaintObject].ColorsPallet);
     }
 }
