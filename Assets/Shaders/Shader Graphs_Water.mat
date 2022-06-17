@@ -35,14 +35,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alpha: 0.5
+    - _Float: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _size_noise: 20
-    - _smoothness: 0
+    - _size_noise: 10
+    - _smoothness: 0.37
     - _speed_wave: 0.2
-    - _wave_force: 0.05
+    - _wave_force: 0.14
     m_Colors:
-    - _Color: {r: 0, g: 0.7739828, b: 1, a: 0}
+    - _Color: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6347385578603176446
 MonoBehaviour:
