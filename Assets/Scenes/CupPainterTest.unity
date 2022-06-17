@@ -1166,6 +1166,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bc27aba380f4d3042970f24087144679, type: 2}
   - {fileID: 11400000, guid: cea50e67e55d600458377273c2c00f67, type: 2}
   - {fileID: 11400000, guid: e94892d807e41614aaef57ae8b34fee4, type: 2}
+  - {fileID: 11400000, guid: 1e031332db096b74fb312496665d9c8a, type: 2}
+  - {fileID: 11400000, guid: 463c14429634fd0488dfe50106a387ac, type: 2}
   _paintObjectsTransform: {fileID: 1289059993}
   _smallPaintSampleTransform: {fileID: 1685253787}
   _scaleSmallPaintSampleObject: 50

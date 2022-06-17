@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f1e5e4c05188249bc2ac9f81743034, type: 3}
   m_Name: level6
   m_EditorClassIdentifier: 
-  _modelObject: {fileID: 0}
-  _modelSampleObject: {fileID: 0}
-  _textureModel: {fileID: 0}
-  _colorsPallet: []
+  _modelObject: {fileID: 9018673022603802861, guid: bb09938d7c7212f4892173ca45c6db19,
+    type: 3}
+  _modelSampleObject: {fileID: 2886632423393941200, guid: bdb03b540a576794dbccaa4024414ccd,
+    type: 3}
+  _textureModel: {fileID: 2800000, guid: 2a561ad896c2b774f916ba1a68b03f7b, type: 3}
+  _colorsPallet:
+  - {r: 0.15294118, g: 0.29411766, b: 0.06666667, a: 1}
+  - {r: 0.78823537, g: 0.5882353, b: 0.47450984, a: 1}
+  - {r: 0.5647059, g: 0.3921569, b: 0.2901961, a: 1}
