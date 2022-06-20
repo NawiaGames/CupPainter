@@ -96,6 +96,7 @@ public class InputA : MonoBehaviour
         if (borderForwardInfo.collider == null) return;
         _valueSkinnedMeshBrush = 100f;
         _positionForwardPaint = borderForwardInfo.point;
+        Handheld.Vibrate();
     }
 
     private void ResetPositionBrush()
