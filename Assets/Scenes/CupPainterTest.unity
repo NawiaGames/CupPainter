@@ -1107,10 +1107,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 1805037414}
+  _settingsBrush: {fileID: 261887636}
+  _distanceDraw: 0.01
   _paintAndRaycastTransform: {fileID: 1304594587}
-  _speedBrushY: 12
+  _speedBrushY: 16
   _speedBrushX: 10
-  _distancBrushToObject: 0
+  _distancBrushToObjectX: 0.1
   _skinnedMeshRendererBrush: {fileID: 1746880016}
   _speedSkinedBrush: 16
   _painTransform: {fileID: 1798007183}
@@ -8668,7 +8670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -542.99994, y: 0}
+  m_AnchoredPosition: {x: -543, y: 0}
   m_SizeDelta: {x: 525, y: 750}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1019297034
@@ -14914,7 +14916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3062f9d282de0f4a8f7d00b45203c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _createPaintObjects: {fileID: 285762477}
+  createLevel: {fileID: 285762477}
   _colorsPallet: {fileID: 8702988722654287740}
   _currentPaintObject: 0
 --- !u!114 &1289059995
@@ -15200,7 +15202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _comparisonText: {fileID: 1848181147}
-  _createPaintObjects: {fileID: 285762477}
+  createLevel: {fileID: 0}
   _texture2DDraw: {fileID: 0}
   _texture2DCurrentDraw: {fileID: 0}
   _accurateBetweenTextures: 0.1

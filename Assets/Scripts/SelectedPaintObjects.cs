@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SelectedPaintObjects : MonoBehaviour
 {
-    [SerializeField] private CreatePaintObjects _createPaintObjects;
+    [FormerlySerializedAs("_createPaintObjects")] [SerializeField] private CreateLevel createLevel;
     [SerializeField] private ColorsPallet _colorsPallet; 
     [SerializeField] private int _currentPaintObject = 0;
 
@@ -12,19 +13,19 @@ public class SelectedPaintObjects : MonoBehaviour
     
     private void Start()
     {
-        _lengthPaintObjects = _createPaintObjects.PaintObjects.Length;
+        _lengthPaintObjects = createLevel.PaintObjects.Length;
         CurrentPaintObjectIndex = _currentPaintObject; 
         ActivateSelectedObject();
-        _colorsPallet.SetColorsPallet(_createPaintObjects.ColorsPallet[_currentPaintObject].ColorsPallet);
+        _colorsPallet.SetColorsPallet(createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
     }
 
     private void ActivateSelectedObject()
     {
         for (var i = 0; i < _lengthPaintObjects; i++)
         {
-            _createPaintObjects.PaintObjects[i].gameObject.SetActive(_currentPaintObject == i);
-            _createPaintObjects.SmallPaintSampleObjects[i].SetActive(_currentPaintObject == i);
-            _createPaintObjects.BigPaintSampleObjects[i].SetActive(_currentPaintObject == i);
+            createLevel.PaintObjects[i].gameObject.SetActive(_currentPaintObject == i);
+            createLevel.SmallPaintSampleObjects[i].SetActive(_currentPaintObject == i);
+            createLevel.BigPaintSampleObjects[i].SetActive(_currentPaintObject == i);
         }
     }
 
@@ -40,6 +41,6 @@ public class SelectedPaintObjects : MonoBehaviour
         CurrentPaintObjectIndex = index; 
         _currentPaintObject = index;
         ActivateSelectedObject();
-        _colorsPallet.SetColorsPallet(_createPaintObjects.ColorsPallet[_currentPaintObject].ColorsPallet);
+        _colorsPallet.SetColorsPallet(createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
     }
 }

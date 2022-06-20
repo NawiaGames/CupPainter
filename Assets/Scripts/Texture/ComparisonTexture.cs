@@ -5,7 +5,7 @@ using UnityEngine;
 public class ComparisonTexture : MonoBehaviour
 {
     [SerializeField] private TMP_Text _comparisonText;
-    [SerializeField] private CreatePaintObjects _createPaintObjects;
+    [SerializeField] private CreateLevel createLevel;
 
     [SerializeField] private Texture2D _texture2DDraw;
     [SerializeField] private Texture2D _texture2DCurrentDraw;
@@ -25,8 +25,8 @@ public class ComparisonTexture : MonoBehaviour
     public void ComparisonPixelDrawing()
     {
         _comparisonPixel = 0;
-        _texture2DDraw = _createPaintObjects.Texture2DModelsSample[SelectedPaintObjects.CurrentPaintObjectIndex];
-        _texture2DCurrentDraw = PaintTexture.toTexture2D(_createPaintObjects
+        _texture2DDraw = createLevel.Texture2DModelsSample[SelectedPaintObjects.CurrentPaintObjectIndex];
+        _texture2DCurrentDraw = PaintTexture.toTexture2D(createLevel
             .PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].RenderTexturePaint);
 
         for (var y = 0; y < SIZE; y++)

@@ -3,10 +3,12 @@ using UnityEngine;
 public class InputA : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
+    [SerializeField] private SettingsBrush _settingsBrush;
+    [SerializeField] private float _distanceDraw = 0.05f; 
     [SerializeField] private Transform _paintAndRaycastTransform;
     [SerializeField] private float _speedBrushY = 12f;
     [SerializeField] private float _speedBrushX = 12f;
-    [SerializeField] private float _distancBrushToObject = 0.1f;
+    [SerializeField] private float _distancBrushToObjectX = 0.1f;
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRendererBrush;
     [SerializeField] private float _speedSkinedBrush = 12f;
     [SerializeField] private Transform _painTransform;
@@ -18,6 +20,7 @@ public class InputA : MonoBehaviour
     private Vector3 _positionForwardPaint;
     private Vector3 _upEdge;
     private float _valueSkinnedMeshBrush;
+    private bool _canDraw; 
 
     private void Start()
     {
@@ -38,10 +41,19 @@ public class InputA : MonoBehaviour
         {
             FollowerMousePositionY();
             TryMoveBorder();
+            
+            if((_painTransform.position.x <= _positionForwardPaint.x + _distanceDraw &&
+                _painTransform.position.x >= _positionForwardPaint.x - _distanceDraw) &&
+               _canDraw
+              )
+                _settingsBrush.SetOpacity(1);
         }
 
         if (Input.GetMouseButtonUp(0))
             ResetPositionBrush();
+        
+   /*     if (Input.GetMouseButtonDown(0))
+            _settingsBrush.SetOpacity(1);*/
     }
 
     private void MoveBrush()
@@ -49,15 +61,13 @@ public class InputA : MonoBehaviour
         _paintAndRaycastTransform.position = Vector3.MoveTowards(_paintAndRaycastTransform.position, _positionFollowerY,
             _speedBrushY * Time.deltaTime);
 
-        if ((_paintAndRaycastTransform.position.y >= _positionFollowerY.y - _distancBrushToObject &&
-            _paintAndRaycastTransform.position.y <= _positionFollowerY.y + _distancBrushToObject) ||
-            (_painTransform.position.x >= _positionForwardPaint.x - _distancBrushToObject &&
-             _painTransform.position.x <= _positionForwardPaint.x + _distancBrushToObject))
+        if ((_paintAndRaycastTransform.position.y >= _positionFollowerY.y - _distancBrushToObjectX &&
+            _paintAndRaycastTransform.position.y <= _positionFollowerY.y + _distancBrushToObjectX))
         {
             _painTransform.position =
-                Vector3.Lerp(_painTransform.position, _positionForwardPaint, _speedBrushX * Time.deltaTime);
+                Vector3.MoveTowards(_painTransform.position, _positionForwardPaint, _speedBrushX * Time.deltaTime);
         }
-        
+
         var currentSkinned = _skinnedMeshRendererBrush.GetBlendShapeWeight(0);
         var result = Mathf.Lerp(currentSkinned, _valueSkinnedMeshBrush, _speedSkinedBrush * Time.deltaTime);
         _skinnedMeshRendererBrush.SetBlendShapeWeight(0, result);
@@ -70,8 +80,8 @@ public class InputA : MonoBehaviour
         var mousePositionWorldPoint = _camera.ScreenToWorldPoint(mousePosition);
         mousePositionWorldPoint.y = LimitPositionY(mousePositionWorldPoint.y);
         var position = _paintAndRaycastTransform.position;
-        _positionFollowerY = new Vector3(position.x, mousePositionWorldPoint.y,
-            position.z);
+        _positionFollowerY = new Vector3(_paintAndRaycastTransform.position.x, mousePositionWorldPoint.y,
+            _paintAndRaycastTransform.position.z);
     }
 
     private float LimitPositionY(float positionY)
@@ -93,7 +103,9 @@ public class InputA : MonoBehaviour
         Debug.DrawRay(raycastPosition, raycastDirection * _maxDistanceRaycast, Color.green);
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
+        _canDraw = false; 
         if (borderForwardInfo.collider == null) return;
+        _canDraw = true; 
         _valueSkinnedMeshBrush = 100f;
         _positionForwardPaint = borderForwardInfo.point;
         Handheld.Vibrate();
@@ -103,5 +115,6 @@ public class InputA : MonoBehaviour
     {
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
+        _settingsBrush.SetOpacity(0);
     }
 }

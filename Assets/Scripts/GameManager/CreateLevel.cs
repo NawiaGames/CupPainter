@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CreatePaintObjects : MonoBehaviour
+public class CreateLevel : MonoBehaviour
 {
     [SerializeField] private Level[] _levelsSO;
     [SerializeField] private Transform _paintObjectsTransform;
@@ -13,13 +13,15 @@ public class CreatePaintObjects : MonoBehaviour
     private GameObject[] _smallPaintSampleObjects;
     private GameObject[] _bigPaintSampleObjects;
     private Texture2D[] _texture2DModelsSample;
-    private Colors[] _colorsPallet; 
+    private Colors[] _colorsPallet;
+    private bool[] _canActivatePallets;
 
     public PaintObject[] PaintObjects => _paintObjects;
     public GameObject[] SmallPaintSampleObjects => _smallPaintSampleObjects;
     public GameObject[] BigPaintSampleObjects => _bigPaintSampleObjects;
     public Texture2D[] Texture2DModelsSample => _texture2DModelsSample;
-    public Colors[] ColorsPallet => _colorsPallet; 
+    public Colors[] ColorsPallet => _colorsPallet;
+    public bool[] CanActivatePallets => _canActivatePallets;
 
     private void Awake()
     {
@@ -32,7 +34,8 @@ public class CreatePaintObjects : MonoBehaviour
         _smallPaintSampleObjects = new GameObject[_levelsSO.Length];
         _bigPaintSampleObjects = new GameObject[_levelsSO.Length];
         _texture2DModelsSample = new Texture2D[_levelsSO.Length];
-        _colorsPallet = new Colors[_levelsSO.Length]; 
+        _colorsPallet = new Colors[_levelsSO.Length];
+        _canActivatePallets = new bool[_levelsSO.Length]; 
         
         for (var i = 0; i < _levelsSO.Length; i++)
         {
@@ -43,6 +46,7 @@ public class CreatePaintObjects : MonoBehaviour
             CreateBigPaintSampleObject(i);
 
             _texture2DModelsSample[i] = _levelsSO[i].TextureModel;
+            _canActivatePallets[i] = _levelsSO[i].ActivatePallet; 
             _colorsPallet[i] = new Colors(_levelsSO[i].ColorsPallet); 
         }
     }
