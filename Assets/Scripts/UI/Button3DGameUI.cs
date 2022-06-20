@@ -48,10 +48,8 @@ public class Button3DGameUI : MonoBehaviour
     private void StarMoveCoroutines (Vector3 directionButtonSample, Vector3 directionBigSample)
     {
         _onClickButtonSample = !_onClickButtonSample; 
-        StopCoroutine("MoveButtonSample");
+        StopAllCoroutines();
         StartCoroutine(MoveButtonSample(directionButtonSample));
-
-        StopCoroutine("MoveBigSample");
         StartCoroutine(MoveBigSample(directionBigSample));
     }
 

@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 
 public class BlendColor : MonoBehaviour
@@ -21,9 +19,7 @@ public class BlendColor : MonoBehaviour
     private void Update()
     {
         if (_blendRender.material.color != _blendColor)
-        {
             _blendRender.material.color = Color.Lerp(_blendRender.material.color, _blendColor, Time.deltaTime * _speedBlend);
-        }
     }
 
     public Color GetColorBlend(Color color)
