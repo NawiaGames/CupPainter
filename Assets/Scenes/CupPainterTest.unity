@@ -25472,6 +25472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _blendRender: {fileID: 9117247763139047249}
+  _speedBlend: 5
 --- !u!64 &9117247763139047251
 MeshCollider:
   m_ObjectHideFlags: 0
