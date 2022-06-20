@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -14,31 +15,25 @@ public class BlendColor : MonoBehaviour
     private void Start()
     {
         _startColor = _blendRender.material.color;
+        _blendColor = _startColor;
+    }
+
+    private void Update()
+    {
+        if (_blendRender.material.color != _blendColor)
+        {
+            _blendRender.material.color = Color.Lerp(_blendRender.material.color, _blendColor, Time.deltaTime * _speedBlend);
+        }
     }
 
     public Color GetColorBlend(Color color)
     {
-        Debug.Log(" I am work");
         if (_blendColor == _startColor)
             _blendColor = color;
         else
             _blendColor = (_blendColor + color) / 2;
         
-        StopCoroutine(BlendColorTime(_blendColor));
-        StartCoroutine(BlendColorTime(_blendColor));
-   //     _blendRender.material.color = _blendColor;
-        
         return _blendColor; 
-    }
-
-    private IEnumerator BlendColorTime(Color color)
-    {
-        while (_blendRender.material.color != color)
-        {
-            var currentColor = _blendRender.material.color;
-            _blendRender.material.color = Color.Lerp(currentColor, color, Time.deltaTime * _speedBlend);
-            yield return null; 
-        }
     }
 
     public void Reset()
