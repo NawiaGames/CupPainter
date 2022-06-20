@@ -14918,6 +14918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   createLevel: {fileID: 285762477}
   _colorsPallet: {fileID: 8702988722654287740}
+  _blendColor: {fileID: 9117247763139047250}
   _currentPaintObject: 0
 --- !u!114 &1289059995
 MonoBehaviour:
