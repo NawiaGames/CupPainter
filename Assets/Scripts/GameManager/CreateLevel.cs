@@ -46,7 +46,7 @@ public class CreateLevel : MonoBehaviour
             CreateBigPaintSampleObject(i);
 
             _texture2DModelsSample[i] = _levelsSO[i].TextureModel;
-            _canActivatePallets[i] = _levelsSO[i].ActivatePallet; 
+            _canActivatePallets[i] = _levelsSO[i].ActivatePalletBlend; 
             _colorsPallet[i] = new Colors(_levelsSO[i].ColorsPallet); 
         }
     }

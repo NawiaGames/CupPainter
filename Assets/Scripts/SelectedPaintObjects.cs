@@ -4,7 +4,8 @@ using UnityEngine.Serialization;
 public class SelectedPaintObjects : MonoBehaviour
 {
     [FormerlySerializedAs("_createPaintObjects")] [SerializeField] private CreateLevel createLevel;
-    [SerializeField] private ColorsPallet _colorsPallet; 
+    [SerializeField] private ColorsPallet _colorsPallet;
+    [SerializeField] private BlendColor _blendColor; 
     [SerializeField] private int _currentPaintObject = 0;
 
     private int _lengthPaintObjects = 0;
@@ -13,10 +14,16 @@ public class SelectedPaintObjects : MonoBehaviour
     
     private void Start()
     {
+        BeginLevel();
+    }
+
+    private void BeginLevel()
+    {
         _lengthPaintObjects = createLevel.PaintObjects.Length;
-        CurrentPaintObjectIndex = _currentPaintObject; 
+        CurrentPaintObjectIndex = _currentPaintObject;
         ActivateSelectedObject();
-        _colorsPallet.SetColorsPallet(createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
+        
+        SetColorsPalletAndActivateMixColor();
     }
 
     private void ActivateSelectedObject()
@@ -41,6 +48,13 @@ public class SelectedPaintObjects : MonoBehaviour
         CurrentPaintObjectIndex = index; 
         _currentPaintObject = index;
         ActivateSelectedObject();
+        
+        SetColorsPalletAndActivateMixColor();
+    }
+
+    private void SetColorsPalletAndActivateMixColor()
+    {
         _colorsPallet.SetColorsPallet(createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
+        _blendColor.gameObject.SetActive(createLevel.CanActivatePallets[_currentPaintObject]);
     }
 }
