@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Level1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Vase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level2/Vase.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ProgremmerTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ProgremmerTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/InputA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/InputA.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ColorPallet/Colors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ColorPallet/Colors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PaintObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PaintObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObject/Level.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +125,7 @@
       <workItem from="1655449188084" duration="4895000" />
       <workItem from="1655648532816" duration="620000" />
       <workItem from="1655708869897" duration="11428000" />
-      <workItem from="1655795362288" duration="6115000" />
+      <workItem from="1655795362288" duration="10129000" />
     </task>
     <servers />
   </component>

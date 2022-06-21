@@ -8,6 +8,7 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private float _speedAnimationMove = 600f;
     [SerializeField] private GameObject _bigSample;
     [SerializeField] private ComparisonTexture _comparisonTexture;
+    [SerializeField] private ExampleTextureDraw _exampleTextureDraw; 
 
     private RectTransform _bigSampleRectTransform;
     private Vector3 _startPositionBigSample;
@@ -18,8 +19,6 @@ public class Button3DGameUI : MonoBehaviour
 
     private float _pathLengthButtonSample = 200f;
     private float _pathLengthBigSample = 530f;
-    
-    
 
     private bool _onClickButtonSample;
 
@@ -55,6 +54,8 @@ public class Button3DGameUI : MonoBehaviour
 
     private IEnumerator MoveButtonSample(Vector3 direction)
     {
+        _exampleTextureDraw.UpdateDirection();
+            
         while (_buttonSampleRectTransform.localPosition != direction)
         {
             _buttonSampleRectTransform.localPosition = Vector3.MoveTowards(_buttonSampleRectTransform.localPosition,
