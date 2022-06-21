@@ -34,7 +34,7 @@ public class SettingsBrush : MonoBehaviour
     public void SetOpacity(float value)
     {
         _paintSphere.Opacity = value;
-        _paintDecal.Opacity = value / 3f; 
+     //   _paintDecal.Opacity = value / 3f; 
     }
 
     public float GetOpacity() => _paintSphere.Opacity; 

@@ -4978,7 +4978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670081719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.07, z: -1.5}
+  m_LocalPosition: {x: -0.792, y: -1.07, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5836,10 +5836,10 @@ MonoBehaviour:
     Texture: {fileID: 0}
     Kernel: 1
     Channels: {x: 1, y: 1, z: 1, w: 1}
-  texture: {fileID: 2800000, guid: 5a95ea648014799409df9f5f3c44830a, type: 3}
-  shape: {fileID: 2800000, guid: 731c0025b2e8a79408147f3537e4f03a, type: 3}
+  texture: {fileID: 2800000, guid: 9948ca5f5424026479c711052c3f6174, type: 3}
+  shape: {fileID: 0}
   shapeChannel: 3
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 1, g: 0, b: 0, a: 1}
   opacity: 1
   angle: 0
   scale: {x: 1, y: 1, z: 1}

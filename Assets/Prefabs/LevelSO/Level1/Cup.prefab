@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _p3dPaintableTexture: {fileID: 7102705094673769245}
-  _meshCollider: {fileID: 7102705094673769216}
 --- !u!1 &7102705094673769221
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot:
     Index: 0
-    Name: _BaseMap
+    Name: _MainTex
   coord: 0
   group:
     index: 0
@@ -335,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot:
     Index: 0
-    Name: _BumpMap
+    Name: _BaseMap
   coord: 0
   group:
     index: 10
@@ -345,7 +344,7 @@ MonoBehaviour:
   saveName: 
   width: 512
   height: 512
-  texture: {fileID: 2800000, guid: 561b8cf6b6a4c714784637867d7f879d, type: 3}
+  texture: {fileID: 0}
   color: {r: 1, g: 1, b: 1, a: 1}
   format: 0
   mipMaps: 0
@@ -382,7 +381,7 @@ MonoBehaviour:
   async: 1
   downsampleSteps: 3
   registeredPaintableTexture: {fileID: 7102705094673769245}
-  cooldown: -4476.335
+  cooldown: -4554.5264
   currentReader:
     dirty: 0
     requested: 0
