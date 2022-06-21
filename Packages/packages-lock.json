@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.ms.gamelib": {
+      "version": "https://github.com/theunspokenterror/gameLib.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a8b87f8a1d9e6e06c28e73e9f3b2823229bb9f04"
+    },
     "com.unity.burst": {
       "version": "1.6.5",
       "depth": 1,
@@ -55,6 +62,15 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.mobile.notifications": {
+      "version": "2.0.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.androidjni": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.postprocessing": {
