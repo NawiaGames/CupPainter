@@ -4,7 +4,7 @@ public class InputA : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private SettingsBrush _settingsBrush;
-    [SerializeField] private float _distanceDraw = 0.05f; 
+    [SerializeField] private float _distanceDraw = 0.05f;
     [SerializeField] private Transform _paintAndRaycastTransform;
     [SerializeField] private float _speedBrushY = 12f;
     [SerializeField] private float _speedBrushX = 12f;
@@ -20,7 +20,7 @@ public class InputA : MonoBehaviour
     private Vector3 _positionForwardPaint;
     private Vector3 _upEdge;
     private float _valueSkinnedMeshBrush;
-    private bool _canDraw; 
+    private bool _canDraw;
 
     private void Start()
     {
@@ -41,19 +41,21 @@ public class InputA : MonoBehaviour
         {
             FollowerMousePositionY();
             TryMoveBorder();
-            
-            if((_painTransform.position.x <= _positionForwardPaint.x + _distanceDraw &&
-                _painTransform.position.x >= _positionForwardPaint.x - _distanceDraw) &&
-               _canDraw
-              )
-                _settingsBrush.SetOpacity(1);
+
+            CanDraw();
         }
 
         if (Input.GetMouseButtonUp(0))
             ResetPositionBrush();
+    }
+
+    private void CanDraw()
+    {
+        if ((!(_painTransform.position.x <= _positionForwardPaint.x + _distanceDraw) ||
+             !(_painTransform.position.x >= _positionForwardPaint.x - _distanceDraw)) || !_canDraw) return;
         
-   /*     if (Input.GetMouseButtonDown(0))
-            _settingsBrush.SetOpacity(1);*/
+        Handheld.Vibrate();
+        _settingsBrush.SetOpacity(1);
     }
 
     private void MoveBrush()
@@ -62,7 +64,7 @@ public class InputA : MonoBehaviour
             _speedBrushY * Time.deltaTime);
 
         if ((_paintAndRaycastTransform.position.y >= _positionFollowerY.y - _distancBrushToObjectX &&
-            _paintAndRaycastTransform.position.y <= _positionFollowerY.y + _distancBrushToObjectX))
+             _paintAndRaycastTransform.position.y <= _positionFollowerY.y + _distancBrushToObjectX))
         {
             _painTransform.position =
                 Vector3.MoveTowards(_painTransform.position, _positionForwardPaint, _speedBrushX * Time.deltaTime);
@@ -103,12 +105,11 @@ public class InputA : MonoBehaviour
         Debug.DrawRay(raycastPosition, raycastDirection * _maxDistanceRaycast, Color.green);
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
-        _canDraw = false; 
+        _canDraw = false;
         if (borderForwardInfo.collider == null) return;
-        _canDraw = true; 
+        _canDraw = true;
         _valueSkinnedMeshBrush = 100f;
         _positionForwardPaint = borderForwardInfo.point;
-        Handheld.Vibrate();
     }
 
     private void ResetPositionBrush()

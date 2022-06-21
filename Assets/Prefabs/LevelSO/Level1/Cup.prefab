@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _p3dPaintableTexture: {fileID: 7102705094673769245}
+  _meshCollider: {fileID: 7102705094673769216}
 --- !u!1 &7102705094673769221
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +382,7 @@ MonoBehaviour:
   async: 1
   downsampleSteps: 3
   registeredPaintableTexture: {fileID: 7102705094673769245}
-  cooldown: -4469.009
+  cooldown: -4476.335
   currentReader:
     dirty: 0
     requested: 0

@@ -10,8 +10,11 @@ public class Colors
     {
         var size = colors.Length;
         _colorsPallet = new Color[size];
-        
+
         for (var i = 0; i < size; i++)
+        {
+            colors[i].a = 1; 
             _colorsPallet[i] = colors[i];
+        }
     }
 }

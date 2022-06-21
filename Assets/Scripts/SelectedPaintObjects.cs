@@ -3,9 +3,10 @@ using UnityEngine.Serialization;
 
 public class SelectedPaintObjects : MonoBehaviour
 {
-    [FormerlySerializedAs("_createPaintObjects")] [SerializeField] private CreateLevel createLevel;
+    [SerializeField] private CreateLevel _createLevel;
     [SerializeField] private ColorsPallet _colorsPallet;
-    [SerializeField] private BlendColor _blendColor; 
+    [SerializeField] private BlendColor _blendColor;
+    [SerializeField] private ExampleTextureDraw _exampleTextureDraw; 
     [SerializeField] private int _currentPaintObject = 0;
 
     private int _lengthPaintObjects = 0;
@@ -19,20 +20,26 @@ public class SelectedPaintObjects : MonoBehaviour
 
     private void BeginLevel()
     {
-        _lengthPaintObjects = createLevel.PaintObjects.Length;
+        _lengthPaintObjects = _createLevel.PaintObjects.Length;
         CurrentPaintObjectIndex = _currentPaintObject;
         ActivateSelectedObject();
         
-        SetColorsPalletAndActivateMixColor();
+        SetSettingsLevel();
     }
 
     private void ActivateSelectedObject()
     {
         for (var i = 0; i < _lengthPaintObjects; i++)
         {
-            createLevel.PaintObjects[i].gameObject.SetActive(_currentPaintObject == i);
-            createLevel.SmallPaintSampleObjects[i].SetActive(_currentPaintObject == i);
-            createLevel.BigPaintSampleObjects[i].SetActive(_currentPaintObject == i);
+            _createLevel.PaintObjects[i].gameObject.SetActive(_currentPaintObject == i);
+            if (_currentPaintObject == i)
+            {
+                var height = _createLevel.PaintObjects[i].MeshCollider.bounds.size.y;
+                Debug.Log(height);
+                _exampleTextureDraw.SetHeight(height);
+            }
+            _createLevel.SmallPaintSampleObjects[i].SetActive(_currentPaintObject == i);
+    //        createLevel.BigPaintSampleObjects[i].SetActive(_currentPaintObject == i);
         }
     }
 
@@ -49,12 +56,13 @@ public class SelectedPaintObjects : MonoBehaviour
         _currentPaintObject = index;
         ActivateSelectedObject();
         
-        SetColorsPalletAndActivateMixColor();
+        SetSettingsLevel();
     }
 
-    private void SetColorsPalletAndActivateMixColor()
+    private void SetSettingsLevel()
     {
-        _colorsPallet.SetColorsPallet(createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
-        _blendColor.gameObject.SetActive(createLevel.CanActivatePallets[_currentPaintObject]);
+        _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
+        _blendColor.gameObject.SetActive(_createLevel.CanActivatePallets[_currentPaintObject]);
+        _exampleTextureDraw.SetTexture(_createLevel.Texture2DModelsSample[_currentPaintObject]);
     }
 }

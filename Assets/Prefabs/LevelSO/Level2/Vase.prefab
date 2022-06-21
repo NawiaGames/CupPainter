@@ -234,3 +234,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _p3dPaintableTexture: {fileID: 4584230103068038950}
+  _meshCollider: {fileID: 4584230103068038971}

@@ -6,6 +6,7 @@ public class Level : ScriptableObject
     [SerializeField] private PaintObject _modelObject;
     [SerializeField] private GameObject _modelSampleObject; 
     [SerializeField] private Texture2D _textureModel;
+    
     [SerializeField] private Color[] _colorsPallet;
     [SerializeField] private bool _activatePalletBlend; 
 
