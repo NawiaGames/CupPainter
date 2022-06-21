@@ -4978,7 +4978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670081719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.792, y: -1.07, z: -1.5}
+  m_LocalPosition: {x: -0.792, y: -1.7, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4999,9 +4999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _meshRenderer: {fileID: 1836136773}
-  _leftX: -4
-  _rightX: -0.8
-  _speedMove: 3
+  _animator: {fileID: 1670081724}
 --- !u!95 &1670081724
 Animator:
   serializedVersion: 4

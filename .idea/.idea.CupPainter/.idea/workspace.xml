@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Blood.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Blood.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/WaterPaint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/WaterPaint.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelSO/Level1/Cup.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SettingsBrush.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bruch/SettingsBrush.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +124,7 @@
       <workItem from="1655449188084" duration="4895000" />
       <workItem from="1655648532816" duration="620000" />
       <workItem from="1655708869897" duration="11428000" />
-      <workItem from="1655795362288" duration="11600000" />
+      <workItem from="1655795362288" duration="11959000" />
     </task>
     <servers />
   </component>
