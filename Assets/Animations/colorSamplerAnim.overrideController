@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: colorSamplerAnim
+  m_Controller: {fileID: 9100000, guid: bf88177c207f11a4995fc8a7a8a600ce, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: aaf99c8d24889834cae9bcac411796e4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 22a2c24572f17784cb554421a35fda54, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a28e64492aad8cc45b396613feb5ee57, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 7b0297e1ae9c30d44bc137ec89621292, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e43826fd174e9f448a91ba1c59242bbe, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e3e42bebb50a07f4b98941b1aa5da32d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3d1977838db5baf479963b76a339e978, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ca31398a01a418946939911473e54a6c, type: 2}

@@ -21,8 +21,8 @@ public class ExampleTextureDraw : MonoBehaviour
 
     private void Update()
     {
-        if (_direction != _myTransform.position)
-            _myTransform.position = Vector3.MoveTowards(_myTransform.position, _direction, _speedMove * Time.deltaTime); 
+        // if (_direction != _myTransform.position)
+        //     _myTransform.position = Vector3.MoveTowards(_myTransform.position, _direction, _speedMove * Time.deltaTime); 
     }
 
     public void SetTexture(Texture2D texture2D) => _meshRenderer.material.mainTexture = texture2D;
