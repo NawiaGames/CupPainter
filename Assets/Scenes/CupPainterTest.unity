@@ -703,6 +703,7 @@ GameObject:
   - component: {fileID: 261887636}
   - component: {fileID: 261887638}
   - component: {fileID: 261887639}
+  - component: {fileID: 261887640}
   m_Layer: 0
   m_Name: PaintBrush
   m_TagString: Untagged
@@ -799,6 +800,18 @@ MonoBehaviour:
   _raycastTransform: {fileID: 1859065048}
   _maxDistanceRaycast: 4
   _limitOffsetUpDown: 2.5
+--- !u!114 &261887640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261887633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30396ef2c6370a645b1dc9cc0ab5892e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &263209453
 GameObject:
   m_ObjectHideFlags: 0
