@@ -15,7 +15,7 @@ public class ExampleTextureDraw : MonoBehaviour
         _meshRenderer.gameObject.transform.localScale = new Vector3(localScale.x, height,localScale.z);
     }
 
-    public void UpdateAnimationTrigger()
+    public void UpdateAnimation()
     {
         _changeDirection = !_changeDirection;
 

@@ -10,16 +10,16 @@ public class ComparisonTexture : MonoBehaviour
     [SerializeField] private Texture2D _texture2DDraw;
     [SerializeField] private Texture2D _texture2DCurrentDraw;
     [SerializeField] private float _accurateBetweenTextures = 0.1f;
+    
     private int _comparisonPixel;
     private float _pixelPercent;
-
-    private const int SIZE = 512;
+    private int _sizePixel;
 
 
     private void Start()
     {
-        var sizePixels = SIZE * SIZE;
-        _pixelPercent = 100f / (float)sizePixels;
+        _sizePixel = CONSTANT.SIZE_PIXEL; 
+        _pixelPercent = CONSTANT.PIXEL_PERCENT;
     }
 
     public void ComparisonPixelDrawing()
@@ -29,9 +29,9 @@ public class ComparisonTexture : MonoBehaviour
         _texture2DCurrentDraw = PaintTexture.toTexture2D(createLevel
             .PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].RenderTexturePaint);
 
-        for (var y = 0; y < SIZE; y++)
+        for (var y = 0; y < _sizePixel; y++)
         {
-            for (var x = 0; x < SIZE; x++)
+            for (var x = 0; x < _sizePixel; x++)
             {
                 var colorOne = _texture2DCurrentDraw.GetPixel(y, x);
                 var colorTwo = _texture2DDraw.GetPixel(y, x);

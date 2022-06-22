@@ -3,19 +3,24 @@ using UnityEngine;
 public class InputA : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
-    [SerializeField] private SettingsBrush _settingsBrush;
     [SerializeField] private float _distanceDraw = 0.05f;
     [SerializeField] private Transform _paintAndRaycastTransform;
+    [Header("Brush settings")]
+    [SerializeField] private SettingsBrush _settingsBrush;
+    [SerializeField] private Transform _painTransform;
     [SerializeField] private float _speedBrushY = 12f;
     [SerializeField] private float _speedBrushX = 12f;
     [SerializeField] private float _distancBrushToObjectX = 0.1f;
+    [SerializeField] private float _limitOffsetUpDown = 1f;
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRendererBrush;
     [SerializeField] private float _speedSkinedBrush = 12f;
-    [SerializeField] private Transform _painTransform;
+    [Header("Raycast settings")]
     [SerializeField] private Transform _raycastTransform;
     [SerializeField] private float _maxDistanceRaycast = 4f;
-    [SerializeField] private float _limitOffsetUpDown = 1f;
+    [Header("Particle system")]
+    [SerializeField] private GameObject _paticleSystemBrushGameObject;
 
+    private ParticleSystem _particleSystemBrush; 
     private Vector3 _positionFollowerY;
     private Vector3 _positionForwardPaint;
     private Vector3 _upEdge;
@@ -27,6 +32,7 @@ public class InputA : MonoBehaviour
         _positionFollowerY = _paintAndRaycastTransform.position;
         _positionForwardPaint = _raycastTransform.position;
         _upEdge = _camera.ViewportToWorldPoint(new Vector3(0, 1, _camera.transform.position.z));
+        _particleSystemBrush = _paticleSystemBrushGameObject.GetComponent<ParticleSystem>(); 
     }
 
     private void Update()
@@ -47,7 +53,7 @@ public class InputA : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0))
         {
-            ResetPositionBrush();
+            ResetBrush();
             _settingsBrush.SetAngleDecal(Random.Range(-180,180));
         }
     }
@@ -59,6 +65,10 @@ public class InputA : MonoBehaviour
 
         Handheld.Vibrate();
         _settingsBrush.SetOpacity(1);
+        _paticleSystemBrushGameObject.SetActive(true);
+            var main = _particleSystemBrush.main;
+        main.startColor = _settingsBrush.ColorBrush; 
+        _valueSkinnedMeshBrush = 100f;
     }
 
     private void MoveBrush()
@@ -110,13 +120,14 @@ public class InputA : MonoBehaviour
         _valueSkinnedMeshBrush = 0;
         _canDraw = false;
         if (borderForwardInfo.collider == null) return;
+        
         _canDraw = true;
-        _valueSkinnedMeshBrush = 100f;
         _positionForwardPaint = borderForwardInfo.point;
     }
 
-    private void ResetPositionBrush()
+    private void ResetBrush()
     {
+        _paticleSystemBrushGameObject.SetActive(false);
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
         _settingsBrush.SetOpacity(0);

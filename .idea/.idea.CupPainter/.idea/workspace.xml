@@ -2,337 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/.sample.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2D Fighters.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2D Fighters.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2D Zoom.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2D Zoom.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DConfinedTargetGroup.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DConfinedTargetGroup.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DConfiner.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DConfiner.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DConfinerComplex.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DConfinerComplex.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DTargetGroup.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/2DTargetGroup.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/LoseSightWhenTargetsFallsOffThePlatform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/LoseSightWhenTargetsFallsOffThePlatform.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/MouseScrollZoom2D.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/2D/MouseScrollZoom2D.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/3rdPersonWithAimMode.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/3rdPersonWithAimMode.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/ActivateOnKeypress.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/ActivateOnKeypress.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/AimingRig.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/AimingRig/AimReticle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/AimingRig/AimReticle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/AimingRig/AimingRig.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/AimingRig/AimingRig.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Anywhere Door.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Anywhere Door.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/CAM1.renderTexture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/CAM1.renderTexture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/CAM2.renderTexture" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/CAM2.renderTexture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/CAM1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/CAM1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/CAM2.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/CAM2.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Green.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Green.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Pink.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Pink.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Skybox_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Skybox_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerLookAt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerLookAt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerMovement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/ScreenCutoutShader.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/ScreenCutoutShader.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/TagChanger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Anywhere Door/TagChanger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BlendListCamera.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BlendListCamera.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BossCamera.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BossCamera/BossCam.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BossCamera/BossCam.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BossCamera/BossLookAt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BossCamera/BossLookAt.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BossCamera/CustomLockCameraY.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/BossCamera/CustomLockCameraY.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetProperty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetProperty.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetTargetController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetTargetController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnets.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnets.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/Proximity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/CameraMagnets/Proximity.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/CM ClearShot1 Blends.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/CM ClearShot1 Blends.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot character.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot character.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot closest.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot closest.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/TIMELINE world animsTimeline.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/ClearShot/TIMELINE world animsTimeline.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Composer Look Ahead.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Composer Look Ahead.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Composer.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Composer.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Custom Blends.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Custom Blends/BlenderSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Custom Blends/BlenderSettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Custom Blends/Custom Blends.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Custom Blends/Custom Blends.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Custom Blends/Noise_CM_4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Custom Blends/Noise_CM_4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/DualTarget.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/DualTarget/DualTarget.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/DualTarget/DualTarget.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/DualTarget/MoveAimTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/DualTarget/MoveAimTarget.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/DualTarget/PointAtAimTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/DualTarget/PointAtAimTarget.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/CinemachineFadeOutNearbyObjects.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/CinemachineFadeOutNearbyObjects.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOut.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOut.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOut.shader" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOut.shader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOutNearbyObjects.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOutNearbyObjects.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FollowCam Simple Follow.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FollowCam Simple Follow.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FollowCam.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FollowCam.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FollowZoom.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/FollowZoom.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Free Look character.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Free Look character.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Free Look collider.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Free Look collider.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/Impulse.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/Impulse.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/ImpulseWave.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/ImpulseWave.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/ShakingCube.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/ShakingCube.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/Y Bump Signal Definition.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Impulse/Y Bump Signal Definition.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/MixingCamera.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/MixingCamera.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Noise.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Noise.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Scripting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Scripting/Scripting.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Scripting/Scripting.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Scripting/ScriptingExample.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Scripting/ScriptingExample.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/SphericalSurfaceFollow.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/SphericalSurfaceFollow.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/StateDrivenCamera.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/StateDrivenCamera.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Timeline.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Timeline/Timeline.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Timeline/Timeline.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Timeline/TimelineTimeline.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Timeline/TimelineTimeline.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/CM vcam1Timeline.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/CM vcam1Timeline.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Auto.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Auto.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Cart.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Cart.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Group.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Group.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Transposer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Transposer/Cube.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Transposer/Cube.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Transposer/Transposer.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Transposer/Transposer.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Transposer/cube movement.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Transposer/cube movement.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/GenericTrigger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/GenericTrigger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Timeline trigger cube.playable" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Timeline trigger cube.playable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger cube.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger cube.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger volume Timeline.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger volume Timeline.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger volume.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger volume.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Animation/Cube.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Animation/Cube.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Animation/cube A motion.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Animation/cube A motion.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Animation/cube B motion.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Animation/cube B motion.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Blends.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Blends/CM StateDrivenCameraBlends.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Blends/CM StateDrivenCameraBlends.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Bouncy 1.physicmaterial" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Bouncy 1.physicmaterial.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Default_Prototype.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Default_Prototype.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Default_Prototype_Blue.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Default_Prototype_Blue.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/GridBox_Trigger.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/GridBox_Trigger.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Ground big.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Ground big.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Ground.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Ground.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/RedThing.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/RedThing.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Trigger.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/Trigger.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/checkerboard.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Materials/checkerboard.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Jog.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Jog.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Sprint.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Sprint.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Walk.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Walk.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Controllers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Controllers/CharacterController.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Controllers/CharacterController.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/DefaultMale.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/DefaultMale.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Materials/DefaultMale_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Materials/DefaultMale_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Albedo.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Albedo.tif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Normal.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Normal.tif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Occlusion.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Occlusion.tif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_SpecSmooth.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_SpecSmooth.tif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Prefabs/3rdPersonController.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Prefabs/3rdPersonController.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement2D.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement2D.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovementNoCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovementNoCamera.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Corridors_1_2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Corridors_1_2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_2D.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_2D.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_Clear_BluePedestal.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_Clear_BluePedestal.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_Corridor.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_Corridor.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_CorridorMixingCam.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_CorridorMixingCam.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_Narrow_Walls.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Environment_Narrow_Walls.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x10.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x10.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x10_BluePedestal.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x10_BluePedestal.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x4.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x4.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_1Wall_10x10.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_1Wall_10x10.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_2Walls_10x10.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_2Walls_10x10.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_LWall_10x10.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_LWall_10x10.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_UWall_10x10.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_UWall_10x10.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Wall_10x4.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Wall_10x4.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Stage1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Stage1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Stage2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Prefabs/Stage2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ActivateCamOnPlay.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ActivateCamOnPlay.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ActivateCameraWithDistance.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ActivateCameraWithDistance.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ExampleHelpWindow.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ExampleHelpWindow.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/InvokeEventFromInspector.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/InvokeEventFromInspector.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/MixingCameraBlend.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/MixingCameraBlend.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/PlayerMove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/PlayerMove.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/PlayerMoveOnSphere.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/PlayerMoveOnSphere.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/PlayerMovePhysics.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/PlayerMovePhysics.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/SimpleElevator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/SimpleElevator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/SpawnInCircle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/SpawnInCircle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ThirdPersonFollowDistanceModifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Scripts/ThirdPersonFollowDistanceModifier.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_Default.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_Default.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_Trigger.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_Trigger.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_Trigger.tga" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_Trigger.tga.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/GridBox_blue.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/checkerboard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/checkerboard.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/crosshair.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Samples/Cinemachine/2.8.6/Cinemachine Example Scenes/Shared/Textures/crosshair.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/ControllerMouse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/ControllerMouse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/LimitPositionBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/LimitPositionBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/MoveToMouse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/MoveToMouse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SelectedColor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SelectedColor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SettingsBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SettingsBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SwitchTextureBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SwitchTextureBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CONSTANT.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CONSTANT.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/InputA.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/InputA.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SelectedColor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SelectedColor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SettingsBrush.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SettingsBrush.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SwitchTextureBrush.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SwitchTextureBrush.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,21 +48,28 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BlendColor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/InputA.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/SelectedColor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bruch/SwitchTextureBrush.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CONSTANT.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraConstantWidth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorPallet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/Colors.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/CreateLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaintObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.ms.gamelib@a8b87f8a1d/Runtime/UISystem/UIPanel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -416,10 +130,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28324">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="28324" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
