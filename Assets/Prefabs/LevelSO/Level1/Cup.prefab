@@ -290,10 +290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot:
     Index: 0
-    Name: _MainTex
+    Name: _BaseMap
   coord: 0
   group:
-    index: 0
+    index: 10
   undoRedo: 0
   stateLimit: 10
   saveLoad: 0
@@ -327,17 +327,17 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7102705094673769221}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6329a951f597a0488f4e1158c8f8c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slot:
     Index: 0
-    Name: _BaseMap
+    Name: _EmissionMap
   coord: 0
   group:
-    index: 10
+    index: -1
   undoRedo: 0
   stateLimit: 10
   saveLoad: 0
@@ -381,7 +381,7 @@ MonoBehaviour:
   async: 1
   downsampleSteps: 3
   registeredPaintableTexture: {fileID: 7102705094673769245}
-  cooldown: -4554.5264
+  cooldown: -4583.338
   currentReader:
     dirty: 0
     requested: 0

@@ -54,6 +54,7 @@ public class SettingsBrush : MonoBehaviour
     public void SetColor(Color color)
     {
         _paintSphere.Color = color;
-        _materialBrush.color = color; 
+        _materialBrush.color = color;
+        _paintDecal.Color = color;
     }
 }

@@ -35,7 +35,6 @@ public class SelectedPaintObjects : MonoBehaviour
             if (_currentPaintObject == i)
             {
                 var height = _createLevel.PaintObjects[i].MeshCollider.bounds.size.y;
-                Debug.Log(height);
                 _exampleTextureDraw.SetHeight(height);
             }
             _createLevel.SmallPaintSampleObjects[i].SetActive(_currentPaintObject == i);
