@@ -46,14 +46,17 @@ public class InputA : MonoBehaviour
         }
 
         if (Input.GetMouseButtonUp(0))
+        {
             ResetPositionBrush();
+            _settingsBrush.SetAngleDecal(Random.Range(-180,180));
+        }
     }
 
     private void CanDraw()
     {
         if ((!(_painTransform.position.x <= _positionForwardPaint.x + _distanceDraw) ||
              !(_painTransform.position.x >= _positionForwardPaint.x - _distanceDraw)) || !_canDraw) return;
-        
+
         Handheld.Vibrate();
         _settingsBrush.SetOpacity(1);
     }

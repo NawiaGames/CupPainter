@@ -57,4 +57,9 @@ public class SettingsBrush : MonoBehaviour
         _materialBrush.color = color;
         _paintDecal.Color = color;
     }
+
+    public void SetAngleDecal(int value)
+    {
+        _paintDecal.Angle = value; 
+    }
 }

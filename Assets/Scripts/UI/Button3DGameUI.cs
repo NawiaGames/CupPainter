@@ -1,4 +1,5 @@
 using System.Collections;
+using GameLib.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +9,8 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private float _speedAnimationMove = 600f;
     [SerializeField] private GameObject _bigSample;
     [SerializeField] private ComparisonTexture _comparisonTexture;
-    [SerializeField] private ExampleTextureDraw _exampleTextureDraw; 
+    [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
+    [SerializeField] private UIPanel _uiPanelSample;
 
     private RectTransform _bigSampleRectTransform;
     private Vector3 _startPositionBigSample;
@@ -22,10 +24,13 @@ public class Button3DGameUI : MonoBehaviour
 
     private bool _onClickButtonSample;
 
+    private bool _isActivateButtonSample = true;
+
     private void Start()
     {
+        _uiPanelSample.ActivatePanel();
         _buttonSampleRectTransform = _buttonSample.gameObject.GetComponent<RectTransform>();
-        _startPositionButtonSample = _buttonSampleRectTransform.localPosition; 
+        _startPositionButtonSample = _buttonSampleRectTransform.localPosition;
         _directionButtonSample = _buttonSampleRectTransform.localPosition + (Vector3.left * _pathLengthButtonSample);
 
         _bigSampleRectTransform = _bigSample.GetComponent<RectTransform>();
@@ -36,17 +41,19 @@ public class Button3DGameUI : MonoBehaviour
     private void Update()
     {
         if (!Input.GetMouseButtonDown(0) || !_onClickButtonSample) return;
+        _uiPanelSample.ActivatePanel();
         StarMoveCoroutines(_startPositionButtonSample, _startPositionBigSample);
     }
 
     public void OnButtonSample()
     {
+        _uiPanelSample.DeactivatePanel();
         StarMoveCoroutines(_directionButtonSample, _directionBigSample);
     }
 
-    private void StarMoveCoroutines (Vector3 directionButtonSample, Vector3 directionBigSample)
+    private void StarMoveCoroutines(Vector3 directionButtonSample, Vector3 directionBigSample)
     {
-        _onClickButtonSample = !_onClickButtonSample; 
+        _onClickButtonSample = !_onClickButtonSample;
         StopAllCoroutines();
         StartCoroutine(MoveButtonSample(directionButtonSample));
         StartCoroutine(MoveBigSample(directionBigSample));
@@ -54,8 +61,8 @@ public class Button3DGameUI : MonoBehaviour
 
     private IEnumerator MoveButtonSample(Vector3 direction)
     {
-        _exampleTextureDraw.UpdateDirection();
-            
+        _exampleTextureDraw.UpdateAnimationTrigger();
+
         while (_buttonSampleRectTransform.localPosition != direction)
         {
             _buttonSampleRectTransform.localPosition = Vector3.MoveTowards(_buttonSampleRectTransform.localPosition,
