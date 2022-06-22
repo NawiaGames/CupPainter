@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 2
       maxCurve:
         serializedVersion: 2
@@ -169,7 +169,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.8
+      scalar: 4
       minScalar: 0.2
       maxCurve:
         serializedVersion: 2
@@ -668,7 +668,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0.96, y: 89.87, z: 0}
+    m_Rotation: {x: -6.97, y: 199.47, z: 0}
     m_Scale: {x: 1, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -983,31 +983,31 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
-          value: 0.32089615
-          inSlope: 16.361162
-          outSlope: 16.361162
+          time: 0.0051078796
+          value: 0.76119554
+          inSlope: -1.0787674
+          outSlope: -1.0787674
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
-          outWeight: 0.28438982
+          outWeight: 0.20717424
         - serializedVersion: 3
-          time: 0.06736207
-          value: 0.97007626
-          inSlope: -0.37170282
-          outSlope: -0.37170282
+          time: 0.40069675
+          value: 0.3208217
+          inSlope: 1.3174187
+          outSlope: 1.3174187
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.33333334
+          inWeight: 0.15536655
+          outWeight: 0.10158125
         - serializedVersion: 3
           time: 1
-          value: 0.47761154
-          inSlope: -1.7665815
-          outSlope: -1.7665815
+          value: 0
+          inSlope: -1.1558146
+          outSlope: -1.1558146
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.054916978
+          inWeight: 0.1735798
           outWeight: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -1318,7 +1318,7 @@ ParticleSystem:
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 1}
         key3: {r: 0, g: 0, b: 0, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0, g: 0, b: 0, a: 0.7143563}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
@@ -1331,10 +1331,10 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 17733
-        atime2: 46838
-        atime3: 65535
-        atime4: 65535
+        atime1: 8096
+        atime2: 10794
+        atime3: 15998
+        atime4: 41634
         atime5: 0
         atime6: 0
         atime7: 0
