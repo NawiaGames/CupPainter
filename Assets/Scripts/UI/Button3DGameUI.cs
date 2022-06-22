@@ -1,4 +1,5 @@
 using System.Collections;
+using Cinemachine;
 using GameLib.UI;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private ComparisonTexture _comparisonTexture;
     [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
     [SerializeField] private UIPanel _uiPanelSample;
+    [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCameraMain; 
 
     private RectTransform _bigSampleRectTransform;
     private Vector3 _startPositionBigSample;
@@ -42,12 +44,14 @@ public class Button3DGameUI : MonoBehaviour
     {
         if (!Input.GetMouseButtonDown(0) || !_onClickButtonSample) return;
         _uiPanelSample.ActivatePanel();
+        _cinemachineVirtualCameraMain.enabled = true; 
         StarMoveCoroutines(_startPositionButtonSample, _startPositionBigSample);
     }
 
     public void OnButtonSample()
     {
         _uiPanelSample.DeactivatePanel();
+        _cinemachineVirtualCameraMain.enabled = false; 
         StarMoveCoroutines(_directionButtonSample, _directionBigSample);
     }
 
