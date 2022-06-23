@@ -2090,6 +2090,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 57173250241e2174c906faa39eadb93a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f78004c981bde0459263600d06c7872, type: 2}
     - target: {fileID: 919132149155446097, guid: 57173250241e2174c906faa39eadb93a,
         type: 3}
       propertyPath: m_Name
@@ -2705,7 +2710,6 @@ MonoBehaviour:
   - {fileID: 9147378616325164326}
   - {fileID: 6151025582318823371}
   - {fileID: 8764358439845408402}
-  _settingsBrush: {fileID: 261887636}
 --- !u!1 &862583845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3418,7 +3422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -543.00006, y: 0}
+  m_AnchoredPosition: {x: -543, y: 0}
   m_SizeDelta: {x: 525, y: 750}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1019297034
