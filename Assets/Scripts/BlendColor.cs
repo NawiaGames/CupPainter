@@ -5,10 +5,8 @@ public class BlendColor : MonoBehaviour
     [SerializeField] private Renderer _blendRender;
     [SerializeField] private float _speedBlend = 7f; 
     
-    private Texture2D _texture2D;
     private Color _startColor; 
     private Color _blendColor;
-    private Color _brushColor;
 
     private void Start()
     {

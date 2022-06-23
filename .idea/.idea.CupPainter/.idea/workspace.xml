@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraConstantWidth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraConstantWidth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BlendColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BlendColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Brush/ControllerMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/ControllerMouse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +130,7 @@
       <workItem from="1655708869897" duration="11428000" />
       <workItem from="1655795362288" duration="13004000" />
       <workItem from="1655880396929" duration="9637000" />
-      <workItem from="1655967345952" duration="5213000" />
+      <workItem from="1655967345952" duration="6696000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class SelectedPaintObjects : MonoBehaviour
 {
@@ -31,14 +30,15 @@ public class SelectedPaintObjects : MonoBehaviour
     {
         for (var i = 0; i < _lengthPaintObjects; i++)
         {
-            _createLevel.PaintObjects[i].gameObject.SetActive(_currentPaintObject == i);
-            if (_currentPaintObject == i)
+            var isPaintObject = _currentPaintObject == i;
+            
+            _createLevel.PaintObjects[i].gameObject.SetActive(isPaintObject);
+            if (isPaintObject)
             {
                 var height = _createLevel.PaintObjects[i].MeshCollider.bounds.size.y;
                 _exampleTextureDraw.SetHeight(height);
             }
-            _createLevel.SmallPaintSampleObjects[i].SetActive(_currentPaintObject == i);
-    //        createLevel.BigPaintSampleObjects[i].SetActive(_currentPaintObject == i);
+            _createLevel.SmallPaintSampleObjects[i].SetActive(isPaintObject);
         }
     }
 

@@ -5,7 +5,6 @@ public class RandomColor : MonoBehaviour
 {
     [SerializeField] private Image[] _imageColors;
     [SerializeField] private ColorPallet[] _colorPallets;
-    [SerializeField] private SettingsBrush _settingsBrush;
     public Image[] ImageColors => _imageColors; 
     private void Awake()
     {
