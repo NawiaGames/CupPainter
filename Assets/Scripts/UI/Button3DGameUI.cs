@@ -35,10 +35,11 @@ public class Button3DGameUI : MonoBehaviour
         _cinemachineVirtualCameraMain.enabled = false;
         _isActivateButtonSample = true;
         _exampleTextureDraw.UpdateAnimation();
-        _comparisonTexture.ComparisonPixelDrawing(out  var result);
-        
-        if(result > _borderNextLevel)
-            _buttonNextLevelGameObject.SetActive(true);
+        _comparisonTexture.StartCoroutineComparison();
+        //    _comparisonTexture.ComparisonPixelDrawing2();
+
+        //   if(result > _borderNextLevel)
+        //      _buttonNextLevelGameObject.SetActive(true);
     }
     
     private void DeactivatePanelComparison()
