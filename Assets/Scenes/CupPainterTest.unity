@@ -1104,7 +1104,8 @@ MonoBehaviour:
   _speedBrushY: 16
   _speedBrushX: 10
   _distancBrushToObjectX: 0.1
-  _limitOffsetUpDown: 2.5
+  _limitUpY: 1.8
+  _limitDownY: 4
   _skinnedMeshRendererBrush: {fileID: 1746880016}
   _speedSkinedBrush: 16
   _raycastTransform: {fileID: 1859065048}

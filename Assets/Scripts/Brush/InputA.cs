@@ -11,7 +11,8 @@ public class InputA : MonoBehaviour
     [SerializeField] private float _speedBrushY = 12f;
     [SerializeField] private float _speedBrushX = 12f;
     [SerializeField] private float _distancBrushToObjectX = 0.1f;
-    [SerializeField] private float _limitOffsetUpDown = 1f;
+    [SerializeField] private float _limitUpY = 1f;
+    [SerializeField] private float _limitDownY = 1f; 
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRendererBrush;
     [SerializeField] private float _speedSkinedBrush = 12f;
     [Header("Raycast settings")]
@@ -101,11 +102,11 @@ public class InputA : MonoBehaviour
 
     private float LimitPositionY(float positionY)
     {
-        if (_upEdge.y < positionY)
-            return _upEdge.y;
+        if (_upEdge.y - _limitUpY < positionY)
+            return _upEdge.y - _limitUpY;
 
-        if (-_upEdge.y + _limitOffsetUpDown > positionY)
-            return -_upEdge.y + _limitOffsetUpDown;
+        if (-_upEdge.y + _limitDownY > positionY)
+            return -_upEdge.y + _limitDownY;
 
         return positionY;
     }
