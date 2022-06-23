@@ -18,6 +18,7 @@ MonoBehaviour:
     type: 3}
   _textureModel: {fileID: 2800000, guid: 9911ae327d655e14589d6734a056b19e, type: 3}
   _colorsPallet:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 1, b: 0, a: 1}
-  - {r: 0, g: 0, b: 1, a: 1}
+  - {r: 0.83921576, g: 0.7176471, b: 0.53333336, a: 1}
+  - {r: 0.3921569, g: 0.7803922, b: 0.8078432, a: 1}
+  - {r: 0.87843144, g: 0.5411765, b: 0.81568635, a: 1}
+  _activatePalletBlend: 0

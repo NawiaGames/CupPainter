@@ -77,7 +77,7 @@ Material:
     - _EnableMos: 0
     - _EnableNormal: 0
     - _EnableOpacity: 0
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0
     - _Metallic: 0
     - _UseUV2: 0
     - _UseUV2Alt: 1
