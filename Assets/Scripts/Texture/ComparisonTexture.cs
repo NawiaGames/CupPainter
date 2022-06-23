@@ -22,7 +22,7 @@ public class ComparisonTexture : MonoBehaviour
         _pixelPercent = CONSTANT.PIXEL_PERCENT;
     }
 
-    public void ComparisonPixelDrawing()
+    public void ComparisonPixelDrawing(out float result)
     {
         _comparisonPixel = 0;
         _texture2DDraw = createLevel.Texture2DModelsSample[SelectedPaintObjects.CurrentPaintObjectIndex];
@@ -47,9 +47,10 @@ public class ComparisonTexture : MonoBehaviour
             }
         }
 
-        var successedPrecent = _comparisonPixel * _pixelPercent;
+        result = _comparisonPixel * _pixelPercent;
+        
         _comparisonText.gameObject.SetActive(true);
-        _comparisonText.text = "Successed: " + successedPrecent.ToString("F1") + "%";
+        _comparisonText.text = "Successed: " + result.ToString("F1") + "%";
     }
 
     public void OnEnableText() => _comparisonText.gameObject.SetActive(false);

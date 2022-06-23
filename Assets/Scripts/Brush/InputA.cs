@@ -119,6 +119,7 @@ public class InputA : MonoBehaviour
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
         _canDraw = false;
+        _paticleSystemBrushGameObject.SetActive(false);
         if (borderForwardInfo.collider == null) return;
         
         _canDraw = true;

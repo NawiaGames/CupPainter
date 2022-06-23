@@ -2,44 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/ControllerMouse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/ControllerMouse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/LimitPositionBrush.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/LimitPositionBrush.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/MoveToMouse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/MoveToMouse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SelectedColor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SelectedColor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SettingsBrush.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SettingsBrush.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SwitchTextureBrush.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SwitchTextureBrush.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CONSTANT.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CONSTANT.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/ControllerMouse.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/InputA.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/InputA.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/LimitPositionBrush.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/MoveToMouse.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SelectedColor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SelectedColor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SettingsBrush.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SettingsBrush.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SwitchTextureBrush.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bruch/SwitchTextureBrush.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,27 +20,19 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraConstantWidth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorPallet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/Colors.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ExampleTextureDraw.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/CreateLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaintObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.ms.gamelib@a8b87f8a1d/Runtime/UISystem/UIPanel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/0a/753e4e4f/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/12/e383f7de/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/26/4b7a10ed/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
@@ -98,19 +58,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.6291161&quot;,
-    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Discover.Launch.Via.Unity": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.6291161",
+    "nodejs_package_manager_path": "npm",
+    "rider.run.widget.enabled.cache": "false",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.2.19f1\Editor\Unity.exe" />
@@ -130,10 +91,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="28324">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16816">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="28324" />
+      <option name="pid" value="16816" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -170,6 +131,7 @@
       <workItem from="1655708869897" duration="11428000" />
       <workItem from="1655795362288" duration="13004000" />
       <workItem from="1655880396929" duration="9637000" />
+      <workItem from="1655967345952" duration="3512000" />
     </task>
     <servers />
   </component>

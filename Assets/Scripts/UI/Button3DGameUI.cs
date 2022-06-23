@@ -1,4 +1,3 @@
-using System.Collections;
 using Cinemachine;
 using GameLib.UI;
 using UnityEngine;
@@ -9,6 +8,8 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
     [SerializeField] private UIPanel _uiPanelSample;
     [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCameraMain;
+    [SerializeField] private GameObject _buttonNextLevelGameObject;
+    [SerializeField] private float _borderNextLevel = 60f; 
     
     private bool _isActivateButtonSample;
 
@@ -20,7 +21,6 @@ public class Button3DGameUI : MonoBehaviour
     private void Update()
     {
         if (!Input.GetMouseButtonDown(0) || !_isActivateButtonSample) return;
-
         DeactivatePanelComparison();
     }
 
@@ -34,8 +34,11 @@ public class Button3DGameUI : MonoBehaviour
         _uiPanelSample.DeactivatePanel();
         _cinemachineVirtualCameraMain.enabled = false;
         _isActivateButtonSample = true;
-        _comparisonTexture.ComparisonPixelDrawing();
         _exampleTextureDraw.UpdateAnimation();
+        _comparisonTexture.ComparisonPixelDrawing(out  var result);
+        
+        if(result > _borderNextLevel)
+            _buttonNextLevelGameObject.SetActive(true);
     }
     
     private void DeactivatePanelComparison()
@@ -45,5 +48,11 @@ public class Button3DGameUI : MonoBehaviour
         _isActivateButtonSample = false;
         _comparisonTexture.OnEnableText();
         _exampleTextureDraw.UpdateAnimation();
+        Invoke("DeactivateButtonNextLevel", 0.2f);
+    }
+
+    private void DeactivateButtonNextLevel()
+    {
+        _buttonNextLevelGameObject.SetActive(false);
     }
 }
