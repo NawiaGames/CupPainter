@@ -1105,7 +1105,7 @@ MonoBehaviour:
   _speedBrushX: 10
   _distancBrushToObjectX: 0.1
   _limitUpY: 1.8
-  _limitDownY: 4
+  _limitDownY: 1
   _skinnedMeshRendererBrush: {fileID: 1746880016}
   _speedSkinedBrush: 16
   _raycastTransform: {fileID: 1859065048}
@@ -3418,7 +3418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -543, y: 0}
+  m_AnchoredPosition: {x: -543.00006, y: 0}
   m_SizeDelta: {x: 525, y: 750}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1019297034
@@ -5330,12 +5330,12 @@ PrefabInstance:
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
@@ -5345,7 +5345,7 @@ PrefabInstance:
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
@@ -5360,17 +5360,17 @@ PrefabInstance:
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
@@ -5385,7 +5385,7 @@ PrefabInstance:
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.00022648202
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
@@ -5410,12 +5410,12 @@ PrefabInstance:
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 9.040039
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.4000244
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
@@ -7118,6 +7118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DefaultResolution: {x: 1080, y: 1920}
   WidthOrHeight: 0
+  _cinemachineVirtualCameras:
+  - {fileID: 1298618807}
+  - {fileID: 1032844380}
 --- !u!114 &1805037418
 MonoBehaviour:
   m_ObjectHideFlags: 0

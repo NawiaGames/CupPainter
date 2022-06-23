@@ -1,9 +1,12 @@
+using Cinemachine;
 using UnityEngine;
 
 public class CameraConstantWidth : MonoBehaviour
 {
     public Vector2 DefaultResolution = new Vector2(1080, 1920);
     [Range(0f, 1f)] public float WidthOrHeight = 0;
+
+    [SerializeField] private CinemachineVirtualCamera[] _cinemachineVirtualCameras; 
 
     private Camera componentCamera;
     
@@ -35,6 +38,11 @@ public class CameraConstantWidth : MonoBehaviour
         {
             float constantWidthFov = CalcVerticalFov(horizontalFov, componentCamera.aspect);
             componentCamera.fieldOfView = Mathf.Lerp(constantWidthFov, initialFov, WidthOrHeight);
+            foreach (var virtualCamera in _cinemachineVirtualCameras)
+            {
+                virtualCamera.m_Lens.FieldOfView = Mathf.Lerp(constantWidthFov, initialFov, WidthOrHeight);
+            }
+           
         }
     }
 
