@@ -6,8 +6,8 @@ using UnityEngine;
 public class ComparisonTexture : MonoBehaviour
 {
     [SerializeField] private TMP_Text _comparisonText;
-    [SerializeField] private CreateLevel createLevel;
-
+    [SerializeField] private CreateLevel _createLevel;
+    [SerializeField] private Button3DGameUI _button3DGameUI; 
     [SerializeField] private Texture2D _texture2DDraw;
     [SerializeField] private Texture2D _texture2DCurrentDraw;
     [SerializeField] private float _accurateBetweenTextures = 0.1f;
@@ -31,8 +31,8 @@ public class ComparisonTexture : MonoBehaviour
     public IEnumerator ComparisonPixelDrawing()
     {
         _comparisonPixel = 0;
-        _texture2DDraw = createLevel.Texture2DModelsSample[SelectedPaintObjects.CurrentPaintObjectIndex];
-        _texture2DCurrentDraw = PaintTexture.toTexture2D(createLevel
+        _texture2DDraw = _createLevel.Texture2DModelsSample[SelectedPaintObjects.CurrentPaintObjectIndex];
+        _texture2DCurrentDraw = PaintTexture.toTexture2D(_createLevel
             .PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].RenderTexturePaint);
 
         var value = 5000;
@@ -57,6 +57,12 @@ public class ComparisonTexture : MonoBehaviour
         }
         var result = _comparisonPixel * _pixelPercent;
         
+        PrintText(result);
+        _button3DGameUI.ActivateButtonNextLevel(result);
+    }
+
+    private void PrintText(float result)
+    {
         _comparisonText.gameObject.SetActive(true);
         _comparisonText.text = "Successed: " + result.ToString("F1") + "%";
     }

@@ -10,6 +10,7 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCameraMain;
     [SerializeField] private GameObject _buttonNextLevelGameObject;
     [SerializeField] private float _borderNextLevel = 60f; 
+
     
     private bool _isActivateButtonSample;
 
@@ -36,10 +37,12 @@ public class Button3DGameUI : MonoBehaviour
         _isActivateButtonSample = true;
         _exampleTextureDraw.UpdateAnimation();
         _comparisonTexture.StartCoroutineComparison();
-        //    _comparisonTexture.ComparisonPixelDrawing2();
+    }
 
-        //   if(result > _borderNextLevel)
-        //      _buttonNextLevelGameObject.SetActive(true);
+    public void ActivateButtonNextLevel(float result)
+    {
+           if(result > _borderNextLevel)
+              _buttonNextLevelGameObject.SetActive(true);
     }
     
     private void DeactivatePanelComparison()
