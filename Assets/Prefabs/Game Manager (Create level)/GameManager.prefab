@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1881560674404543491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881560674404543493}
+  - component: {fileID: 1881560674404543490}
+  - component: {fileID: 1881560674404543492}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1881560674404543493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881560674404543491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8946908, y: -1.0345286, z: -0.32849872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881560674404543490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881560674404543491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 914074a20aac2e247bae7c21182be443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1881560674404543492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881560674404543491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf69bfc8ec540943bb59a5c2bb1e8bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelsSO:
+  - {fileID: 11400000, guid: 7d72fc3af81439e4f8325dcd4b07b916, type: 2}
+  - {fileID: 11400000, guid: bc27aba380f4d3042970f24087144679, type: 2}
+  - {fileID: 11400000, guid: cea50e67e55d600458377273c2c00f67, type: 2}
+  - {fileID: 11400000, guid: e94892d807e41614aaef57ae8b34fee4, type: 2}
+  - {fileID: 11400000, guid: 1e031332db096b74fb312496665d9c8a, type: 2}
+  - {fileID: 11400000, guid: 463c14429634fd0488dfe50106a387ac, type: 2}
+  - {fileID: 11400000, guid: 071ab3ed617e0414c8904c12f94bbb79, type: 2}
+  - {fileID: 11400000, guid: c50ac8072e1bf3f4eb1019a206cde9ba, type: 2}
+  _paintObjectsTransform: {fileID: 0}
+  _spawnPaintSampleTransform: {fileID: 0}
+  _scaleSmallPaintSampleObject: 30
+  _bigPaintSampleTransform: {fileID: 0}
+  _scaleBigPaintSampleObject: 150

@@ -4,7 +4,7 @@ public class CreateLevel : MonoBehaviour
 {
     [SerializeField] private Level[] _levelsSO;
     [SerializeField] private Transform _paintObjectsTransform;
-    [SerializeField] private Transform _smallPaintSampleTransform;
+    [SerializeField] private Transform _spawnPaintSampleTransform;
     [SerializeField] private int _scaleSmallPaintSampleObject = 50; 
     [SerializeField] private Transform _bigPaintSampleTransform;
     [SerializeField] private int _scaleBigPaintSampleObject = 150; 
@@ -65,7 +65,7 @@ public class CreateLevel : MonoBehaviour
     private void CreateSmallPaintSampleObject(int i)
     {
         var smallPaintSampleObject = InstantiateObject(_levelsSO[i].ModelSampleObject);
-        smallPaintSampleObject.transform.SetParent(_smallPaintSampleTransform);
+        smallPaintSampleObject.transform.SetParent(_spawnPaintSampleTransform);
         _smallPaintSampleObjects[i] = smallPaintSampleObject;
         _smallPaintSampleObjects[i].transform.localRotation = Quaternion.identity;
         _smallPaintSampleObjects[i].transform.localPosition = Vector3.zero;
