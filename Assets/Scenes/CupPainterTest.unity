@@ -4565,9 +4565,6 @@ MonoBehaviour:
   _buttonNextLevelGameObject: {fileID: 64285953}
   _borderNextLevel: 20
   _winPanel: {fileID: 532173686}
-  _loosePanel: {fileID: 1980360384}
-  _textSuccessedWin: {fileID: 0}
-  _textSuccessedLoose: {fileID: 0}
   _matchPanel: {fileID: 1980360384}
   _sliderProgressSuccessed: {fileID: 528239452}
   _textSuccessed: {fileID: 2107382088}

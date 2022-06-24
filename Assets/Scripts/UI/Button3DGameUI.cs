@@ -14,9 +14,7 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private GameObject _buttonNextLevelGameObject;
     [SerializeField] private float _borderNextLevel = 60f;
     [SerializeField] private UIPanel _winPanel;
-    [SerializeField] private UIPanel _loosePanel;
-    [SerializeField] private TMP_Text _textSuccessedWin;
-    [SerializeField] private TMP_Text _textSuccessedLoose;
+  //  [SerializeField] private UIPanel _loosePanel;
     [Header("Match Panel")]
     [SerializeField] private UIPanel _matchPanel; 
     [SerializeField] private Slider _sliderProgressSuccessed;
@@ -53,7 +51,6 @@ public class Button3DGameUI : MonoBehaviour
     public void ActivateProgressSlider(float result)
     {
         _matchPanel.ActivatePanel();
-        StopAllCoroutines();
         StartCoroutine(MoveProgressSuccessed(result));
     }
 
@@ -61,6 +58,7 @@ public class Button3DGameUI : MonoBehaviour
     {
         float startProgress = 0; 
         _textSuccessed.text = startProgress.ToString("F1") + "%";
+        _sliderProgressSuccessed.value = startProgress; 
         
         while (startProgress != endProgress)
         {
@@ -70,7 +68,7 @@ public class Button3DGameUI : MonoBehaviour
             yield return null; 
         }
         
-   //     ActivatePanelWinOrLose(endProgress);
+         ActivatePanelWinOrLose(endProgress);
     }
     
 
@@ -80,13 +78,11 @@ public class Button3DGameUI : MonoBehaviour
         {
             _buttonNextLevelGameObject.SetActive(true);
             _winPanel.ActivatePanel();
-            _textSuccessedWin.text = "Match: " + result.ToString("F1") + "%";
         }
-        else
+  /*      else
         {
             _loosePanel.ActivatePanel();
-            _textSuccessedLoose.text = "Match: " + result.ToString("F1") + "%";
-        }
+        }*/
     }
 
     private void DeactivatePanelComparison()
@@ -95,8 +91,9 @@ public class Button3DGameUI : MonoBehaviour
         _cinemachineVirtualCameraMain.enabled = true;
         _isActivateButtonSample = false;
         _exampleTextureDraw.UpdateAnimation();
-        
-      //  _winPanel.DeactivatePanel();
+        _comparisonTexture.StopAllCoroutinesComparison();
+        StopAllCoroutines();
+        _winPanel.DeactivatePanel();
      //   _loosePanel.DeactivatePanel();
         _matchPanel.DeactivatePanel();
         Invoke("DeactivateButtonNextLevel", 0.2f);

@@ -34,13 +34,13 @@ public class ComparisonTexture : MonoBehaviour
             .PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].RenderTexturePaint);
 
         var value = 5000;
-
+        Debug.Log("I am work");
         var colorOne = _texture2DCurrentDraw.GetPixels();
         var colorTwo = _texture2DDraw.GetPixels();
         
         for (var i = 0; i < colorOne.Length; i++)
         {
-            if ((i + 1) % value == 0)
+           if ((i + 1) % value == 0)
                 yield return null;
             
             if ((colorOne[i].r <= colorTwo[i].r + _accurateBetweenTextures &&
@@ -54,7 +54,11 @@ public class ComparisonTexture : MonoBehaviour
                 _comparisonPixel++;
         }
         var result = _comparisonPixel * _pixelPercent;
-        
         _button3DGameUI.ActivateProgressSlider(result);
+    }
+
+    public void StopAllCoroutinesComparison()
+    {
+        StopAllCoroutines();
     }
 }
