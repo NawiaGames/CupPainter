@@ -60,4 +60,9 @@ public class SettingsBrush : MonoBehaviour
     {
         _paintDecal.Angle = value; 
     }
+
+    public void SetOpacityFromSlider()
+    {
+        SetOpacity(_sliderOpacity.value);
+    }
 }

@@ -5,35 +5,41 @@ public class InputA : MonoBehaviour
     [SerializeField] private Camera _camera;
     [SerializeField] private float _distanceDraw = 0.05f;
     [SerializeField] private Transform _paintAndRaycastTransform;
-    [Header("Brush settings")]
-    [SerializeField] private SettingsBrush _settingsBrush;
+
+    [Header("Brush settings")] [SerializeField]
+    private SettingsBrush _settingsBrush;
+
     [SerializeField] private Transform _painTransform;
     [SerializeField] private float _speedBrushY = 12f;
     [SerializeField] private float _speedBrushX = 12f;
     [SerializeField] private float _distancBrushToObjectX = 0.1f;
     [SerializeField] private float _limitUpY = 1f;
-    [SerializeField] private float _limitDownY = 1f; 
+    [SerializeField] private float _limitDownY = 1f;
     [SerializeField] private SkinnedMeshRenderer _skinnedMeshRendererBrush;
     [SerializeField] private float _speedSkinedBrush = 12f;
-    [Header("Raycast settings")]
-    [SerializeField] private Transform _raycastTransform;
-    [SerializeField] private float _maxDistanceRaycast = 4f;
-    [Header("Particle system")]
-    [SerializeField] private GameObject _paticleSystemBrushGameObject;
 
-    private ParticleSystem _particleSystemBrush; 
+    [Header("Raycast settings")] [SerializeField]
+    private Transform _raycastTransform;
+
+    [SerializeField] private float _maxDistanceRaycast = 4f;
+
+    [Header("Particle system")] [SerializeField]
+    private GameObject _paticleSystemBrushGameObject;
+
+    private ParticleSystem _particleSystemBrush;
     private Vector3 _positionFollowerY;
     private Vector3 _positionForwardPaint;
     private Vector3 _upEdge;
     private float _valueSkinnedMeshBrush;
     private bool _canDraw;
+    private bool _isLimitPosition;
 
     private void Start()
     {
         _positionFollowerY = _paintAndRaycastTransform.position;
         _positionForwardPaint = _raycastTransform.position;
         _upEdge = _camera.ViewportToWorldPoint(new Vector3(0, 1, _camera.transform.position.z));
-        _particleSystemBrush = _paticleSystemBrushGameObject.GetComponent<ParticleSystem>(); 
+        _particleSystemBrush = _paticleSystemBrushGameObject.GetComponent<ParticleSystem>();
     }
 
     private void Update()
@@ -47,15 +53,17 @@ public class InputA : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             FollowerMousePositionY();
-            TryMoveBorder();
-
-            CanDraw();
+            if (!_isLimitPosition)
+            {
+                TryMoveBorder();
+                CanDraw();
+            }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             ResetBrush();
-            _settingsBrush.SetAngleDecal(Random.Range(-180,180));
+            _settingsBrush.SetAngleDecal(Random.Range(-180, 180));
         }
     }
 
@@ -65,10 +73,10 @@ public class InputA : MonoBehaviour
              !(_painTransform.position.x >= _positionForwardPaint.x - _distanceDraw)) || !_canDraw) return;
 
         Handheld.Vibrate();
-        _settingsBrush.SetOpacity(1);
+        _settingsBrush.SetOpacityFromSlider();
         _paticleSystemBrushGameObject.SetActive(true);
-            var main = _particleSystemBrush.main;
-        main.startColor = _settingsBrush.ColorBrush; 
+        var main = _particleSystemBrush.main;
+        main.startColor = _settingsBrush.ColorBrush;
         _valueSkinnedMeshBrush = 100f;
     }
 
@@ -102,12 +110,13 @@ public class InputA : MonoBehaviour
 
     private float LimitPositionY(float positionY)
     {
-        if (_upEdge.y - _limitUpY < positionY)
-            return _upEdge.y - _limitUpY;
+        if (_upEdge.y - _limitUpY < positionY || -_upEdge.y + _limitDownY > positionY)
+        {
+            _isLimitPosition = true;
+            return _paintAndRaycastTransform.position.y;
+        }
 
-        if (-_upEdge.y + _limitDownY > positionY)
-            return -_upEdge.y + _limitDownY;
-
+        _isLimitPosition = false;
         return positionY;
     }
 
@@ -122,7 +131,7 @@ public class InputA : MonoBehaviour
         _canDraw = false;
         _paticleSystemBrushGameObject.SetActive(false);
         if (borderForwardInfo.collider == null) return;
-        
+
         _canDraw = true;
         _positionForwardPaint = borderForwardInfo.point;
     }

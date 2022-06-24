@@ -9088,10 +9088,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3603569655581599523, guid: 31069681f092904489fc57139547b1a9,
+    - target: {fileID: 3603569654263670949, guid: 31069681f092904489fc57139547b1a9,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603569655581599523, guid: 31069681f092904489fc57139547b1a9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3603569655595107640, guid: 31069681f092904489fc57139547b1a9,
         type: 3}
