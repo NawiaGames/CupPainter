@@ -37,8 +37,8 @@ public class ComparisonTexture : MonoBehaviour
 
         var value = 5000;
 
-        var colorOne = _texture2DCurrentDraw.GetPixels32();
-        var colorTwo = _texture2DDraw.GetPixels32();
+        var colorOne = _texture2DCurrentDraw.GetPixels();
+        var colorTwo = _texture2DDraw.GetPixels();
         
         for (var i = 0; i < colorOne.Length; i++)
         {
