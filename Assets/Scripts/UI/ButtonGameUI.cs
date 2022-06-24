@@ -26,7 +26,7 @@ public class ButtonGameUI : MonoBehaviour
 
     public void OnSubtractIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(-1);
     
-    public void OnSelectedColor(int index)
+   public void OnSelectedColor(int index)
     {
         var color = _randomColor.ImageColors[index].color;
         _settingsBrush.SetColor(color);
