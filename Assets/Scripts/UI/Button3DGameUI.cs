@@ -1,7 +1,9 @@
+using System.Collections;
 using Cinemachine;
 using GameLib.UI;
 using TMPro;
 using UnityEngine;
+using Slider = UnityEngine.UI.Slider;
 
 public class Button3DGameUI : MonoBehaviour
 {
@@ -14,9 +16,13 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private UIPanel _winPanel;
     [SerializeField] private UIPanel _loosePanel;
     [SerializeField] private TMP_Text _textSuccessedWin;
-    [SerializeField] private TMP_Text _textSuccessedLoose; 
+    [SerializeField] private TMP_Text _textSuccessedLoose;
+    [Header("Match Panel")]
+    [SerializeField] private UIPanel _matchPanel; 
+    [SerializeField] private Slider _sliderProgressSuccessed;
+    [SerializeField] private TMP_Text _textSuccessed; 
+    [SerializeField] private float _speedSlider = 6f;
 
-    
     private bool _isActivateButtonSample;
 
     private void Start()
@@ -44,7 +50,31 @@ public class Button3DGameUI : MonoBehaviour
         _comparisonTexture.StartCoroutineComparison();
     }
 
-    public void ActivatePanelWinOrLoose(float result)
+    public void ActivateProgressSlider(float result)
+    {
+        _matchPanel.ActivatePanel();
+        StopAllCoroutines();
+        StartCoroutine(MoveProgressSuccessed(result));
+    }
+
+    private IEnumerator MoveProgressSuccessed(float endProgress)
+    {
+        float startProgress = 0; 
+        _textSuccessed.text = startProgress.ToString("F1") + "%";
+        
+        while (startProgress != endProgress)
+        {
+            startProgress = Mathf.MoveTowards(startProgress, endProgress, Time.deltaTime * _speedSlider);
+            _sliderProgressSuccessed.value = startProgress; 
+            _textSuccessed.text = startProgress.ToString("F1") + "%";
+            yield return null; 
+        }
+        
+   //     ActivatePanelWinOrLose(endProgress);
+    }
+    
+
+    private void ActivatePanelWinOrLose(float result)
     {
         if (result > _borderNextLevel)
         {
@@ -55,19 +85,20 @@ public class Button3DGameUI : MonoBehaviour
         else
         {
             _loosePanel.ActivatePanel();
-            _textSuccessedLoose.text ="Match: " +  result.ToString("F1") + "%";
-
+            _textSuccessedLoose.text = "Match: " + result.ToString("F1") + "%";
         }
     }
-    
+
     private void DeactivatePanelComparison()
     {
         _uiPanelSample.ActivatePanel();
         _cinemachineVirtualCameraMain.enabled = true;
         _isActivateButtonSample = false;
         _exampleTextureDraw.UpdateAnimation();
-        _winPanel.DeactivatePanel();
-        _loosePanel.DeactivatePanel();
+        
+      //  _winPanel.DeactivatePanel();
+     //   _loosePanel.DeactivatePanel();
+        _matchPanel.DeactivatePanel();
         Invoke("DeactivateButtonNextLevel", 0.2f);
     }
 

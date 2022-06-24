@@ -55,6 +55,6 @@ public class ComparisonTexture : MonoBehaviour
         }
         var result = _comparisonPixel * _pixelPercent;
         
-        _button3DGameUI.ActivatePanelWinOrLoose(result);
+        _button3DGameUI.ActivateProgressSlider(result);
     }
 }
