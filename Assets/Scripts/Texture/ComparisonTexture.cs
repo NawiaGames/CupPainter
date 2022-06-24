@@ -1,11 +1,9 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
 
 [DefaultExecutionOrder(-10)]
 public class ComparisonTexture : MonoBehaviour
 {
-    [SerializeField] private TMP_Text _comparisonText;
     [SerializeField] private CreateLevel _createLevel;
     [SerializeField] private Button3DGameUI _button3DGameUI; 
     [SerializeField] private Texture2D _texture2DDraw;
@@ -57,15 +55,6 @@ public class ComparisonTexture : MonoBehaviour
         }
         var result = _comparisonPixel * _pixelPercent;
         
-        PrintText(result);
-        _button3DGameUI.ActivateButtonNextLevel(result);
+        _button3DGameUI.ActivatePanelWinOrLoose(result);
     }
-
-    private void PrintText(float result)
-    {
-        _comparisonText.gameObject.SetActive(true);
-        _comparisonText.text = "Successed: " + result.ToString("F1") + "%";
-    }
-
-    public void OnEnableText() => _comparisonText.gameObject.SetActive(false);
 }

@@ -1,5 +1,6 @@
 using Cinemachine;
 using GameLib.UI;
+using TMPro;
 using UnityEngine;
 
 public class Button3DGameUI : MonoBehaviour
@@ -9,7 +10,11 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private UIPanel _uiPanelSample;
     [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCameraMain;
     [SerializeField] private GameObject _buttonNextLevelGameObject;
-    [SerializeField] private float _borderNextLevel = 60f; 
+    [SerializeField] private float _borderNextLevel = 60f;
+    [SerializeField] private UIPanel _winPanel;
+    [SerializeField] private UIPanel _loosePanel;
+    [SerializeField] private TMP_Text _textSuccessedWin;
+    [SerializeField] private TMP_Text _textSuccessedLoose; 
 
     
     private bool _isActivateButtonSample;
@@ -39,10 +44,20 @@ public class Button3DGameUI : MonoBehaviour
         _comparisonTexture.StartCoroutineComparison();
     }
 
-    public void ActivateButtonNextLevel(float result)
+    public void ActivatePanelWinOrLoose(float result)
     {
-           if(result > _borderNextLevel)
-              _buttonNextLevelGameObject.SetActive(true);
+        if (result > _borderNextLevel)
+        {
+            _buttonNextLevelGameObject.SetActive(true);
+            _winPanel.ActivatePanel();
+            _textSuccessedWin.text = "Match: " + result.ToString("F1") + "%";
+        }
+        else
+        {
+            _loosePanel.ActivatePanel();
+            _textSuccessedLoose.text ="Match: " +  result.ToString("F1") + "%";
+
+        }
     }
     
     private void DeactivatePanelComparison()
@@ -50,8 +65,9 @@ public class Button3DGameUI : MonoBehaviour
         _uiPanelSample.ActivatePanel();
         _cinemachineVirtualCameraMain.enabled = true;
         _isActivateButtonSample = false;
-        _comparisonTexture.OnEnableText();
         _exampleTextureDraw.UpdateAnimation();
+        _winPanel.DeactivatePanel();
+        _loosePanel.DeactivatePanel();
         Invoke("DeactivateButtonNextLevel", 0.2f);
     }
 
