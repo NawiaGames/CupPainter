@@ -258,18 +258,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27142727}
   m_CullTransparentMesh: 1
---- !u!114 &38508754 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2509877725500539333, guid: 31069681f092904489fc57139547b1a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 3603569655002611750}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &64285953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,8 +4554,8 @@ MonoBehaviour:
   _borderNextLevel: 20
   _winPanel: {fileID: 532173686}
   _loosePanel: {fileID: 1980360384}
-  _textSuccessedWin: {fileID: 38508754}
-  _textSuccessedLoose: {fileID: 1657762384}
+  _textSuccessedWin: {fileID: 0}
+  _textSuccessedLoose: {fileID: 0}
 --- !u!114 &1337466199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5640,18 +5628,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1657762384 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5870807763250914483, guid: 31069681f092904489fc57139547b1a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 3603569655002611750}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1670081719
 GameObject:
   m_ObjectHideFlags: 0
@@ -8805,21 +8781,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1337466197}
     m_Modifications:
-    - target: {fileID: 1803333172978768390, guid: 31069681f092904489fc57139547b1a9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3603569654263670949, guid: 31069681f092904489fc57139547b1a9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3603569655581599523, guid: 31069681f092904489fc57139547b1a9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3603569655595107640, guid: 31069681f092904489fc57139547b1a9,
         type: 3}
       propertyPath: m_Pivot.x
