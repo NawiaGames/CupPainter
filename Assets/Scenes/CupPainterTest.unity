@@ -1105,7 +1105,7 @@ MonoBehaviour:
   _speedBrushX: 10
   _distancBrushToObjectX: 0.1
   _limitUpY: 1.8
-  _limitDownY: 1
+  _limitDownY: 4
   _skinnedMeshRendererBrush: {fileID: 1746880016}
   _speedSkinedBrush: 16
   _raycastTransform: {fileID: 1859065048}
@@ -4785,7 +4785,7 @@ MonoBehaviour:
   _uiPanelSample: {fileID: 1541988586}
   _cinemachineVirtualCameraMain: {fileID: 1298618807}
   _buttonNextLevelGameObject: {fileID: 64285953}
-  _borderNextLevel: 10
+  _borderNextLevel: 20
 --- !u!114 &1337466199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4799,7 +4799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _comparisonText: {fileID: 1848181147}
-  createLevel: {fileID: 285762477}
+  _createLevel: {fileID: 285762477}
+  _button3DGameUI: {fileID: 1337466198}
   _texture2DDraw: {fileID: 0}
   _texture2DCurrentDraw: {fileID: 0}
   _accurateBetweenTextures: 0.1
@@ -5419,7 +5420,7 @@ PrefabInstance:
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5.4000244
+      value: -5.4001465
       objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706967, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
