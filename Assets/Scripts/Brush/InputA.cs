@@ -33,6 +33,7 @@ public class InputA : MonoBehaviour
     private float _valueSkinnedMeshBrush;
     private bool _canDraw;
     private bool _isLimitPosition;
+    private bool _isUIMenu;
 
     private void Start()
     {
@@ -44,7 +45,9 @@ public class InputA : MonoBehaviour
 
     private void Update()
     {
-        Controller();
+        if (!_isUIMenu)
+            Controller();
+        
         MoveBrush();
     }
 
@@ -143,4 +146,6 @@ public class InputA : MonoBehaviour
         _valueSkinnedMeshBrush = 0;
         _settingsBrush.SetOpacity(0);
     }
+
+    public void SetIsUIMenu(bool state) => _isUIMenu = state;
 }

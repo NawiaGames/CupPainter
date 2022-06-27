@@ -8,6 +8,7 @@ public class ButtonGameUI : MonoBehaviour
     [SerializeField] private RandomColor _randomColor;
     [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
+    [SerializeField] private GameObject _buttonNextLevelGameObject;
     [SerializeField] private GameObject _debugMenu; 
     
     private bool _isOpenDebugMenu;
@@ -25,8 +26,8 @@ public class ButtonGameUI : MonoBehaviour
     public void OnAddIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(1);
 
     public void OnSubtractIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(-1);
-    
-   public void OnSelectedColor(int index)
+
+    public void OnSelectedColor(int index)
     {
         var color = _randomColor.ImageColors[index].color;
         _settingsBrush.SetColor(color);

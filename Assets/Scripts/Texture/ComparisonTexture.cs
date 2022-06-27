@@ -34,7 +34,6 @@ public class ComparisonTexture : MonoBehaviour
             .PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].RenderTexturePaint);
 
         var value = 5000;
-        Debug.Log("I am work");
         var colorOne = _texture2DCurrentDraw.GetPixels();
         var colorTwo = _texture2DDraw.GetPixels();
         

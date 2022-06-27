@@ -5,9 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/mainFont SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/mainFont SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CupPainterTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/InputA.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExampleTextureDraw.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Texture/ComparisonTexture.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI/Summary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI/Summary.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +28,30 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaintObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SelectedPaintObjects.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/Texture/ComparisonTexture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/Texture/ComparisonTexture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/Texture/ComparisonTexture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/Texture/ComparisonTexture.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/Texture/ComparisonTexture.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Button3DGameUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/Button3DGameUI.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.ms.gamelib@a8b87f8a1d/Runtime/UISystem/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.ms.gamelib@a8b87f8a1d/Runtime/UISystem/UIPanel.cs" root0="SKIP_HIGHLIGHTING" />
@@ -101,10 +118,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22284">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="22284" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -143,6 +160,7 @@
       <workItem from="1655880396929" duration="9637000" />
       <workItem from="1655967345952" duration="6696000" />
       <workItem from="1656053001421" duration="5687000" />
+      <workItem from="1656313166202" duration="7725000" />
     </task>
     <servers />
   </component>

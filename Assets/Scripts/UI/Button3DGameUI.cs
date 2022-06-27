@@ -11,12 +11,13 @@ public class Button3DGameUI : MonoBehaviour
     [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
     [SerializeField] private UIPanel _uiPanelSample;
     [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCameraMain;
-    [SerializeField] private GameObject _buttonNextLevelGameObject;
+    [SerializeField] private InputA _inputA; 
     [SerializeField] private float _borderNextLevel = 60f;
+    [Header("Win Panel")]
     [SerializeField] private UIPanel _winPanel;
-  //  [SerializeField] private UIPanel _loosePanel;
     [Header("Match Panel")]
-    [SerializeField] private UIPanel _matchPanel; 
+    [SerializeField] private UIPanel _matchPanel;
+    [SerializeField] private UIPanel _continuePanel; 
     [SerializeField] private Slider _sliderProgressSuccessed;
     [SerializeField] private TMP_Text _textSuccessed; 
     [SerializeField] private float _speedSlider = 6f;
@@ -28,12 +29,6 @@ public class Button3DGameUI : MonoBehaviour
         _uiPanelSample.ActivatePanel();
     }
 
-    private void Update()
-    {
-        if (!Input.GetMouseButtonDown(0) || !_isActivateButtonSample) return;
-        DeactivatePanelComparison();
-    }
-
     public void OnButtonSample()
     {
         ActivatePanelComparison();
@@ -41,10 +36,11 @@ public class Button3DGameUI : MonoBehaviour
 
     private void ActivatePanelComparison()
     {
+        _inputA.SetIsUIMenu(true);
         _uiPanelSample.DeactivatePanel();
         _cinemachineVirtualCameraMain.enabled = false;
         _isActivateButtonSample = true;
-        _exampleTextureDraw.UpdateAnimation();
+        _exampleTextureDraw.SetStateAnimation(true);
         _comparisonTexture.StartCoroutineComparison();
     }
 
@@ -68,39 +64,27 @@ public class Button3DGameUI : MonoBehaviour
             yield return null; 
         }
         
-         ActivatePanelWinOrLose(endProgress);
+         ActivatePanelWinOrContinue(endProgress);
     }
     
 
-    private void ActivatePanelWinOrLose(float result)
+    private void ActivatePanelWinOrContinue(float result)
     {
         if (result > _borderNextLevel)
-        {
-            _buttonNextLevelGameObject.SetActive(true);
             _winPanel.ActivatePanel();
-        }
-  /*      else
-        {
-            _loosePanel.ActivatePanel();
-        }*/
+        else
+            _continuePanel.ActivatePanel();
     }
 
-    private void DeactivatePanelComparison()
+    public void DeactivatePanelComparison()
     {
+        _inputA.SetIsUIMenu(false);
         _uiPanelSample.ActivatePanel();
         _cinemachineVirtualCameraMain.enabled = true;
         _isActivateButtonSample = false;
-        _exampleTextureDraw.UpdateAnimation();
+        _exampleTextureDraw.SetStateAnimation(false);
         _comparisonTexture.StopAllCoroutinesComparison();
         StopAllCoroutines();
-        _winPanel.DeactivatePanel();
-     //   _loosePanel.DeactivatePanel();
         _matchPanel.DeactivatePanel();
-        Invoke("DeactivateButtonNextLevel", 0.2f);
-    }
-
-    private void DeactivateButtonNextLevel()
-    {
-        _buttonNextLevelGameObject.SetActive(false);
     }
 }
