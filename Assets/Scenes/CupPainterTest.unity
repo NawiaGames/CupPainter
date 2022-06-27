@@ -4140,7 +4140,8 @@ MonoBehaviour:
   _uiPanelSample: {fileID: 1541988586}
   _cinemachineVirtualCameraMain: {fileID: 1298618807}
   _inputA: {fileID: 261887639}
-  _borderNextLevel: 20
+  _borderNextLevel: 99
+  _addPercentForLevel: 1.05
   _winPanel: {fileID: 532173686}
   _matchPanel: {fileID: 1691436321}
   _continuePanel: {fileID: 76843000}
@@ -8175,12 +8176,17 @@ PrefabInstance:
     - target: {fileID: 246946520405727748, guid: 31069681f092904489fc57139547b1a9,
         type: 3}
       propertyPath: m_Value
-      value: 50.1
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 246946520405727748, guid: 31069681f092904489fc57139547b1a9,
         type: 3}
       propertyPath: m_MaxValue
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 246946520405727748, guid: 31069681f092904489fc57139547b1a9,
+        type: 3}
+      propertyPath: m_WholeNumbers
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3603569655371413696, guid: 31069681f092904489fc57139547b1a9,
         type: 3}

@@ -11,15 +11,18 @@ public class PanelMatch : MonoBehaviour
     [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
     [SerializeField] private UIPanel _uiPanelSample;
     [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCameraMain;
-    [SerializeField] private InputA _inputA; 
+    [SerializeField] private InputA _inputA;
+    [Header("Level parameters")]
     [SerializeField] private float _borderNextLevel = 60f;
-    [Header("Win Panel")]
-    [SerializeField] private UIPanel _winPanel;
-    [Header("Match Panel")]
-    [SerializeField] private UIPanel _matchPanel;
-    [SerializeField] private UIPanel _continuePanel; 
+    [SerializeField] private float _addPercentForLevel = 1.05f; 
+    [Header("Win Panel")] [SerializeField] private UIPanel _winPanel;
+    
+    [Header("Match Panel")] [SerializeField]
+    private UIPanel _matchPanel;
+
+    [SerializeField] private UIPanel _continuePanel;
     [SerializeField] private Slider _sliderProgressSuccessed;
-    [SerializeField] private TMP_Text _textSuccessed; 
+    [SerializeField] private TMP_Text _textSuccessed;
     [SerializeField] private float _speedSlider = 6f;
 
     private bool _isActivateButtonSample;
@@ -52,21 +55,23 @@ public class PanelMatch : MonoBehaviour
 
     private IEnumerator MoveProgressSuccessed(float endProgress)
     {
-        float startProgress = 0; 
-        _textSuccessed.text = startProgress.ToString("F1") + "%";
-        _sliderProgressSuccessed.value = startProgress; 
-        
+        float startProgress = 0;
+        _textSuccessed.text = startProgress.ToString("F0") + "%";
+        _sliderProgressSuccessed.value = startProgress;
+        endProgress = Mathf.Min(endProgress * _addPercentForLevel, 100); 
+        var result = 0;
         while (startProgress != endProgress)
         {
             startProgress = Mathf.MoveTowards(startProgress, endProgress, Time.deltaTime * _speedSlider);
-            _sliderProgressSuccessed.value = startProgress; 
-            _textSuccessed.text = startProgress.ToString("F1") + "%";
-            yield return null; 
+            result = Mathf.RoundToInt(startProgress);
+            _sliderProgressSuccessed.value = result;
+            _textSuccessed.text = result.ToString("F0") + "%";
+            yield return null;
         }
-        
-         ActivatePanelWinOrContinue(endProgress);
+
+        ActivatePanelWinOrContinue(result);
     }
-    
+
 
     private void ActivatePanelWinOrContinue(float result)
     {
