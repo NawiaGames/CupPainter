@@ -3,12 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class ButtonGameUI : MonoBehaviour
 {
+    [SerializeField] private CreateLevel _createLevel; 
     [SerializeField] private SettingsBrush _settingsBrush;
     [SerializeField] private BlendColor _blendColor; 
     [SerializeField] private RandomColor _randomColor;
     [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
-    [SerializeField] private GameObject _buttonNextLevelGameObject;
     [SerializeField] private GameObject _debugMenu; 
     
     private bool _isOpenDebugMenu;
@@ -39,5 +39,8 @@ public class ButtonGameUI : MonoBehaviour
         _debugMenu.SetActive(_isOpenDebugMenu);
     }
 
-    public void OnResetBlend() => _blendColor.Reset(); 
+    public void OnResetBlend() => _blendColor.Reset();
+
+    public void ResetPaintTexture() => _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex]
+        .PP3dPaintableTexture.Clear();
 }

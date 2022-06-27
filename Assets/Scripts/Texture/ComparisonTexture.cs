@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [DefaultExecutionOrder(-10)]
 public class ComparisonTexture : MonoBehaviour
 {
     [SerializeField] private CreateLevel _createLevel;
-    [SerializeField] private Button3DGameUI _button3DGameUI; 
+    [FormerlySerializedAs("_button3DGameUI")] [SerializeField] private PanelMatch panelMatch; 
     [SerializeField] private Texture2D _texture2DDraw;
     [SerializeField] private Texture2D _texture2DCurrentDraw;
     [SerializeField] private float _accurateBetweenTextures = 0.1f;
@@ -53,7 +54,7 @@ public class ComparisonTexture : MonoBehaviour
                 _comparisonPixel++;
         }
         var result = _comparisonPixel * _pixelPercent;
-        _button3DGameUI.ActivateProgressSlider(result);
+        panelMatch.ActivateProgressSlider(result);
     }
 
     public void StopAllCoroutinesComparison()

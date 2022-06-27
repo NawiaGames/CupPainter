@@ -7,6 +7,7 @@ public class PaintObject : MonoBehaviour
     private MeshCollider _meshCollider; 
     public RenderTexture RenderTexturePaint => _p3dPaintableTexture.Current;
     public MeshCollider MeshCollider => _meshCollider;
+    public P3dPaintableTexture PP3dPaintableTexture => _p3dPaintableTexture; 
 
     private void Awake()
     {

@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using Slider = UnityEngine.UI.Slider;
 
-public class Button3DGameUI : MonoBehaviour
+public class PanelMatch : MonoBehaviour
 {
     [SerializeField] private ComparisonTexture _comparisonTexture;
     [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
