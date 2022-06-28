@@ -111,7 +111,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 920500ba3e6a20e4ca4e8b6108e97a71, type: 2}
+  - {fileID: 2100000, guid: f939e8ee69bc4994f951006d25476547, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -204,10 +204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot:
     Index: 0
-    Name: _MainTex
+    Name: _BaseMap
   coord: 0
   group:
-    index: 0
+    index: 10
   undoRedo: 0
   stateLimit: 10
   saveLoad: 0
