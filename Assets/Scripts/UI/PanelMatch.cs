@@ -24,7 +24,7 @@ public class PanelMatch : MonoBehaviour
     [SerializeField] private Slider _sliderProgressSuccessed;
     [SerializeField] private TMP_Text _textSuccessed;
     [SerializeField] private float _speedSlider = 6f;
-
+    [SerializeField] private Save _save; 
     private bool _isActivateButtonSample;
 
     private void Start()
@@ -68,7 +68,7 @@ public class PanelMatch : MonoBehaviour
             _textSuccessed.text = result.ToString("F0") + "%";
             yield return null;
         }
-
+        _save.SetPercentLevel(SelectedPaintObjects.CurrentPaintObjectIndex, result);
         ActivatePanelWinOrContinue(result);
     }
 

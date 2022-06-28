@@ -69,5 +69,9 @@ MonoBehaviour:
   _paintObjectsTransform: {fileID: 0}
   _spawnPaintSampleTransform: {fileID: 0}
   _scaleSmallPaintSampleObject: 30
-  _bigPaintSampleTransform: {fileID: 0}
-  _scaleBigPaintSampleObject: 150
+  _selectedSpawnPaintObjectsTransform: {fileID: 0}
+  _templateCreatePaintObject: {fileID: 5772092317685010786, guid: 749fcbfeaa00d0a48bf16f96881b86da,
+    type: 3}
+  _scaleSelectedPaintObject: 30
+  _buttonGameUI: {fileID: 0}
+  _save: {fileID: 876269870, guid: c54e8f552adaf5940b8f2a214eeb7024, type: 3}
