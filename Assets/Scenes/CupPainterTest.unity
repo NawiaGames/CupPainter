@@ -998,6 +998,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &805683530 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4995605576297595839, guid: 832c91f69b70ffc48a030ac49278fd74,
+    type: 3}
+  m_PrefabInstance: {fileID: 808094207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &808094207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3703,6 +3709,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881560674404543492, guid: 34dfb4232c3749d458e1e92bb3d75370,
         type: 3}
+      propertyPath: _buttonGameUI
+      value: 
+      objectReference: {fileID: 848667436}
+    - target: {fileID: 1881560674404543492, guid: 34dfb4232c3749d458e1e92bb3d75370,
+        type: 3}
       propertyPath: _paintObjectsTransform
       value: 
       objectReference: {fileID: 1289059993}
@@ -4186,6 +4197,11 @@ PrefabInstance:
       propertyPath: _selectedPaintObjects
       value: 
       objectReference: {fileID: 1289059994}
+    - target: {fileID: 3838970030395262712, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
+        type: 3}
+      propertyPath: _panelSelectedPaintObjects
+      value: 
+      objectReference: {fileID: 805683530}
     - target: {fileID: 3838970030395262713, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
         type: 3}
       propertyPath: _colorPallets.Array.data[0]

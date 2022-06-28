@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CreateLevel : MonoBehaviour
 {
@@ -8,8 +9,10 @@ public class CreateLevel : MonoBehaviour
     [SerializeField] private int _scaleSmallPaintSampleObject = 50; 
     [SerializeField] private Transform _selectedSpawnPaintObjectsTransform;
     [SerializeField] private GameObject _templateCreatePaintObject; 
-    [SerializeField] private int _scaleSelectedPaintObject = 30; 
-
+    [SerializeField] private int _scaleSelectedPaintObject = 30;
+    [SerializeField] private ButtonGameUI _buttonGameUI; 
+    
+    private UnityEngine.Events.UnityAction _buttonCallback;
     private PaintObject[] _paintObjects;
     private GameObject[] _smallPaintSampleObjects;
     private GameObject[] _selectedSpawnPaintObjects;
@@ -57,7 +60,14 @@ public class CreateLevel : MonoBehaviour
         var template = Instantiate(_templateCreatePaintObject, _selectedSpawnPaintObjectsTransform);
         template.transform.localScale = Vector3.one;
         template.transform.localRotation = Quaternion.identity;
-        template.transform.localPosition = Vector3.zero; 
+        template.transform.localPosition = Vector3.zero;
+        var button = template.GetComponent<Button>();
+        if (button != null)
+        {
+            _buttonCallback = null;
+            _buttonCallback = () => _buttonGameUI.SelectedLevel(i);
+            button.onClick.AddListener(_buttonCallback);
+        }
         var selectedPaintObject = InstantiateObject(_levelsSO[i].ModelSampleObject, template.transform, true);
         _selectedSpawnPaintObjects[i] = selectedPaintObject;
         _selectedSpawnPaintObjects[i].transform.localRotation = Quaternion.identity; 

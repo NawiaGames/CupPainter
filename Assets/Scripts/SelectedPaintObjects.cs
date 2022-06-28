@@ -50,7 +50,12 @@ public class SelectedPaintObjects : MonoBehaviour
             index = _lengthPaintObjects - 1;
         else if (_lengthPaintObjects - 1 < index)
             index = 0;
-        
+
+        LoadSelectedPaintObject(index);
+    }
+
+    public void LoadSelectedPaintObject(int index)
+    {
         CurrentPaintObjectIndex = index; 
         _currentPaintObject = index;
         ActivateSelectedObject();
