@@ -43,4 +43,6 @@ public class ButtonGameUI : MonoBehaviour
 
     public void ResetPaintTexture() => _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex]
         .PP3dPaintableTexture.Clear();
+
+    public void SelectedLevel() => Debug.Log("I am work");
 }

@@ -6,19 +6,20 @@ public class CreateLevel : MonoBehaviour
     [SerializeField] private Transform _paintObjectsTransform;
     [SerializeField] private Transform _spawnPaintSampleTransform;
     [SerializeField] private int _scaleSmallPaintSampleObject = 50; 
-    [SerializeField] private Transform _bigPaintSampleTransform;
-    [SerializeField] private int _scaleBigPaintSampleObject = 150; 
+    [SerializeField] private Transform _selectedSpawnPaintObjectsTransform;
+    [SerializeField] private GameObject _templateCreatePaintObject; 
+    [SerializeField] private int _scaleSelectedPaintObject = 30; 
 
     private PaintObject[] _paintObjects;
     private GameObject[] _smallPaintSampleObjects;
-    private GameObject[] _bigPaintSampleObjects;
+    private GameObject[] _selectedSpawnPaintObjects;
     private Texture2D[] _texture2DModelsSample;
     private Colors[] _colorsPallet;
     private bool[] _canActivatePallets;
 
     public PaintObject[] PaintObjects => _paintObjects;
     public GameObject[] SmallPaintSampleObjects => _smallPaintSampleObjects;
-    public GameObject[] BigPaintSampleObjects => _bigPaintSampleObjects;
+    public GameObject[] SelectedSpawnPaintObjects => _selectedSpawnPaintObjects;
     public Texture2D[] Texture2DModelsSample => _texture2DModelsSample;
     public Colors[] ColorsPallet => _colorsPallet;
     public bool[] CanActivatePallets => _canActivatePallets;
@@ -32,7 +33,7 @@ public class CreateLevel : MonoBehaviour
     {
         _paintObjects = new PaintObject[_levelsSO.Length];
         _smallPaintSampleObjects = new GameObject[_levelsSO.Length];
-        _bigPaintSampleObjects = new GameObject[_levelsSO.Length];
+        _selectedSpawnPaintObjects = new GameObject[_levelsSO.Length];
         _texture2DModelsSample = new Texture2D[_levelsSO.Length];
         _colorsPallet = new Colors[_levelsSO.Length];
         _canActivatePallets = new bool[_levelsSO.Length]; 
@@ -43,7 +44,7 @@ public class CreateLevel : MonoBehaviour
             
             CreateSmallPaintSampleObject(i);
 
-            CreateBigPaintSampleObject(i);
+            CreateSelectedPaintObject(i);
 
             _texture2DModelsSample[i] = _levelsSO[i].TextureModel;
             _canActivatePallets[i] = _levelsSO[i].ActivatePalletBlend; 
@@ -51,21 +52,23 @@ public class CreateLevel : MonoBehaviour
         }
     }
 
-    private void CreateBigPaintSampleObject(int i)
+    private void CreateSelectedPaintObject(int i)
     {
-        var bigPaintSampleObject = InstantiateObject(_levelsSO[i].ModelSampleObject);
-        bigPaintSampleObject.transform.SetParent(_bigPaintSampleTransform);
-        _bigPaintSampleObjects[i] = bigPaintSampleObject;
-        _bigPaintSampleObjects[i].transform.localRotation = Quaternion.identity; 
-        _bigPaintSampleObjects[i].transform.localPosition = Vector3.zero;
-        _bigPaintSampleObjects[i].transform.localScale = new Vector3(_scaleBigPaintSampleObject,
-            _scaleBigPaintSampleObject, _scaleBigPaintSampleObject);
+        var template = Instantiate(_templateCreatePaintObject, _selectedSpawnPaintObjectsTransform);
+        template.transform.localScale = Vector3.one;
+        template.transform.localRotation = Quaternion.identity;
+        template.transform.localPosition = Vector3.zero; 
+        var selectedPaintObject = InstantiateObject(_levelsSO[i].ModelSampleObject, template.transform, true);
+        _selectedSpawnPaintObjects[i] = selectedPaintObject;
+        _selectedSpawnPaintObjects[i].transform.localRotation = Quaternion.identity; 
+        _selectedSpawnPaintObjects[i].transform.localPosition = Vector3.zero;
+        _selectedSpawnPaintObjects[i].transform.localScale = new Vector3(_scaleSelectedPaintObject,
+            _scaleSelectedPaintObject, _scaleSelectedPaintObject);
     }
 
     private void CreateSmallPaintSampleObject(int i)
     {
-        var smallPaintSampleObject = InstantiateObject(_levelsSO[i].ModelSampleObject);
-        smallPaintSampleObject.transform.SetParent(_spawnPaintSampleTransform);
+        var smallPaintSampleObject = InstantiateObject(_levelsSO[i].ModelSampleObject, _spawnPaintSampleTransform, false);
         _smallPaintSampleObjects[i] = smallPaintSampleObject;
         _smallPaintSampleObjects[i].transform.localRotation = Quaternion.identity;
         _smallPaintSampleObjects[i].transform.localPosition = Vector3.zero;
@@ -75,16 +78,15 @@ public class CreateLevel : MonoBehaviour
 
     private void CreatePaintObject(int i)
     {
-        var paintObjects = InstantiateObject(_levelsSO[i].ModelObject.gameObject);
-        paintObjects.gameObject.transform.SetParent(_paintObjectsTransform);
+        var paintObjects = InstantiateObject(_levelsSO[i].ModelObject.gameObject, _paintObjectsTransform, false);
         _paintObjects[i] = paintObjects.GetComponent<PaintObject>();
         _paintObjects[i].gameObject.transform.localPosition = Vector3.zero;
     }
 
-    private GameObject InstantiateObject(GameObject createObject)
+    private GameObject InstantiateObject(GameObject createObject, Transform parent, bool activate)
     {
-        var initObject = Instantiate(createObject);
-        initObject.SetActive(false);
+        var initObject = Instantiate(createObject, parent);
+        initObject.SetActive(activate);
         return initObject; 
     }
 }
