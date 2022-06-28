@@ -82,20 +82,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3838970030395262712, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
-          type: 3}
-        m_TargetAssemblyTypeName: ButtonGameUI, Assembly-CSharp
-        m_MethodName: SelectedLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &3592285935846642994
 CanvasRenderer:
   m_ObjectHideFlags: 0

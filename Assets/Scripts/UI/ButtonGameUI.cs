@@ -9,6 +9,7 @@ public class ButtonGameUI : MonoBehaviour
     [SerializeField] private RandomColor _randomColor;
     [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
+    [SerializeField] private GameObject _panelSelectedPaintObjects; 
     [SerializeField] private GameObject _debugMenu; 
     
     private bool _isOpenDebugMenu;
@@ -44,5 +45,9 @@ public class ButtonGameUI : MonoBehaviour
     public void ResetPaintTexture() => _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex]
         .PP3dPaintableTexture.Clear();
 
-    public void SelectedLevel() => Debug.Log("I am work");
+    public void SelectedLevel(int index = 0)
+    {
+        _selectedPaintObjects.LoadSelectedPaintObject(index); 
+        _panelSelectedPaintObjects.SetActive(false);
+    }
 }
