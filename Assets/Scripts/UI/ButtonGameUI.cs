@@ -41,8 +41,10 @@ public class ButtonGameUI : MonoBehaviour
         _debugMenu.SetActive(_isOpenDebugMenu);
     }
 
+    [ContextMenu("Reset Blend")]
     public void OnResetBlend() => _blendColor.Reset();
 
+    [ContextMenu("Reset Paint Texture")]
     public void ResetPaintTexture() => _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex]
         .PP3dPaintableTexture.Clear();
 
