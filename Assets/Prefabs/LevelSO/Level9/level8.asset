@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f1e5e4c05188249bc2ac9f81743034, type: 3}
+  m_Name: level8
+  m_EditorClassIdentifier: 
+  _modelObject: {fileID: 1594953310117828405, guid: 645c04032cf6f694db240f952fa0f272,
+    type: 3}
+  _modelSampleObject: {fileID: 8240832953115701054, guid: a06fb447a1b0c2e409a40c0622ebd96e,
+    type: 3}
+  _textureModel: {fileID: 2800000, guid: 10f93524d7f53d8419f063798fce17a9, type: 3}
+  _colorsPallet:
+  - {r: 0.8352942, g: 0.40000004, b: 0.227451, a: 1}
+  - {r: 0.8352942, g: 0.7843138, b: 0.227451, a: 1}
+  - {r: 0.22745098, g: 0.8352941, b: 0.5254902, a: 1}
+  _activatePalletBlend: 1
