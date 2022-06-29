@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67f1e5e4c05188249bc2ac9f81743034, type: 3}
   m_Name: level11
   m_EditorClassIdentifier: 
-  _modelObject: {fileID: 1594953310117828405, guid: 0dbd8a8d026ac6946810a786d87c7b55,
+  _modelObject: {fileID: 1594953310117828405, guid: fd465520a3a9a3b4493dc5f0e4bd6f55,
     type: 3}
-  _modelSampleObject: {fileID: 8240832953115701054, guid: 8aaddcd3c1464c04ebf9ae57029b548a,
+  _modelSampleObject: {fileID: 8240832953115701054, guid: ef7b394810d55cf4f868f07bb66ae3aa,
     type: 3}
   _textureModel: {fileID: 2800000, guid: 10f93524d7f53d8419f063798fce17a9, type: 3}
   _colorsPallet:

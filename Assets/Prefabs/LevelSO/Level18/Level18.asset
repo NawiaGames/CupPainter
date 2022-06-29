@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67f1e5e4c05188249bc2ac9f81743034, type: 3}
-  m_Name: Level17
+  m_Name: Level18
   m_EditorClassIdentifier: 
-  _modelObject: {fileID: 1290810821974457561, guid: 27307a932975ac0429b2f77d9e450b71,
+  _modelObject: {fileID: 6246790072142409669, guid: fb17dbb22db8cee47868b673104ca590,
     type: 3}
-  _modelSampleObject: {fileID: 4584230103451222410, guid: 1ff31ec72fe20e446a8049f72045a0b3,
+  _modelSampleObject: {fileID: 7102705094467738058, guid: eb64865b6724e3c43b60d4d0bf1d1fe0,
     type: 3}
-  _textureModel: {fileID: 2800000, guid: 597bb0f59beff474bb1ffb67ed04f0d0, type: 3}
+  _textureModel: {fileID: 2800000, guid: 6859a33e89de89e4e97e3fd50e16fa2a, type: 3}
   _colorsPallet:
-  - {r: 0.67058825, g: 0.36078432, b: 0.10588236, a: 1}
-  - {r: 0.9294118, g: 0.69411767, b: 0.5254902, a: 1}
+  - {r: 0, g: 0.6745098, b: 0.49019608, a: 1}
+  - {r: 0.9254902, g: 0.5568628, b: 0.50980395, a: 1}
+  - {r: 0.9764706, g: 0.64705884, b: 0.98039216, a: 1}
   _activatePalletBlend: 0
