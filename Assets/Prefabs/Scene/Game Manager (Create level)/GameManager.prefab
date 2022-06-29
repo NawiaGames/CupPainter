@@ -66,6 +66,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 463c14429634fd0488dfe50106a387ac, type: 2}
   - {fileID: 11400000, guid: 071ab3ed617e0414c8904c12f94bbb79, type: 2}
   - {fileID: 11400000, guid: c50ac8072e1bf3f4eb1019a206cde9ba, type: 2}
+  - {fileID: 11400000, guid: 5ac6076f6d33ff34cbc78b9fcd9905f6, type: 2}
+  - {fileID: 11400000, guid: 569badb7f84f2ab4ea5d6df6a09f8b38, type: 2}
+  - {fileID: 11400000, guid: 31c414199f1ee0546a189feb5e7f6ed1, type: 2}
+  - {fileID: 11400000, guid: 83a501a5705c5194888c793576c3083e, type: 2}
+  - {fileID: 11400000, guid: 8fbe6a9713d607943abe7a82ba02e8a0, type: 2}
+  - {fileID: 11400000, guid: 628e9af7730826c4cb9f85e09d476ab4, type: 2}
+  - {fileID: 11400000, guid: eec08d6d36d35724ab43f10e7b461df9, type: 2}
+  - {fileID: 11400000, guid: 83e081c4eb5e0254ea9ba37b881dba65, type: 2}
+  - {fileID: 11400000, guid: 83204c05ce28f224b95adb644c6cb7d2, type: 2}
   _paintObjectsTransform: {fileID: 0}
   _spawnPaintSampleTransform: {fileID: 0}
   _scaleSmallPaintSampleObject: 30
