@@ -65,6 +65,7 @@ public class SelectedPaintObjects : MonoBehaviour
 
     private void SetSettingsLevel()
     {
+        _colorsPallet.ActivateAnimationPallet();
         _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
         _blendColor.gameObject.SetActive(_createLevel.CanActivatePallets[_currentPaintObject]);
         _exampleTextureDraw.SetTexture(_createLevel.Texture2DModelsSample[_currentPaintObject]);

@@ -384,6 +384,7 @@ MonoBehaviour:
   _buttonGame: {fileID: 848667436}
   _paintSphere: {fileID: 1798007179}
   _paintDecal: {fileID: 1798007184}
+  _paintDecalSmoothness: {fileID: 1798007186}
   _materialBrush: {fileID: -6553565116120738525, guid: 54d676e8129c9fa4cabe1b77d1630483,
     type: 3}
   _sliderOpacity: {fileID: 2107544179}
@@ -1611,7 +1612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -543.00006, y: 0}
+  m_AnchoredPosition: {x: -543, y: 0}
   m_SizeDelta: {x: 525, y: 750}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1019297034
@@ -2950,6 +2951,7 @@ GameObject:
   - component: {fileID: 1798007180}
   - component: {fileID: 1798007179}
   - component: {fileID: 1798007184}
+  - component: {fileID: 1798007186}
   - component: {fileID: 1798007185}
   m_Layer: 0
   m_Name: Paint
@@ -2974,7 +2976,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   group:
-    index: 0
+    index: -1
   targetModel: {fileID: 0}
   targetTexture: {fileID: 0}
   blendMode:
@@ -3111,6 +3113,53 @@ MonoBehaviour:
     hitLimit: 30
     connectHits: 0
     clipConnected: 0
+--- !u!114 &1798007186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798007177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36498e7e45483f478ff74ab3f1cb21c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetModel: {fileID: 0}
+  group:
+    index: 55
+  targetTexture: {fileID: 0}
+  blendMode:
+    Index: 0
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Texture: {fileID: 0}
+    Kernel: 1
+    Channels: {x: 1, y: 1, z: 1, w: 1}
+  texture: {fileID: 2800000, guid: ee622ce51b08eb0479076c5f04cae2b1, type: 3}
+  shape: {fileID: 0}
+  shapeChannel: 3
+  color: {r: 1, g: 0, b: 0, a: 1}
+  opacity: 1
+  angle: 0
+  scale: {x: 1, y: 1, z: 1}
+  radius: 0.1
+  hardness: 3
+  wrapping: 1
+  normalFront: 1
+  normalBack: 0
+  normalFade: 0.01
+  tileTexture: {fileID: 0}
+  tileTransform: {fileID: 0}
+  tileOpacity: 1
+  tileTransition: 4
+  modifiers:
+    modifiers: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1805037412
 GameObject:
   m_ObjectHideFlags: 0

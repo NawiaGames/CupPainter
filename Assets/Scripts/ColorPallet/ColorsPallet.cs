@@ -4,12 +4,15 @@ public class ColorsPallet : MonoBehaviour
 {
     [SerializeField] private ColorPallet[] _colorsPallets;
     [SerializeField] private SettingsBrush _settingsBrush;
-    [SerializeField] private Frames _frames; 
+    [SerializeField] private Frames _frames;
+    [SerializeField] private Animator _animatorPallet; 
     
     public void SetColorsPallet(Color[] _colors)
     {
         _settingsBrush.SetColor(_colors[0]);
         _frames.ActivateColorFrame(0);
+
+        
         for (var i = 0; i < _colorsPallets.Length; i++)
         {
             if (i < _colors.Length)
@@ -24,5 +27,10 @@ public class ColorsPallet : MonoBehaviour
             
             _colorsPallets[i].SetIndex(i);
         }
+    }
+
+    public void ActivateAnimationPallet()
+    {
+        _animatorPallet.SetTrigger("activate");
     }
 }
