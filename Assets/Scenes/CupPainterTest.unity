@@ -417,6 +417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 1805037414}
   _settingsBrush: {fileID: 261887636}
+  _frames: {fileID: 2713381383385082257}
 --- !u!114 &261887639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,7 +1611,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -543, y: 0}
+  m_AnchoredPosition: {x: -543.00006, y: 0}
   m_SizeDelta: {x: 525, y: 750}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1019297034
@@ -3891,6 +3892,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: pallets
       objectReference: {fileID: 0}
+    - target: {fileID: 2713381381581408782, guid: 751e152b9e324844d890195ce1a337d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2713381382803486327, guid: 751e152b9e324844d890195ce1a337d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6229947450291713747, guid: 751e152b9e324844d890195ce1a337d3,
         type: 3}
       propertyPath: m_RootOrder
@@ -3953,6 +3964,18 @@ PrefabInstance:
       objectReference: {fileID: 261887636}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751e152b9e324844d890195ce1a337d3, type: 3}
+--- !u!114 &2713381383385082257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 297698441731240722, guid: 751e152b9e324844d890195ce1a337d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2713381383385082256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3640d0fc54357479d5e89c00e3fded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3603569655002611750
 PrefabInstance:
   m_ObjectHideFlags: 0

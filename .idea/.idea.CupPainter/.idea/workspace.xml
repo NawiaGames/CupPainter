@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Frames.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Frames.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene/paintPallet (ColorsPallet).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scene/paintPallet (ColorsPallet).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scene/pallets.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scene/pallets.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Brush/SelectedColor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Brush/SelectedColor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorPallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorPallet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorsPallet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorsPallet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraConstantWidth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorPallet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/Colors.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Frames.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/CreateLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaintObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RandomColor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -136,7 +144,7 @@
       <workItem from="1656053001421" duration="5687000" />
       <workItem from="1656313166202" duration="7725000" />
       <workItem from="1656399729797" duration="4796000" />
-      <workItem from="1656485246106" duration="745000" />
+      <workItem from="1656485246106" duration="2752000" />
     </task>
     <servers />
   </component>
@@ -160,5 +168,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Frames.cs</url>
+          <line>11</line>
+          <properties documentPath="C:\NAWIA\CupPainter\Assets\Scripts\Frames.cs" initialLine="11" containingFunctionPresentation="method 'ActivateMixFrame'">
+            <startOffsets>
+              <option value="262" />
+            </startOffsets>
+            <endOffsets>
+              <option value="306" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

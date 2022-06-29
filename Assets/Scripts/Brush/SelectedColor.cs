@@ -4,6 +4,7 @@ public class SelectedColor : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
     [SerializeField] private SettingsBrush _settingsBrush;
+    [SerializeField] private Frames _frames; 
  
     public void CameraToRaycast()
     {
@@ -23,11 +24,14 @@ public class SelectedColor : MonoBehaviour
         var colorBrush = _settingsBrush.ColorBrush;
         var colorBlend = blendColor.GetColorBlend(colorBrush);
         _settingsBrush.SetColor(colorBlend);
+        _frames.ActivateMixFrame();
     }
 
     private void GetColorPallets(ColorPallet colorPallet)
     {
         var color = colorPallet.GetColor();
         _settingsBrush.SetColor(color);
+        var index = colorPallet.GetIndex();
+        _frames.ActivateColorFrame(index);
     }
 }
