@@ -382,7 +382,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _buttonGame: {fileID: 848667436}
-  _paintSphere: {fileID: 1798007179}
   _paintDecal: {fileID: 1798007184}
   _paintDecalSmoothness: {fileID: 1798007186}
   _materialBrush: {fileID: -6553565116120738525, guid: 54d676e8129c9fa4cabe1b77d1630483,
@@ -4011,6 +4010,11 @@ PrefabInstance:
       propertyPath: _settingsBrush
       value: 
       objectReference: {fileID: 261887636}
+    - target: {fileID: 6728632792463802092, guid: 751e152b9e324844d890195ce1a337d3,
+        type: 3}
+      propertyPath: _animatorPallet
+      value: 
+      objectReference: {fileID: 2713381383385082258}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751e152b9e324844d890195ce1a337d3, type: 3}
 --- !u!114 &2713381383385082257 stripped
@@ -4025,6 +4029,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae3640d0fc54357479d5e89c00e3fded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2713381383385082258 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7611863507091476973, guid: 751e152b9e324844d890195ce1a337d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2713381383385082256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3603569655002611750
 PrefabInstance:
   m_ObjectHideFlags: 0
