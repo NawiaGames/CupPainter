@@ -1,3 +1,4 @@
+using GameLib.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +11,7 @@ public class ButtonGameUI : MonoBehaviour
     [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
     [SerializeField] private GameObject _uilngameHUD; 
-    [SerializeField] private GameObject _panelSelectedPaintObjects; 
+    [SerializeField] private UIPanel _panelSelectedPaintObjects; 
     [SerializeField] private GameObject _debugMenu; 
     
     private bool _isOpenDebugMenu;
@@ -51,7 +52,7 @@ public class ButtonGameUI : MonoBehaviour
     public void SelectedLevel(int index = 0)
     {
         _selectedPaintObjects.LoadSelectedPaintObject(index); 
-        _panelSelectedPaintObjects.SetActive(false);
+        _panelSelectedPaintObjects.DeactivatePanel();
         _uilngameHUD.SetActive(true);
     }
 
@@ -59,7 +60,7 @@ public class ButtonGameUI : MonoBehaviour
     public void OpenSelectedPanel()
     {
         _uilngameHUD.SetActive(false);
-        _panelSelectedPaintObjects.SetActive(true);
+        _panelSelectedPaintObjects.ActivatePanel();
         var percentLevels = _createLevel.Save.GetPercentLevels();
         for (var i = 0; i < percentLevels.Length; i++)
             _createLevel.SelectPaintObjectUI[i].Text.text = percentLevels[i] + "%"; 

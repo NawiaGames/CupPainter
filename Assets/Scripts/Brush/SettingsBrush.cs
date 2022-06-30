@@ -58,7 +58,6 @@ public class SettingsBrush : MonoBehaviour
     //    _paintSphere.Color = color;
         _materialBrush.color = color;
         _paintDecal.Color = color;
-        _paintDecalSmoothness.Color = color; 
     }
 
     public void SetAngleDecal(int value)

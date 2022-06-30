@@ -31,5 +31,7 @@ public class ColorsPallet : MonoBehaviour
 
     public void ActivateAnimationPallet() => _animatorPallet.SetTrigger("activate");
 
+    public void ActivateNXLAnimationPallet() => _animatorPallet.SetTrigger("activateNXL");
+
     public void DeactivateAnimationPallet() => _animatorPallet.SetTrigger("deactivate");
 }

@@ -5,7 +5,8 @@ public class SelectedPaintObjects : MonoBehaviour
     [SerializeField] private CreateLevel _createLevel;
     [SerializeField] private ColorsPallet _colorsPallet;
     [SerializeField] private BlendColor _blendColor;
-    [SerializeField] private ExampleTextureDraw _exampleTextureDraw; 
+    [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
+    [SerializeField] private PanelMatch _panelMatch;
     [SerializeField] private int _currentPaintObject = 0;
 
     private int _lengthPaintObjects = 0;
@@ -65,6 +66,7 @@ public class SelectedPaintObjects : MonoBehaviour
 
     private void SetSettingsLevel()
     {
+        _panelMatch.ActivateButtonUIInGameHud();
         _colorsPallet.ActivateAnimationPallet();
         _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
         _blendColor.gameObject.SetActive(_createLevel.CanActivatePallets[_currentPaintObject]);
