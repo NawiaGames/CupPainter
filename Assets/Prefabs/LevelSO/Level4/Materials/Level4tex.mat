@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: lvl7rx
+  m_Name: Level4tex
   m_Shader: {fileID: 4800000, guid: d2862e538ed34704297d434d0ab8c398, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
@@ -38,7 +38,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 663444aa561ce324ba30ef76bcbc6cb4, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0f824970bf3b12f4c9b26289e7ae518b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
