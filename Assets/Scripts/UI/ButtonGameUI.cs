@@ -63,7 +63,6 @@ public class ButtonGameUI : MonoBehaviour
         _panelSelectedPaintObjects.ActivatePanel();
         var percentLevels = _createLevel.Save.GetPercentLevels();
         for (var i = 0; i < percentLevels.Length; i++)
-            _createLevel.SelectPaintObjectUI[i].Text.text = percentLevels[i] + "%"; 
-        
+            _createLevel.SelectPaintObjectUI[i].Text.text = percentLevels[i] + "%";
     }
 }

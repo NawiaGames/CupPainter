@@ -66,6 +66,7 @@ public class SelectedPaintObjects : MonoBehaviour
 
     private void SetSettingsLevel()
     {
+        _colorsPallet.SettingsBrush.SetColorSmoothness(_createLevel.PaintObjects[_currentPaintObject].ColorSmoothness);
         _panelMatch.ActivateButtonUIInGameHud();
         _colorsPallet.ActivateAnimationPallet();
         _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);

@@ -5,7 +5,9 @@ public class ColorsPallet : MonoBehaviour
     [SerializeField] private ColorPallet[] _colorsPallets;
     [SerializeField] private SettingsBrush _settingsBrush;
     [SerializeField] private Frames _frames;
-    [SerializeField] private Animator _animatorPallet; 
+    [SerializeField] private Animator _animatorPallet;
+
+    public SettingsBrush SettingsBrush => _settingsBrush; 
     
     public void SetColorsPallet(Color[] _colors)
     {
