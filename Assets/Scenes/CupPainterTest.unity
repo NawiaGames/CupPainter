@@ -2570,6 +2570,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2560584944489490195, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 2063956832}
+    - target: {fileID: 2560584944489490195, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 848667436}
+    - target: {fileID: 2560584944489490195, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnResetBlend
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560584944489490195, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonGameUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2659095021823706966, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_Name
@@ -3769,6 +3789,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 943737058}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2063956832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3838970031102102379, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3838970030167500244}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2065439535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1607570576616614362, guid: 9c14f30362433ad4e95e3a5659f32256,
@@ -4450,6 +4482,11 @@ PrefabInstance:
     - target: {fileID: 3838970030395262719, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3838970031102102378, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
+        type: 3}
+      propertyPath: m_Transition
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3838970031866889879, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
