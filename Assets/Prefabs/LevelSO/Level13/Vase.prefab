@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2914128423807178301}
-  m_Mesh: {fileID: 3915365081812517687, guid: bc968557964a11f44ad535e57395d0c9, type: 3}
+  m_Mesh: {fileID: 7567532504055388576, guid: bc968557964a11f44ad535e57395d0c9, type: 3}
 --- !u!23 &3849423241228753626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -318,3 +318,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _p3dPaintableTexture: {fileID: 4584230103068038950}
+  _smoothness: 0
