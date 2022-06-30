@@ -2226,6 +2226,7 @@ MonoBehaviour:
   _textSuccessed: {fileID: 2107382088}
   _speedSlider: 24
   _save: {fileID: 1489681983}
+  _colorsPallet: {fileID: 8702988722654287740}
 --- !u!114 &1337466199
 MonoBehaviour:
   m_ObjectHideFlags: 0

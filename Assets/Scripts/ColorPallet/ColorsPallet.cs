@@ -29,8 +29,7 @@ public class ColorsPallet : MonoBehaviour
         }
     }
 
-    public void ActivateAnimationPallet()
-    {
-        _animatorPallet.SetTrigger("activate");
-    }
+    public void ActivateAnimationPallet() => _animatorPallet.SetTrigger("activate");
+
+    public void DeactivateAnimationPallet() => _animatorPallet.SetTrigger("deactivate");
 }

@@ -24,7 +24,8 @@ public class PanelMatch : MonoBehaviour
     [SerializeField] private Slider _sliderProgressSuccessed;
     [SerializeField] private TMP_Text _textSuccessed;
     [SerializeField] private float _speedSlider = 6f;
-    [SerializeField] private Save _save; 
+    [SerializeField] private Save _save;
+    [SerializeField] private ColorsPallet _colorsPallet; 
     private bool _isActivateButtonSample;
 
     private void Start()
@@ -35,6 +36,7 @@ public class PanelMatch : MonoBehaviour
     public void OnButtonSample()
     {
         ActivatePanelComparison();
+        _colorsPallet.DeactivateAnimationPallet();
     }
 
     private void ActivatePanelComparison()
@@ -91,5 +93,6 @@ public class PanelMatch : MonoBehaviour
         _comparisonTexture.StopAllCoroutinesComparison();
         StopAllCoroutines();
         _matchPanel.DeactivatePanel();
+        _colorsPallet.ActivateAnimationPallet();
     }
 }

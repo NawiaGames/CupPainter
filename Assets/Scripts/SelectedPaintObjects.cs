@@ -10,8 +10,8 @@ public class SelectedPaintObjects : MonoBehaviour
 
     private int _lengthPaintObjects = 0;
 
-    public static int CurrentPaintObjectIndex; 
-    
+    public static int CurrentPaintObjectIndex;
+
     private void Start()
     {
         BeginLevel();
