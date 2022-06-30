@@ -1106,69 +1106,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 808094208}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1541988586}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TogglePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ActivatePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameLib.UI.UIPanel, com.nawiagames.gamelib
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GameLib.UI.UIPanel, com.nawiagames.gamelib
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4995605576297595838, guid: 832c91f69b70ffc48a030ac49278fd74,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1278,11 +1218,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PanelSelectedPaintObjects
-      objectReference: {fileID: 0}
-    - target: {fileID: 4995605576297595839, guid: 832c91f69b70ffc48a030ac49278fd74,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 832c91f69b70ffc48a030ac49278fd74, type: 3}
@@ -2757,9 +2692,29 @@ PrefabInstance:
       objectReference: {fileID: 357222756}
     - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 808094208}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1541988586}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2767,8 +2722,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DeactivatePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GameLib.UI.UIPanel, com.nawiagames.gamelib
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameLib.UI.UIPanel, com.nawiagames.gamelib
+      objectReference: {fileID: 0}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebcaab335b22149459ee6bd686829a06, type: 3}
