@@ -2687,11 +2687,6 @@ PrefabInstance:
       objectReference: {fileID: 357222756}
     - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
@@ -2699,7 +2694,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 808094208}
+      objectReference: {fileID: 848667436}
     - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -2712,18 +2707,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TogglePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: DeactivatePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameLib.UI.UIPanel, com.nawiagames.gamelib
       objectReference: {fileID: 0}
     - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
         type: 3}
@@ -2749,7 +2734,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1541988584}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760685275}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 697f5e0982c14ee4ea5855c49882ab94, type: 3}
@@ -2826,12 +2811,6 @@ SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8479036361289377885, guid: 54d676e8129c9fa4cabe1b77d1630483,
     type: 3}
   m_PrefabInstance: {fileID: 1991147770}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1760685275 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2659095021823706966, guid: ebcaab335b22149459ee6bd686829a06,
-    type: 3}
-  m_PrefabInstance: {fileID: 1541988584}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1775568239
 PrefabInstance:
@@ -4327,7 +4306,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _uilngameHUD
       value: 
-      objectReference: {fileID: 1760685275}
+      objectReference: {fileID: 1541988586}
     - target: {fileID: 3838970030395262712, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
         type: 3}
       propertyPath: _settingsBrush

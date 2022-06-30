@@ -10,7 +10,7 @@ public class ButtonGameUI : MonoBehaviour
     [SerializeField] private RandomColor _randomColor;
     [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
-    [SerializeField] private GameObject _uilngameHUD; 
+    [SerializeField] private UIPanel _uilngameHUD; 
     [SerializeField] private UIPanel _panelSelectedPaintObjects; 
     [SerializeField] private GameObject _debugMenu; 
     
@@ -53,13 +53,13 @@ public class ButtonGameUI : MonoBehaviour
     {
         _selectedPaintObjects.LoadSelectedPaintObject(index); 
         _panelSelectedPaintObjects.DeactivatePanel();
-        _uilngameHUD.SetActive(true);
+        _uilngameHUD.ActivatePanel();
     }
 
     [ContextMenu("Open selected panel")]
     public void OpenSelectedPanel()
     {
-        _uilngameHUD.SetActive(false);
+        _uilngameHUD.DeactivatePanel();
         _panelSelectedPaintObjects.ActivatePanel();
         var percentLevels = _createLevel.Save.GetPercentLevels();
         for (var i = 0; i < percentLevels.Length; i++)
