@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 3958694795095035215}
   - component: {fileID: 5827664661359940239}
   - component: {fileID: 3201335459550684372}
+  - component: {fileID: 8530457237178868504}
   m_Layer: 0
   m_Name: colorMatchOBJ_UI
   m_TagString: Untagged
@@ -536,6 +537,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8530457237178868504
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962459556086515889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7911038261412049663, guid: 5c4999acc42b50641828314e645e7f9f, type: 3}
 --- !u!1 &3589466721791020849
 GameObject:
   m_ObjectHideFlags: 0
