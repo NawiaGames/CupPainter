@@ -124,6 +124,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!23 &35365473 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8238905266253354019, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1057734326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &73094189 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4995605576297595838, guid: 832c91f69b70ffc48a030ac49278fd74,
@@ -1981,6 +1987,7 @@ MonoBehaviour:
   _exampleTextureDraw: {fileID: 684244300}
   _panelMatch: {fileID: 1337466198}
   _currentPaintObject: 0
+  _rendererColorMatch: {fileID: 35365473}
 --- !u!114 &1289059995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4049,6 +4056,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: pallets
       objectReference: {fileID: 0}
+    - target: {fileID: 1962459556086515889, guid: 751e152b9e324844d890195ce1a337d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011575298484287947, guid: 751e152b9e324844d890195ce1a337d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2713381381581408782, guid: 751e152b9e324844d890195ce1a337d3,
         type: 3}
       propertyPath: m_IsActive
@@ -4124,6 +4141,11 @@ PrefabInstance:
       propertyPath: _animatorPallet
       value: 
       objectReference: {fileID: 2713381383385082258}
+    - target: {fileID: 8445013548775682498, guid: 751e152b9e324844d890195ce1a337d3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 066f6e77dda27084984a50a2b0f5667f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 751e152b9e324844d890195ce1a337d3, type: 3}
 --- !u!114 &2713381383385082257 stripped
