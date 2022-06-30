@@ -11,5 +11,5 @@ public class Rotation : MonoBehaviour
 
     private void Rotate() => transform.Rotate(_rotationSpeed * Time.deltaTime, Space.World);
 
-    public void SetSpeed(float value) => _rotationSpeed.y = value; 
+//    public void SetSpeed(float value) => _rotationSpeed.y = value; 
 }

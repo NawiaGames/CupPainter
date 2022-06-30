@@ -79,14 +79,13 @@ public class SelectedPaintObjects : MonoBehaviour
         
         var colorSmoothness = _createLevel.PaintObjects[_currentPaintObject].ColorSmoothness;
         var smoothness = _createLevel.PaintObjects[_currentPaintObject].Smoothness;
-        _colorsPallet.SettingsBrush.SetColorSmoothness(colorSmoothness);
+        _colorsPallet.SettingsBrush.SetColorSmoothness(smoothness, colorSmoothness);
         UpdateMaterialColorMatch(smoothness, colorSmoothness);
         _colorsPallet.SetSmoothness(smoothness, colorSmoothness);
     }
 
     private void UpdateMaterialColorMatch(float smoothness, Color colorSmoothness)
     {
-     
         const string nameSmoothness = "_Smoothness";
         const string nameSpecColor = "_SpecColor"; 
         _rendererColorMatch.material.SetFloat(nameSmoothness, smoothness);

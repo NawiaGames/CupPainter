@@ -24,7 +24,7 @@ public class ButtonGameUI : MonoBehaviour
 
     public void OnChangeRadius(float value) => _settingsBrush.SetRadius(value); 
 
-    public void OnChangeSpeedRotation(float value) => _rotationObject.SetSpeed(value);
+  //  public void OnChangeSpeedRotation(float value) => _rotationObject.SetSpeed(value);
 
     public void OnAddIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(1);
 

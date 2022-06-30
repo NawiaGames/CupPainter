@@ -29,7 +29,7 @@ public class SettingsBrush : MonoBehaviour
         SetOpacity(_sliderOpacity.value);
         SetHardness(_sliderHardness.value);
         SetRadius(_sliderRadius.value);
-        _buttonGame.OnChangeSpeedRotation(_sliderSpeedRotation.value);
+ //       _buttonGame.OnChangeSpeedRotation(_sliderSpeedRotation.value);
     }
 
     public void SetOpacity(float value)
@@ -60,7 +60,14 @@ public class SettingsBrush : MonoBehaviour
         _paintDecal.Color = color;
     }
 
-    public void SetColorSmoothness(Color color) => _paintDecalSmoothness.Color = color;
+    public void SetColorSmoothness(float smoothness, Color color)
+    {
+        _paintDecalSmoothness.Color = color;
+   /*     const string nameSmoothness = "_Smoothness";
+        const string nameSpecColor = "_SpecColor"; 
+        _materialBrush.SetFloat(nameSmoothness, smoothness);
+        _materialBrush.SetColor(nameSpecColor, color);*/
+    } 
 
         public void SetAngleDecal(int value)
     {
