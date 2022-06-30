@@ -3164,7 +3164,7 @@ MonoBehaviour:
   texture: {fileID: 2800000, guid: ee622ce51b08eb0479076c5f04cae2b1, type: 3}
   shape: {fileID: 0}
   shapeChannel: 3
-  color: {r: 1, g: 0, b: 0, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 1}
   opacity: 1
   angle: 0
   scale: {x: 1, y: 1, z: 1}
@@ -3238,7 +3238,7 @@ MonoBehaviour:
   texture: {fileID: 2800000, guid: ee622ce51b08eb0479076c5f04cae2b1, type: 3}
   shape: {fileID: 0}
   shapeChannel: 3
-  color: {r: 1, g: 0, b: 0, a: 1}
+  color: {r: 0, g: 0, b: 0, a: 1}
   opacity: 1
   angle: 0
   scale: {x: 1, y: 1, z: 1}
