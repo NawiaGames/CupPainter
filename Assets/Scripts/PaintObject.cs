@@ -14,7 +14,8 @@ public class PaintObject : MonoBehaviour
     public RenderTexture RenderTexturePaint => _p3dPaintableTexture.Current;
     public MeshCollider MeshCollider => _meshCollider;
     public P3dPaintableTexture PP3dPaintableTexture => _p3dPaintableTexture;
-    public Color ColorSmoothness => _colorSmoothness; 
+    public Color ColorSmoothness => _colorSmoothness;
+    public float Smoothness => _smoothness; 
     
     private void Awake()
     {
