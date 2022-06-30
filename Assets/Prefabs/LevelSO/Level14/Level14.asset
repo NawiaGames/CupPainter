@@ -16,8 +16,10 @@ MonoBehaviour:
     type: 3}
   _modelSampleObject: {fileID: 4584230103451222410, guid: 25144bbbc4ab4d145894da53466ac01a,
     type: 3}
-  _textureModel: {fileID: 2800000, guid: 597bb0f59beff474bb1ffb67ed04f0d0, type: 3}
+  _textureModel: {fileID: 2800000, guid: ba983ed68fd9bc24d9b3a7938b52ef57, type: 3}
   _colorsPallet:
-  - {r: 0.67058825, g: 0.36078432, b: 0.10588236, a: 1}
-  - {r: 0.9294118, g: 0.69411767, b: 0.5254902, a: 1}
-  _activatePalletBlend: 0
+  - {r: 0.5019608, g: 1, b: 0.972549, a: 1}
+  - {r: 1, g: 0.5803922, b: 0.29803923, a: 1}
+  - {r: 0.4509804, g: 0.9607843, b: 0.4117647, a: 1}
+  - {r: 1, g: 0.9411765, b: 0.29803923, a: 1}
+  _activatePalletBlend: 1
