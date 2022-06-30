@@ -31,6 +31,12 @@ public class ColorsPallet : MonoBehaviour
         }
     }
 
+    public void SetSmoothness(float smoothness, Color colorSmoothness)
+    {
+        foreach (var colorPallet in _colorsPallets)
+            colorPallet.SetSmoothness(smoothness,colorSmoothness);
+    }
+
     public void ActivateAnimationPallet() => _animatorPallet.SetTrigger("activate");
 
     public void ActivateNXLAnimationPallet() => _animatorPallet.SetTrigger("activateNXL");
