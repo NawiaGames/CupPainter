@@ -63,10 +63,10 @@ public class SettingsBrush : MonoBehaviour
     public void SetColorSmoothness(float smoothness, Color color)
     {
         _paintDecalSmoothness.Color = color;
-   /*     const string nameSmoothness = "_Smoothness";
+        const string nameSmoothness = "_Smoothness";
         const string nameSpecColor = "_SpecColor"; 
         _materialBrush.SetFloat(nameSmoothness, smoothness);
-        _materialBrush.SetColor(nameSpecColor, color);*/
+        _materialBrush.SetColor(nameSpecColor, color);
     } 
 
         public void SetAngleDecal(int value)

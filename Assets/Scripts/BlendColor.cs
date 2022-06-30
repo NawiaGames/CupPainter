@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class BlendColor : MonoBehaviour
 {
+    [SerializeField] private GameObject _waterCupGameObject; 
     [SerializeField] private Renderer _blendRender;
     [SerializeField] private float _speedBlend = 7f; 
     
@@ -34,5 +35,11 @@ public class BlendColor : MonoBehaviour
     {
         _blendColor = _startColor;
         _blendRender.material.color = _blendColor; 
+    }
+
+    public void EnableGameObject(bool state)
+    {
+        gameObject.SetActive(state);
+        _waterCupGameObject.SetActive(state);
     }
 }
