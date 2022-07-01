@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CreateLevel : MonoBehaviour
 {
@@ -11,19 +10,19 @@ public class CreateLevel : MonoBehaviour
     [SerializeField] private SelectPaintObjectUI _templateCreatePaintObject;
     [SerializeField] private int _scaleSelectedPaintObject = 30;
     [SerializeField] private ButtonGameUI _buttonGameUI;
-    [SerializeField] private Save _save; 
-
+    [SerializeField] private Save _save;
     private UnityEngine.Events.UnityAction _buttonCallback;
     private PaintObject[] _paintObjects;
     private GameObject[] _smallPaintSampleObjects;
-    private GameObject[] _selectedSpawnPaintObjects;
+    private PaintObject[] _selectedSpawnPaintObjects;
     private Texture2D[] _texture2DModelsSample;
     private SelectPaintObjectUI[] _selectedPaintObjects; 
     private Colors[] _colorsPallet;
     private bool[] _canActivatePallets;
-    private int[] _percentLevels; 
-
+    private int[] _percentLevels;
+   
     public PaintObject[] PaintObjects => _paintObjects;
+    public PaintObject[] SelectedSpawnPaintObjects => _selectedSpawnPaintObjects;
     public GameObject[] SmallPaintSampleObjects => _smallPaintSampleObjects;
     public Texture2D[] Texture2DModelsSample => _texture2DModelsSample;
     public Colors[] ColorsPallet => _colorsPallet;
@@ -40,11 +39,12 @@ public class CreateLevel : MonoBehaviour
     {
         _paintObjects = new PaintObject[_levelsSO.Length];
         _smallPaintSampleObjects = new GameObject[_levelsSO.Length];
-        _selectedSpawnPaintObjects = new GameObject[_levelsSO.Length];
+        _selectedSpawnPaintObjects = new PaintObject[_levelsSO.Length];
         _texture2DModelsSample = new Texture2D[_levelsSO.Length];
         _colorsPallet = new Colors[_levelsSO.Length];
         _canActivatePallets = new bool[_levelsSO.Length];
         _selectedPaintObjects = new SelectPaintObjectUI[_levelsSO.Length];
+        
         _save.SetPercentLevels(_levelsSO.Length);
         _percentLevels = _save.GetPercentLevels();
         
@@ -60,6 +60,8 @@ public class CreateLevel : MonoBehaviour
             _canActivatePallets[i] = _levelsSO[i].ActivatePalletBlend;
             _colorsPallet[i] = new Colors(_levelsSO[i].ColorsPallet);
         }
+        
+        _save.SetPaintObjectsSelectedObjects(_selectedSpawnPaintObjects);
     }
 
     private void CreateSelectedPaintObject(int i)
@@ -76,8 +78,8 @@ public class CreateLevel : MonoBehaviour
         template.Button.onClick.AddListener(_buttonCallback);
         template.Text.text = _percentLevels[i] + "%"; 
 
-        var selectedPaintObject = InstantiateObject(_levelsSO[i].ModelSampleObject, template.transform, true);
-        _selectedSpawnPaintObjects[i] = selectedPaintObject;
+        var selectedPaintObject = InstantiateObject(_levelsSO[i].ModelObject.gameObject, template.transform, true);
+        _selectedSpawnPaintObjects[i] = selectedPaintObject.GetComponent<PaintObject>();
         _selectedSpawnPaintObjects[i].transform.localRotation = Quaternion.identity;
         _selectedSpawnPaintObjects[i].transform.localPosition = Vector3.zero;
         _selectedSpawnPaintObjects[i].transform.localScale = new Vector3(_scaleSelectedPaintObject,

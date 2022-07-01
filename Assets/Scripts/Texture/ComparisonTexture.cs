@@ -11,6 +11,8 @@ public class ComparisonTexture : MonoBehaviour
     [SerializeField] private Texture2D _texture2DCurrentDraw;
     [SerializeField] private float _accurateBetweenTextures = 0.1f;
 
+    public CreateLevel CreateLevel => _createLevel; 
+
     private int _comparisonPixel;
     private float _pixelPercent;
     private int _sizePixel;

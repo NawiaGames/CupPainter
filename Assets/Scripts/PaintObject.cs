@@ -11,10 +11,12 @@ public class PaintObject : MonoBehaviour
     private P3dPaintableTexture _p3dPaintableTextureSmoothness; 
     private MeshCollider _meshCollider;
     private P3dMaterialCloner _p3dMaterialCloner;
+    private Renderer _renderer;
+    public Renderer Renderer => _renderer; 
     public RenderTexture RenderTexturePaint => _p3dPaintableTexture.Current;
     public MeshCollider MeshCollider => _meshCollider;
     public P3dPaintableTexture P3dPaintableTexture => _p3dPaintableTexture;
-    public P3dPaintableTexture P3dPaintableTextureSmoothness => _p3dPaintableTextureSmoothness; 
+    public P3dPaintableTexture P3dPaintableTextureSmoothness => _p3dPaintableTextureSmoothness;
     public Color ColorSmoothness => _colorSmoothness;
     public float Smoothness => _smoothness; 
     
@@ -29,6 +31,7 @@ public class PaintObject : MonoBehaviour
         
         _meshCollider = _p3dPaintableTexture.gameObject.GetComponent<MeshCollider>();
         _p3dMaterialCloner = _p3dPaintableTexture.gameObject.GetComponent<P3dMaterialCloner>();
+        _renderer = _p3dPaintableTexture.gameObject.GetComponent<Renderer>();
     }
 
     private void Start()

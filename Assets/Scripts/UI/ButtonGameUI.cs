@@ -8,7 +8,6 @@ public class ButtonGameUI : MonoBehaviour
     [SerializeField] private SettingsBrush _settingsBrush;
     [SerializeField] private BlendColor _blendColor; 
     [SerializeField] private RandomColor _randomColor;
-    [SerializeField] private Rotation _rotationObject;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
     [SerializeField] private UIPanel _uilngameHUD; 
     [SerializeField] private UIPanel _panelSelectedPaintObjects; 
@@ -23,9 +22,7 @@ public class ButtonGameUI : MonoBehaviour
     public void OnChangeHardness(float value) => _settingsBrush.SetHardness(value);
 
     public void OnChangeRadius(float value) => _settingsBrush.SetRadius(value); 
-
-  //  public void OnChangeSpeedRotation(float value) => _rotationObject.SetSpeed(value);
-
+    
     public void OnAddIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(1);
 
     public void OnSubtractIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(-1);
@@ -68,5 +65,10 @@ public class ButtonGameUI : MonoBehaviour
         var percentLevels = _createLevel.Save.GetPercentLevels();
         for (var i = 0; i < percentLevels.Length; i++)
             _createLevel.SelectPaintObjectUI[i].Text.text = percentLevels[i] + "%";
+
+        var materialsClones = _createLevel.Save.GetPaintObjectsSelectedObjects();
+        for (var i = 0; i < materialsClones.Length; i++)
+            _createLevel.SelectedSpawnPaintObjects[i].Renderer.material.mainTexture =
+                materialsClones[i].Renderer.material.mainTexture;
     }
 }

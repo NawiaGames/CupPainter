@@ -72,7 +72,10 @@ public class PanelMatch : MonoBehaviour
             _textSuccessed.text = result.ToString("F0") + "%";
             yield return null;
         }
-        _save.SetPercentLevel(SelectedPaintObjects.CurrentPaintObjectIndex, result);
+
+        var index = SelectedPaintObjects.CurrentPaintObjectIndex;
+        _save.SetPercentLevel(index, result);
+        _save.SetPaintObjectsSelectedObject(index, _comparisonTexture.CreateLevel.PaintObjects[index]);
         ActivatePanelWinOrContinue(result);
     }
 
