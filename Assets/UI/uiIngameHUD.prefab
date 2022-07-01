@@ -1767,15 +1767,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: pallets
       objectReference: {fileID: 0}
-    - target: {fileID: 1962459556086515889, guid: 751e152b9e324844d890195ce1a337d3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2011575298484287947, guid: 751e152b9e324844d890195ce1a337d3,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658348942954202005, guid: 751e152b9e324844d890195ce1a337d3,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 3216935212
       objectReference: {fileID: 0}
     - target: {fileID: 2713381381581408782, guid: 751e152b9e324844d890195ce1a337d3,
         type: 3}
