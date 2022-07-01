@@ -318,5 +318,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _p3dPaintableTexture: {fileID: 4584230103068038950}
-  _smoothness: 0.2
-  _colorSmoothness: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 1}
+  _smoothness: 0
+  _colorSmoothness: {r: 0, g: 0, b: 0, a: 1}
