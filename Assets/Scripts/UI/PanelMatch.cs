@@ -97,4 +97,10 @@ public class PanelMatch : MonoBehaviour
         _matchPanel.DeactivatePanel();
         _colorsPallet.ActivateNXLAnimationPallet();
     }
+
+    public void WinPanelOpenSelected()
+    {
+        DeactivatePanelComparison();
+        _uiPanelSample.DeactivatePanel();
+    }
 }

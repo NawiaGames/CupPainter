@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="" />
+    <list default="true" id="9b7c4ea9-0f96-4874-9b09-e42b640f31d2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CupPainter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/PaintMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PaintMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/PanelMatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PanelMatch.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,19 +17,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraConstantWidth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/ColorPallet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ColorPallet/Colors.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/ColorPallet/ColorsPallet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Frames.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/CreateLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PaintObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,24 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/GenerateTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Texture/PaintTexture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/ButtonGameUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PanelMatch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/NAWIA/CupPainter/Assets/Scripts/UI/PanelMatch.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.ms.gamelib@a8b87f8a1d/Runtime/UISystem/UIElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.ms.gamelib@a8b87f8a1d/Runtime/UISystem/UIPanel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
