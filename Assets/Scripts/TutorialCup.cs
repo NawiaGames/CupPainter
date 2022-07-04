@@ -7,40 +7,56 @@ public class TutorialCup : MonoBehaviour
     [SerializeField] private InputOverlayTutorial _inputOverlayTutorial;
     [SerializeField] private Transform _compareTransform; 
     [SerializeField] private float _timeNextStep = 3f;
+    [SerializeField] private Transform _colorPaintPallet;
+    [SerializeField] private Transform _mixColorsTransform;
+    [SerializeField] private Transform _waterCupTransform;
 
     private bool _nextStep = true;
-
-    private void Start()
-    {
-        _inputOverlayTutorial.Activate(_compareTransform.position);
-    }
+    private int _counterStep; 
 
     public void StartTutorial()
     {
-     /*   StopAllCoroutines();
-        
-        if (SelectedPaintObjects.CurrentPaintObjectIndex == 0)
+        StopAllCoroutines();
+
+        switch (SelectedPaintObjects.CurrentPaintObjectIndex)
         {
-            StartCoroutine(StartTutorialLevel1Coroutine());
-        }*/
+            case 0:
+            {
+                var positions = new Vector3[]{ Vector3.zero, _compareTransform.position};
+                StartCoroutine(StartTutorialLevelCoroutine(positions));
+                break;
+            }
+            case 1:
+            {
+                var positions = new Vector3[] { _colorPaintPallet.position };
+                StartCoroutine(StartTutorialLevelCoroutine(positions));
+                break;
+            }
+            case 7:
+            {
+                var positions = new Vector3[] { _mixColorsTransform.position, _waterCupTransform.position };
+                StartCoroutine(StartTutorialLevelCoroutine(positions));
+                break;
+            }
+        }
     }
 
-    private IEnumerator StartTutorialLevel1Coroutine()
+    private IEnumerator StartTutorialLevelCoroutine(Vector3[] positions)
     {
-        var position = new Vector3[]{ Vector3.down * 30f, _compareTransform.position};
-        _nextStep = true; 
-        for (var i = 0; i < position.Length; )
+        _nextStep = true;
+        _counterStep = 0;
+        while (_counterStep < positions.Length)
         {
             if (_nextStep)
             {
                 _nextStep = false;
-                StartCoroutine(WaitClick(position[i]));
-                i++;
-                yield return new WaitForSeconds(_timeNextStep);
+                if(_counterStep > 0)
+                    yield return new WaitForSeconds(_timeNextStep);
+                StartCoroutine(WaitClick(positions[_counterStep]));
+  
             }
             yield return null; 
         }
-        
     }
 
     private IEnumerator WaitClick(Vector3 position)
@@ -55,6 +71,7 @@ public class TutorialCup : MonoBehaviour
         }
         
         _inputOverlayTutorial.Deactivate();
+        _counterStep++; 
         _nextStep = true; 
     }
     

@@ -761,6 +761,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 5836226468196681755}
   _text: {fileID: 3606405372431591643}
+  _uiPanelUnlock: {fileID: 7962135353223661518}
+  _lockedGameObject: {fileID: 7772691383663438994}
+  _readyGameObject: {fileID: 3475953300092887801}
 --- !u!225 &7364161600425158724
 CanvasGroup:
   m_ObjectHideFlags: 0

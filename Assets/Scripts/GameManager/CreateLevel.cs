@@ -76,8 +76,9 @@ public class CreateLevel : MonoBehaviour
         templateGameObject.transform.localScale = Vector3.one;
         templateGameObject.transform.localRotation = Quaternion.identity;
         templateGameObject.transform.localPosition = Vector3.zero;
-        _selectedPaintObjects[i] = template; 
+        template.UIPanelUnlock.Initialize();
         
+        _selectedPaintObjects[i] = template; 
         _buttonCallback = null;
         _buttonCallback = () => _buttonGameUI.SelectedLevel(i);
         template.Button.onClick.AddListener(_buttonCallback);
