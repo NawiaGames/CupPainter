@@ -28,14 +28,25 @@ public class BlendColor : MonoBehaviour
 
     public Color GetColorBlend(Color color)
     {
-        _text.enabled = false; 
-        _mix.SetActive(true);
+        BeginMixColors();
         if (_blendColor == _startColor)
             _blendColor = color;
         else
             _blendColor = (_blendColor + color) / 2;
         
         return _blendColor; 
+    }
+
+    private void BeginMixColors()
+    {
+        _text.enabled = false;
+        _mix.SetActive(true);
+    }
+
+    public void ResetMixColors()
+    {
+        _text.enabled = true;
+        _mix.SetActive(false);
     }
 
     public void Reset()
