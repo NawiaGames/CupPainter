@@ -31,10 +31,10 @@ public class ColorsPallet : MonoBehaviour
         }
     }
 
-    public void SetSmoothness(float smoothness, Color colorSmoothness)
+    public void SetSmoothness(float smoothness)
     {
         foreach (var colorPallet in _colorsPallets)
-            colorPallet.SetSmoothness(smoothness,colorSmoothness);
+            colorPallet.SetSmoothness(smoothness);
     }
 
     public void ActivateAnimationPallet() => _animatorPallet.SetTrigger("activate");

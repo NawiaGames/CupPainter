@@ -76,26 +76,20 @@ public class SelectedPaintObjects : MonoBehaviour
         _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
         _blendColor.EnableGameObject(_createLevel.CanActivatePallets[_currentPaintObject]);
         _blendColor.Reset();
-        Debug.Log("Selected Paint");
         _exampleTextureDraw.SetTexture(_createLevel.Texture2DModelsSample[_currentPaintObject]);
         var colorSmoothness = _createLevel.PaintObjects[_currentPaintObject].ColorSmoothness;
         var smoothness = _createLevel.PaintObjects[_currentPaintObject].Smoothness;
         _colorsPallet.SettingsBrush.SetColorSmoothness(smoothness, colorSmoothness);
-        UpdateMaterialColorMatch(smoothness, colorSmoothness);
-        _colorsPallet.SetSmoothness(smoothness, colorSmoothness);
+        UpdateMaterialColorMatch(smoothness);
+        _colorsPallet.SetSmoothness(smoothness);
 
         _tutorialCup.StartTutorial();
     }
-    
 
-
-
-    private void UpdateMaterialColorMatch(float smoothness, Color colorSmoothness)
+    private void UpdateMaterialColorMatch(float smoothness)
     {
         const string nameSmoothness = "_Smoothness";
-        const string nameSpecColor = "_SpecColor"; 
         _rendererColorMatch.material.SetFloat(nameSmoothness, smoothness);
-        _rendererColorMatch.material.SetColor(nameSpecColor, colorSmoothness);
         
     }
 }

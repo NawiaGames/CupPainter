@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using GameLib.UI;
 using UnityEngine;
@@ -13,7 +12,6 @@ public class TutorialCup : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log(_compareTransform.position);
         _inputOverlayTutorial.Activate(_compareTransform.position);
     }
 

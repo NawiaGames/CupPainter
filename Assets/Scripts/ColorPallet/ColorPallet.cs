@@ -16,12 +16,10 @@ public class ColorPallet : MonoBehaviour
     
     public Color GetColor() => _renderer.material.color;
 
-    public void SetSmoothness(float smoothness, Color colorSmoothness)
+    public void SetSmoothness(float smoothness)
     {
         const string nameSmoothness = "_Smoothness";
-        const string nameSpecColor = "_SpecColor"; 
         _renderer.material.SetFloat(nameSmoothness, smoothness);
-        _renderer.material.SetColor(nameSpecColor, colorSmoothness);
     }
 
     public void SetIndex(int value) => _index = value;
