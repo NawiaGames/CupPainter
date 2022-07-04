@@ -148,7 +148,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f939e8ee69bc4994f951006d25476547, type: 2}
+  - {fileID: 2100000, guid: d2a8f97a206723f40a7ac32f5dc016fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -318,4 +318,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _p3dPaintableTexture: {fileID: 4584230103068038950}
-  _smoothness: 0.25
+  _smoothness: 0.8
+  _colorSmoothness: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
