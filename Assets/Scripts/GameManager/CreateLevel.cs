@@ -12,7 +12,9 @@ public class CreateLevel : MonoBehaviour
     [SerializeField] private Transform _selectedSpawnPaintObjectsTransform;
     [SerializeField] private SelectPaintObjectUI _templateCreatePaintObject;
     [SerializeField] private int _scaleSelectedPaintObject = 30;
+    [SerializeField] private float _downPositionYPaintSelected = -50; 
     [SerializeField] private ButtonGameUI _buttonGameUI;
+    [Space]
     [SerializeField] private Save _save;
     private UnityEngine.Events.UnityAction _buttonCallback;
     private PaintObject[] _paintObjects;
@@ -84,7 +86,8 @@ public class CreateLevel : MonoBehaviour
         var selectedPaintObject = InstantiateObject(_levelsSO[i].ModelObject.gameObject, template.transform, true);
         _selectedSpawnPaintObjects[i] = selectedPaintObject.GetComponent<PaintObject>();
         _selectedSpawnPaintObjects[i].transform.localRotation = Quaternion.identity;
-        _selectedSpawnPaintObjects[i].transform.localPosition = Vector3.zero;
+        var position = new Vector3(0, _downPositionYPaintSelected, 0); 
+        _selectedSpawnPaintObjects[i].transform.localPosition = position;
         _selectedSpawnPaintObjects[i].transform.localScale = new Vector3(_scaleSelectedPaintObject,
             _scaleSelectedPaintObject, _scaleSelectedPaintObject);
     }

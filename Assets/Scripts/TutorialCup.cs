@@ -7,11 +7,6 @@ public class TutorialCup : MonoBehaviour
 {
     [SerializeField] private InputOverlayTutorial _inputOverlayTutorial;
 
-    private void Awake()
-    {
-        _inputOverlayTutorial.Initialize();
-    }
-
     public void StartTutorial()
     {
         if (SelectedPaintObjects.CurrentPaintObjectIndex == 0)
