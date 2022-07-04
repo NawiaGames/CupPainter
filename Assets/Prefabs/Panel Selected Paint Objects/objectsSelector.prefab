@@ -715,6 +715,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2635223719172532516}
   - component: {fileID: 384824227728330770}
+  - component: {fileID: 7364161600425158724}
+  - component: {fileID: 7172346633754238463}
   m_Layer: 5
   m_Name: objectsSelector
   m_TagString: Untagged
@@ -759,6 +761,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _button: {fileID: 5836226468196681755}
   _text: {fileID: 3606405372431591643}
+--- !u!225 &7364161600425158724
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7888432301965535276}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &7172346633754238463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7888432301965535276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acdec3a07fa93545b374f8d017912ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  registerAnimator: 1
+  initialDelay: 0
+  activateAnimationPreset: {fileID: 11400000, guid: 77505c0c0726874419b8ca0010be36e6,
+    type: 2}
+  deactivateAnimationPreset: {fileID: 11400000, guid: a528e4653df7b3d41bf6afa9d49d2a41,
+    type: 2}
+  affectedTransform: {fileID: 0}
 --- !u!1 &8710717134243734505
 GameObject:
   m_ObjectHideFlags: 0
