@@ -700,7 +700,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _waterCupGameObject: {fileID: 0}
-  _blendRender: {fileID: 0}
+  _mix: {fileID: 0}
+  _text: {fileID: 0}
   _speedBlend: 5
 --- !u!1 &5068078056237087895
 GameObject:
@@ -908,11 +909,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _colorsPallets:
-  - {fileID: 5383009517184451345}
   - {fileID: 6997076413890652668}
   - {fileID: 5613472299252310181}
-  - {fileID: 6183599235205058107}
+  - {fileID: 5383009517184451345}
   - {fileID: 6884083952553316608}
+  - {fileID: 6183599235205058107}
   _settingsBrush: {fileID: 0}
   _frames: {fileID: 0}
   _animatorPallet: {fileID: 0}

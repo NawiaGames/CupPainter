@@ -247,11 +247,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _frames:
-  - {fileID: 6319954483495738160}
   - {fileID: 4336425520747804145}
   - {fileID: 2713381381551714067}
-  - {fileID: 2713381381581408782}
+  - {fileID: 6319954483495738160}
   - {fileID: 2713381382803486327}
+  - {fileID: 2713381381581408782}
   - {fileID: 0}
 --- !u!95 &7611863507091476973
 Animator:
@@ -908,6 +908,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _blendRender
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3301005711668695638, guid: 401b3f51d8e17154383c0c2a1ecffb0d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5068078056237087895, guid: 401b3f51d8e17154383c0c2a1ecffb0d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5173127780308157430, guid: 401b3f51d8e17154383c0c2a1ecffb0d,
         type: 3}
