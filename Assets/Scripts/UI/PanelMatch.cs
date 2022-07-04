@@ -25,7 +25,8 @@ public class PanelMatch : MonoBehaviour
     [SerializeField] private TMP_Text _textSuccessed;
     [SerializeField] private float _speedSlider = 6f;
     [SerializeField] private Save _save;
-    [SerializeField] private ColorsPallet _colorsPallet; 
+    [SerializeField] private ColorsPallet _colorsPallet;
+    [SerializeField] private ParticleSystem[] _particleSystemWin; 
     private bool _isActivateButtonSample;
 
     private void Start()
@@ -90,6 +91,9 @@ public class PanelMatch : MonoBehaviour
         if (result < _borderNextLevel) return;
         _winPanel.ActivatePanel();
         _continuePanel.DeactivatePanel();
+        foreach (var particleSystem in _particleSystemWin)
+            particleSystem.Play();
+        
     }
 
     public void DeactivatePanelComparison()

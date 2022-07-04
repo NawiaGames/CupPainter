@@ -162,8 +162,8 @@ MonoBehaviour:
   _uiPanelSample: {fileID: 8327790177174152988}
   _cinemachineVirtualCameraMain: {fileID: 0}
   _inputA: {fileID: 0}
-  _borderNextLevel: 99
-  _addPercentForLevel: 1.05
+  _borderNextLevel: 70
+  _addPercentForLevel: 1.02
   _winPanel: {fileID: 687102564237852748}
   _matchPanel: {fileID: 2728896358275528429}
   _continuePanel: {fileID: 1353607884706263501}
@@ -172,6 +172,7 @@ MonoBehaviour:
   _speedSlider: 24
   _save: {fileID: 0}
   _colorsPallet: {fileID: 745287674369427514}
+  _particleSystemWin: []
 --- !u!114 &8255363179332649489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -875,6 +876,11 @@ PrefabInstance:
       propertyPath: m_TargetGraphic
       value: 
       objectReference: {fileID: 8255363180759651874}
+    - target: {fileID: 6213735747318872580, guid: ebcaab335b22149459ee6bd686829a06,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8255363179332649488}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebcaab335b22149459ee6bd686829a06, type: 3}
 --- !u!114 &745287674369427514 stripped
@@ -919,6 +925,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 8327790177174152988}
+    - target: {fileID: 1416131545840543131, guid: 832c91f69b70ffc48a030ac49278fd74,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 8255363179332649488}
     - target: {fileID: 4995605576297595838, guid: 832c91f69b70ffc48a030ac49278fd74,
         type: 3}
       propertyPath: m_Pivot.x
