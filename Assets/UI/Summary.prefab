@@ -296,17 +296,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359006715552667770}
-  m_LocalRotation: {x: 0, y: 0, z: 0.76153827, w: 0.6481199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.058017775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1552009633420845842}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 99.2}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 96}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -128}
   m_SizeDelta: {x: 1080, y: 256}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &8366056746525774456
@@ -347,8 +347,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 3216935212
-  m_fontColor: {r: 0.17225882, g: 0.5354432, b: 0.745283, a: 0.7490196}
+    rgba: 4294967295
+  m_fontColor: {r: 0.17225882, g: 0.5354432, b: 0.745283, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ec2acd765832c49a4052ac33eaf62d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ThemeID>k__BackingField: 0
+  <ThemeID>k__BackingField: 1
 --- !u!1 &1454220113524319762
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,7 +1349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3603569655581599520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2584,7 +2584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   registerAnimator: 1
-  initialDelay: 0
+  initialDelay: 1
   activateAnimationPreset: {fileID: 11400000, guid: fcc6c277b48cee24bae1a3fc77687365,
     type: 2}
   deactivateAnimationPreset: {fileID: 11400000, guid: 6f026fdf47cc1054db36b8213e2ce2a1,
