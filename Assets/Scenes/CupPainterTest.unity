@@ -3342,7 +3342,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _templateCreatePaintObject
       value: 
-      objectReference: {fileID: 5772092317685010786, guid: 749fcbfeaa00d0a48bf16f96881b86da,
+      objectReference: {fileID: 384824227728330770, guid: 749fcbfeaa00d0a48bf16f96881b86da,
         type: 3}
     - target: {fileID: 1881560674404543492, guid: 34dfb4232c3749d458e1e92bb3d75370,
         type: 3}
