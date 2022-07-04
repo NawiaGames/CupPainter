@@ -1,4 +1,3 @@
-using PaintIn3D;
 using UnityEngine;
 
 [DefaultExecutionOrder(-5)]

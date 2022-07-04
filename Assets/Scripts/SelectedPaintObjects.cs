@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(10)]
 public class SelectedPaintObjects : MonoBehaviour
 {
     [SerializeField] private CreateLevel _createLevel;
@@ -75,15 +76,19 @@ public class SelectedPaintObjects : MonoBehaviour
         _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
         _blendColor.EnableGameObject(_createLevel.CanActivatePallets[_currentPaintObject]);
         _blendColor.Reset();
-        _tutorialCup.StartTutorial();
+        Debug.Log("Selected Paint");
         _exampleTextureDraw.SetTexture(_createLevel.Texture2DModelsSample[_currentPaintObject]);
-        
         var colorSmoothness = _createLevel.PaintObjects[_currentPaintObject].ColorSmoothness;
         var smoothness = _createLevel.PaintObjects[_currentPaintObject].Smoothness;
         _colorsPallet.SettingsBrush.SetColorSmoothness(smoothness, colorSmoothness);
         UpdateMaterialColorMatch(smoothness, colorSmoothness);
         _colorsPallet.SetSmoothness(smoothness, colorSmoothness);
+        
+        Invoke("StartTutorial" , 1f);
     }
+    
+    private void StartTutorial() =>   _tutorialCup.StartTutorial();
+
 
     private void UpdateMaterialColorMatch(float smoothness, Color colorSmoothness)
     {
