@@ -12,9 +12,14 @@ public class BlendColor : MonoBehaviour
     private Color _startColor; 
     private Color _blendColor;
 
-    private void Start()
+    
+    private void Awake()
     {
         _blendRender = _mix.GetComponent<Renderer>();
+    }
+
+    private void Start()
+    {
         _startColor = _blendRender.material.color;
         _blendColor = _startColor;
     }

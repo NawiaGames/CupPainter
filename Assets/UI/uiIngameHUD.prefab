@@ -1717,6 +1717,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8255363179332649488, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
+          type: 3}
+        m_TargetAssemblyTypeName: PanelMatch, Assembly-CSharp
+        m_MethodName: DeactivateAnimationPallet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1167177995
 CanvasRenderer:
   m_ObjectHideFlags: 0

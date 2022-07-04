@@ -38,8 +38,12 @@ public class PanelMatch : MonoBehaviour
     public void OnButtonSample()
     {
         ActivatePanelComparison();
-        _colorsPallet.DeactivateAnimationPallet();
+        DeactivateAnimationPallet();
     }
+
+    public void DeactivateAnimationPallet() => _colorsPallet.DeactivateAnimationPallet();
+
+    public void ActivateAnimationPallet() => _colorsPallet.ActivateAnimationPallet(); 
 
     private void ActivatePanelComparison()
     {
@@ -54,6 +58,7 @@ public class PanelMatch : MonoBehaviour
     public void ActivateProgressSlider(float result)
     {
         _matchPanel.ActivatePanel();
+        _continuePanel.ActivatePanel();
         StartCoroutine(MoveProgressSuccessed(result));
     }
 
@@ -82,10 +87,9 @@ public class PanelMatch : MonoBehaviour
 
     private void ActivatePanelWinOrContinue(float result)
     {
-        if (result > _borderNextLevel)
-            _winPanel.ActivatePanel();
-        else
-            _continuePanel.ActivatePanel();
+        if (result < _borderNextLevel) return;
+        _winPanel.ActivatePanel();
+        _continuePanel.DeactivatePanel();
     }
 
     public void DeactivatePanelComparison()
