@@ -872,7 +872,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 92cbe2193295c134ea3708725c886e9b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.89
+      value: 13.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 92cbe2193295c134ea3708725c886e9b,
         type: 3}
@@ -3001,6 +3001,11 @@ PrefabInstance:
       propertyPath: m_AABB.m_Extent.z
       value: 0.19510227
       objectReference: {fileID: 0}
+    - target: {fileID: -8479036361289377885, guid: 54d676e8129c9fa4cabe1b77d1630483,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a092098533ebb84583a942ad4149a29, type: 2}
     - target: {fileID: -8479036361289377885, guid: 54d676e8129c9fa4cabe1b77d1630483,
         type: 3}
       propertyPath: m_BlendShapeWeights.Array.size
