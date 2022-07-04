@@ -16,18 +16,12 @@ public class PaintObject : MonoBehaviour
     public RenderTexture RenderTexturePaint => _p3dPaintableTexture.Current;
     public MeshCollider MeshCollider => _meshCollider;
     public P3dPaintableTexture P3dPaintableTexture => _p3dPaintableTexture;
-    public P3dPaintableTexture P3dPaintableTextureSmoothness => _p3dPaintableTextureSmoothness;
     public Color ColorSmoothness => _colorSmoothness;
     public float Smoothness => _smoothness; 
     
     private void Awake()
     {
-        _p3dPaintableTextureSmoothness = _p3dPaintableTexture.gameObject.AddComponent<P3dPaintableTexture>();
-        var slot = new P3dSlot(0, "_SpecGlossMap");
-        _p3dPaintableTextureSmoothness.Slot = slot;
-        _p3dPaintableTextureSmoothness.Group = 55;
-        _p3dPaintableTextureSmoothness.Color = Color.black;
-        _p3dPaintableTextureSmoothness.Activate();
+
         
         _meshCollider = _p3dPaintableTexture.gameObject.GetComponent<MeshCollider>();
         _p3dMaterialCloner = _p3dPaintableTexture.gameObject.GetComponent<P3dMaterialCloner>();

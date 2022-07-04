@@ -7,6 +7,7 @@ public class SelectedPaintObjects : MonoBehaviour
     [SerializeField] private BlendColor _blendColor;
     [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
     [SerializeField] private PanelMatch _panelMatch;
+    [SerializeField] private TutorialCup _tutorialCup; 
     [SerializeField] private int _currentPaintObject = 0;
 
     [Header("Change materials")] [SerializeField]
@@ -74,6 +75,7 @@ public class SelectedPaintObjects : MonoBehaviour
         _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
         _blendColor.EnableGameObject(_createLevel.CanActivatePallets[_currentPaintObject]);
         _blendColor.Reset();
+        _tutorialCup.StartTutorial();
         _exampleTextureDraw.SetTexture(_createLevel.Texture2DModelsSample[_currentPaintObject]);
         
         var colorSmoothness = _createLevel.PaintObjects[_currentPaintObject].ColorSmoothness;

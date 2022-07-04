@@ -46,7 +46,6 @@ public class ButtonGameUI : MonoBehaviour
     public void ResetPaintTexture()
     {
         _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].P3dPaintableTexture.Clear();
-        _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].P3dPaintableTextureSmoothness.Clear();
         _createLevel.Save.SetPercentLevel(SelectedPaintObjects.CurrentPaintObjectIndex, 0);
     }
 

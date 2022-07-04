@@ -51,6 +51,8 @@ MonoBehaviour:
   _blendColor: {fileID: 0}
   _exampleTextureDraw: {fileID: 0}
   _panelMatch: {fileID: 0}
+  _tutorialCup: {fileID: 1540482101333000560, guid: 30a2a0bf940cff7498062cd2f30d5029,
+    type: 3}
   _currentPaintObject: 0
   _rendererColorMatch: {fileID: 0}
 --- !u!114 &266512697006724929

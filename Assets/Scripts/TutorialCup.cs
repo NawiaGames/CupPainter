@@ -8,10 +8,11 @@ public class TutorialCup : MonoBehaviour
 
     public void StartTutorial()
     {
+        _inputOverlayTutorial.Deactivate();
         StopAllCoroutines();
         
-        if(SelectedPaintObjects.CurrentPaintObjectIndex == 1)
-            StartCoroutine(StartTutorialLevel1Coroutine());
+      /*  if(SelectedPaintObjects.CurrentPaintObjectIndex == 0)
+            StartCoroutine(StartTutorialLevel1Coroutine());*/
     }
 
     private IEnumerator StartTutorialLevel1Coroutine()
