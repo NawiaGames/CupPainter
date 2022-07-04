@@ -61,13 +61,37 @@ public class ButtonGameUI : MonoBehaviour
     {
         _uilngameHUD.DeactivatePanel();
         _panelSelectedPaintObjects.ActivatePanel();
-        var percentLevels = _createLevel.Save.GetPercentLevels();
-        for (var i = 0; i < percentLevels.Length; i++)
-            _createLevel.SelectPaintObjectUI[i].Text.text = percentLevels[i] + "%";
+        InitializationSelectedPanel();
+    }
 
+    private void InitializationSelectedPanel()
+    {
         var materialsClones = _createLevel.Save.GetPaintObjectsSelectedObjects();
+        var percentLevels = _createLevel.Save.GetPercentLevels();
+        var indexNextLevel = 0;
+
         for (var i = 0; i < materialsClones.Length; i++)
+        {
             _createLevel.SelectedSpawnPaintObjects[i].Renderer.material.mainTexture =
                 materialsClones[i].Renderer.material.mainTexture;
+            
+            if (i == 0 || percentLevels[i] > PanelMatch.BorderNextLevel)
+            {
+                _createLevel.SelectPaintObjectUI[i].Text.enabled = true;
+                _createLevel.SelectPaintObjectUI[i].Text.text = percentLevels[i] + "%";
+            }
+            else
+            {
+                _createLevel.SelectPaintObjectUI[i].UIPanelUnlock.ActivatePanel();
+                _createLevel.SelectPaintObjectUI[i].Text.enabled = false;
+            }
+
+            if (percentLevels[i] > PanelMatch.BorderNextLevel)
+                indexNextLevel = i + 1;
+        }
+        
+        _createLevel.SelectPaintObjectUI[indexNextLevel].Text.enabled = true;
+        _createLevel.SelectPaintObjectUI[indexNextLevel].Text.text = percentLevels[indexNextLevel] + "%";
+        _createLevel.SelectPaintObjectUI[indexNextLevel].UIPanelUnlock.DeactivatePanel();
     }
 }

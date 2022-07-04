@@ -29,6 +29,13 @@ public class PanelMatch : MonoBehaviour
     [SerializeField] private ParticleSystem[] _particleSystemWin; 
     private bool _isActivateButtonSample;
 
+    public static float BorderNextLevel = 0;
+
+    private void Awake()
+    {
+        BorderNextLevel = _borderNextLevel;
+    }
+
     private void Start()
     {
         ActivateButtonUIInGameHud();

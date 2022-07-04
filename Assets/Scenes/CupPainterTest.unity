@@ -3237,7 +3237,7 @@ PrefabInstance:
     - target: {fileID: 266512697006724928, guid: 5274ad1735f2d8d4095b569618676fb0,
         type: 3}
       propertyPath: _currentPaintObject
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 266512697006724928, guid: 5274ad1735f2d8d4095b569618676fb0,
         type: 3}
