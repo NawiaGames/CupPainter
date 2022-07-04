@@ -1,16 +1,20 @@
+using TMPro;
 using UnityEngine;
 
 public class BlendColor : MonoBehaviour
 {
-    [SerializeField] private GameObject _waterCupGameObject; 
-    [SerializeField] private Renderer _blendRender;
-    [SerializeField] private float _speedBlend = 7f; 
-    
+    [SerializeField] private GameObject _waterCupGameObject;
+    [SerializeField] private GameObject _mix;
+    [SerializeField] private TextMeshPro _text; 
+    [SerializeField] private float _speedBlend = 7f;
+    private Renderer _blendRender;
+
     private Color _startColor; 
     private Color _blendColor;
 
     private void Start()
     {
+        _blendRender = _mix.GetComponent<Renderer>();
         _startColor = _blendRender.material.color;
         _blendColor = _startColor;
     }
@@ -19,10 +23,13 @@ public class BlendColor : MonoBehaviour
     {
         if (_blendRender.material.color != _blendColor)
             _blendRender.material.color = Color.Lerp(_blendRender.material.color, _blendColor, Time.deltaTime * _speedBlend);
+        
     }
 
     public Color GetColorBlend(Color color)
     {
+        _text.enabled = false; 
+        _mix.SetActive(true);
         if (_blendColor == _startColor)
             _blendColor = color;
         else
