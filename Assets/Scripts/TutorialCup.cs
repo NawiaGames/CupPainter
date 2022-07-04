@@ -12,28 +12,18 @@ public class TutorialCup : MonoBehaviour
         _inputOverlayTutorial.Initialize();
     }
 
-    private void Start()
-    {
-     //   _inputOverlayTutorial.Activate(Vector3.down * 30f);
-    }
-    
-    
-
     public void StartTutorial()
     {
-      //  StopAllCoroutines();
-    //  _inputOverlayTutorial.Activate(Vector3.down * 30f);
-     /*   Debug.Log("Active? " + gameObject.activeInHierarchy);
-        if (SelectedPaintObjects.CurrentPaintObjectIndex == 1)
+        if (SelectedPaintObjects.CurrentPaintObjectIndex == 0)
         {
-            _inputOverlayTutorial.Activate(Vector3.down * 30f);*/
-     //       StartCoroutine(StartTutorialLevel1Coroutine());
-     //   }
+            StartCoroutine(StartTutorialLevel1Coroutine());
+        }
     }
 
     private IEnumerator StartTutorialLevel1Coroutine()
     {
-        Debug.Log("I am work");
+        _inputOverlayTutorial.Activate(Vector3.down * 30f);
+
         while (true)
         {
             if(Input.GetMouseButtonDown(0))
@@ -41,6 +31,6 @@ public class TutorialCup : MonoBehaviour
             yield return null;
         }
         
-      //  _inputOverlayTutorial.Deactivate();
+        _inputOverlayTutorial.Deactivate();
     }
 }

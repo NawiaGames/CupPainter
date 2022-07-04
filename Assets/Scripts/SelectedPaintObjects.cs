@@ -83,11 +83,11 @@ public class SelectedPaintObjects : MonoBehaviour
         _colorsPallet.SettingsBrush.SetColorSmoothness(smoothness, colorSmoothness);
         UpdateMaterialColorMatch(smoothness, colorSmoothness);
         _colorsPallet.SetSmoothness(smoothness, colorSmoothness);
-        
-        Invoke("StartTutorial" , 1f);
+
+        _tutorialCup.StartTutorial();
     }
     
-    private void StartTutorial() =>   _tutorialCup.StartTutorial();
+
 
 
     private void UpdateMaterialColorMatch(float smoothness, Color colorSmoothness)

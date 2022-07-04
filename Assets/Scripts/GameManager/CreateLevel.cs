@@ -3,9 +3,12 @@ using UnityEngine;
 public class CreateLevel : MonoBehaviour
 {
     [SerializeField] private Level[] _levelsSO;
+    [Header("Paint Sample")]
     [SerializeField] private Transform _paintObjectsTransform;
     [SerializeField] private Transform _spawnPaintSampleTransform;
     [SerializeField] private int _scaleSmallPaintSampleObject = 50;
+    [SerializeField] private float _downPositionYpaintSample = -60; 
+    [Header("Paint Selected")]
     [SerializeField] private Transform _selectedSpawnPaintObjectsTransform;
     [SerializeField] private SelectPaintObjectUI _templateCreatePaintObject;
     [SerializeField] private int _scaleSelectedPaintObject = 30;
@@ -92,7 +95,8 @@ public class CreateLevel : MonoBehaviour
             InstantiateObject(_levelsSO[i].ModelSampleObject, _spawnPaintSampleTransform, false);
         _smallPaintSampleObjects[i] = smallPaintSampleObject;
         _smallPaintSampleObjects[i].transform.localRotation = Quaternion.identity;
-        _smallPaintSampleObjects[i].transform.localPosition = Vector3.zero;
+        var position = new Vector3(0, _downPositionYpaintSample , 0);
+        _smallPaintSampleObjects[i].transform.localPosition = position;
         _smallPaintSampleObjects[i].transform.localScale = new Vector3(_scaleSmallPaintSampleObject,
             _scaleSmallPaintSampleObject, _scaleSmallPaintSampleObject);
     }

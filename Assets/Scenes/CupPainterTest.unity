@@ -542,6 +542,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1358027021}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &367525025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4501585333810343680, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3838970030167500244}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3ca99d2521b084ebfd770725fe8080, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &368347068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 24a36ee54536ba149a419c9f8eeecc15,
@@ -3181,6 +3193,11 @@ PrefabInstance:
       propertyPath: _createLevel
       value: 
       objectReference: {fileID: 285762477}
+    - target: {fileID: 266512697006724928, guid: 5274ad1735f2d8d4095b569618676fb0,
+        type: 3}
+      propertyPath: _tutorialCup
+      value: 
+      objectReference: {fileID: 367525025}
     - target: {fileID: 266512697006724928, guid: 5274ad1735f2d8d4095b569618676fb0,
         type: 3}
       propertyPath: _colorsPallet
