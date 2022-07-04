@@ -1032,12 +1032,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!23 &796461267 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7881457647583050247, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1057734326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &808094208 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7807077806228767645, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
@@ -1513,6 +1507,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4878633971403133054, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f939e8ee69bc4994f951006d25476547, type: 2}
     - target: {fileID: 6732226093172919749, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
         type: 3}
       propertyPath: m_IsActive
@@ -1582,7 +1581,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _meshRenderer
       value: 
-      objectReference: {fileID: 796461267}
+      objectReference: {fileID: 1834440060}
     - target: {fileID: 7590400182476338678, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
         type: 3}
       propertyPath: m_IsActive
@@ -1764,7 +1763,7 @@ MonoBehaviour:
   _exampleTextureDraw: {fileID: 684244300}
   _panelMatch: {fileID: 1337466198}
   _currentPaintObject: 0
-  _rendererColorMatch: {fileID: 796461267}
+  _rendererColorMatch: {fileID: 1834440060}
 --- !u!114 &1289059995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2718,6 +2717,12 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!23 &1834440060 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4878633971403133054, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1057734326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1853801616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 54d676e8129c9fa4cabe1b77d1630483,
