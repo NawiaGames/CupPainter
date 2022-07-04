@@ -305,6 +305,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 153648478}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &153648481 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 545742826082508161, guid: 09a5225e30b7959499fd664d229aee55,
+    type: 3}
+  m_PrefabInstance: {fileID: 153648478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &231166610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2854,6 +2860,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d3d1aeeacb7e2649b7afd2adb607aca, type: 3}
+--- !u!198 &1921775027 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 545742826082508161, guid: 09a5225e30b7959499fd664d229aee55,
+    type: 3}
+  m_PrefabInstance: {fileID: 492064257}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1926438024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7956729669815720491, guid: b9dcc6055a5c96c4991715c2b5927c5c,
@@ -3871,6 +3883,21 @@ PrefabInstance:
       propertyPath: _cinemachineVirtualCameraMain
       value: 
       objectReference: {fileID: 1298618807}
+    - target: {fileID: 8255363179332649488, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
+        type: 3}
+      propertyPath: _particleSystemWin.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255363179332649488, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
+        type: 3}
+      propertyPath: _particleSystemWin.Array.data[0]
+      value: 
+      objectReference: {fileID: 1921775027}
+    - target: {fileID: 8255363179332649488, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
+        type: 3}
+      propertyPath: _particleSystemWin.Array.data[1]
+      value: 
+      objectReference: {fileID: 153648481}
     - target: {fileID: 8255363179332649489, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
         type: 3}
       propertyPath: _createLevel
