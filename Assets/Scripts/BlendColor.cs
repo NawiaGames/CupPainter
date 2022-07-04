@@ -43,14 +43,10 @@ public class BlendColor : MonoBehaviour
         _mix.SetActive(true);
     }
 
-    public void ResetMixColors()
+    public void Reset()
     {
         _text.enabled = true;
         _mix.SetActive(false);
-    }
-
-    public void Reset()
-    {
         _blendColor = _startColor;
         _blendRender.material.color = _blendColor; 
     }

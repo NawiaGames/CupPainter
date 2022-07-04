@@ -73,6 +73,7 @@ public class SelectedPaintObjects : MonoBehaviour
         _colorsPallet.ActivateAnimationPallet();
         _colorsPallet.SetColorsPallet(_createLevel.ColorsPallet[_currentPaintObject].ColorsPallet);
         _blendColor.EnableGameObject(_createLevel.CanActivatePallets[_currentPaintObject]);
+        _blendColor.Reset();
         _exampleTextureDraw.SetTexture(_createLevel.Texture2DModelsSample[_currentPaintObject]);
         
         var colorSmoothness = _createLevel.PaintObjects[_currentPaintObject].ColorSmoothness;
