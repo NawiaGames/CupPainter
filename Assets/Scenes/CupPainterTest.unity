@@ -124,12 +124,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!23 &35365473 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8238905266253354019, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1057734326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &134430785
 GameObject:
   m_ObjectHideFlags: 3
@@ -1038,6 +1032,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!23 &796461267 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7881457647583050247, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1057734326}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &808094208 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7807077806228767645, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
@@ -1493,6 +1493,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 936651299040019148, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1687612193953774941, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3403560958641351110, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173726753981345704, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6732226093172919749, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7320580379664129335, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
         type: 3}
       propertyPath: m_Name
@@ -1552,6 +1577,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7320580379664129339, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: _meshRenderer
+      value: 
+      objectReference: {fileID: 796461267}
+    - target: {fileID: 7590400182476338678, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845691141225945617, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8296748899543192198, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662871197058954871, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a4db5ea9c8aa12449dcd7f2936d7bc3, type: 3}
@@ -1714,7 +1764,7 @@ MonoBehaviour:
   _exampleTextureDraw: {fileID: 684244300}
   _panelMatch: {fileID: 1337466198}
   _currentPaintObject: 0
-  _rendererColorMatch: {fileID: 35365473}
+  _rendererColorMatch: {fileID: 796461267}
 --- !u!114 &1289059995
 MonoBehaviour:
   m_ObjectHideFlags: 0
