@@ -42,7 +42,7 @@ public class ButtonGameUI : MonoBehaviour
     [ContextMenu("Reset Blend")]
     public void OnResetBlend()
     {
-        VibrateCup.Vibrate();
+        HapticManager.VibLo(this);
         _blendColor.Reset();
     } 
 

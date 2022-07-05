@@ -21,7 +21,7 @@ public class SelectedColor : MonoBehaviour
 
     private void GetColorBlend(BlendColor blendColor)
     {
-        VibrateCup.Vibrate();
+        HapticManager.VibLo(this);
         var colorBrush = _settingsBrush.ColorBrush;
         var colorBlend = blendColor.GetColorBlend(colorBrush);
         _settingsBrush.SetColor(colorBlend);
@@ -30,7 +30,7 @@ public class SelectedColor : MonoBehaviour
 
     private void GetColorPallets(ColorPallet colorPallet)
     {
-        VibrateCup.Vibrate();
+        HapticManager.VibLo(this);
         var color = colorPallet.GetColor();
         _settingsBrush.SetColor(color);
         var index = colorPallet.GetIndex();

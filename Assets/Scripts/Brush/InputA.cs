@@ -65,7 +65,7 @@ public class InputA : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
             if (!_isLimitPosition && _canDraw)
-                VibrateCup.Vibrate();
+                HapticManager.VibLo(this);
 
         if (Input.GetMouseButtonUp(0))
         {

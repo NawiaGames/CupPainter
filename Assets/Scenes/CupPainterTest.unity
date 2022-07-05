@@ -580,6 +580,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 876269870, guid: c54e8f552adaf5940b8f2a214eeb7024, type: 3}
+      propertyPath: _isOpenAllLevels
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 876269870, guid: c54e8f552adaf5940b8f2a214eeb7024, type: 3}
       propertyPath: _selectedPaintObjects
       value: 
       objectReference: {fileID: 1289059994}
@@ -3435,6 +3439,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6488462599739048112, guid: 34dfb4232c3749d458e1e92bb3d75370,
+        type: 3}
+      propertyPath: presetHi
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ee20bb6533ae9847bbda63f4f1c8b84,
+        type: 2}
+    - target: {fileID: 6488462599739048112, guid: 34dfb4232c3749d458e1e92bb3d75370,
+        type: 3}
+      propertyPath: presetLow
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f30070ed51e7fa4ea638ea988eb297f,
+        type: 2}
+    - target: {fileID: 6488462599739048112, guid: 34dfb4232c3749d458e1e92bb3d75370,
+        type: 3}
+      propertyPath: presetMed
+      value: 
+      objectReference: {fileID: 11400000, guid: f64e0c0da3f17f9419ca7e593e7abe39,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34dfb4232c3749d458e1e92bb3d75370, type: 3}
 --- !u!114 &2713381383385082257 stripped

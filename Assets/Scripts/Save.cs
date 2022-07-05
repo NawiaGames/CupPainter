@@ -3,8 +3,8 @@ using UnityEngine;
 [DefaultExecutionOrder(-5)]
 public class Save : MonoBehaviour
 {
-   [SerializeField] private SelectedPaintObjects _selectedPaintObjects; 
-    
+    [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
+    [SerializeField] private bool _isOpenAllLevels = false;
     private const string _percentSaveName = "Percent";
     private int[] _percentLevels;
     private PaintObject[] _paintObjectsSelectedObjects;
@@ -23,13 +23,25 @@ public class Save : MonoBehaviour
 
     public void SetPercentLevelsFromSave(int length)
     {
-        var indexLevel = 0; 
+        var indexLevel = 0;
         _percentLevels = new int[length];
-        for (var i = 0; i < length; i++)
+        if (!_isOpenAllLevels)
         {
-            _percentLevels[i] = PlayerPrefs.GetInt(_percentSaveName + i, 0);
-            if (_percentLevels[i] > PanelMatch.BorderNextLevel)
-                indexLevel = i + 1; 
+            for (var i = 0; i < length; i++)
+            {
+                _percentLevels[i] = PlayerPrefs.GetInt(_percentSaveName + i, 0);
+                if (_percentLevels[i] > PanelMatch.BorderNextLevel)
+                    indexLevel = i + 1;
+            }
+        }
+        else
+        {
+            for (var i = 0; i < length; i++)
+            {
+                _percentLevels[i] = 100;
+                if (_percentLevels[i] > PanelMatch.BorderNextLevel)
+                    indexLevel = 1;
+            }
         }
 
         _selectedPaintObjects.SetCurrentIndex(indexLevel);
