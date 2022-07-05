@@ -19,13 +19,13 @@ public class Save : MonoBehaviour
     public void SetPaintObjectsSelectedObject(int index, PaintObject paintObject) =>
         _paintObjectsSelectedObjects[index] = paintObject;
 
-    public void SetRenderPaintObjects(PaintObject[] paintObjects)
+    public void SetRenderPaintObjects(SampleObject[] sampleObjects)
     {
-        for (var i = 0; i < paintObjects.Length; i++)
+        for (var i = 0; i < sampleObjects.Length; i++)
         {
             if(_percentLevels[i] > PanelMatch.BorderNextLevel)
             _paintObjectsSelectedObjects[i].Renderer.material.mainTexture =
-                paintObjects[i].Renderer.material.mainTexture;
+                sampleObjects[i].Renderer.material.mainTexture;
         }
     }
     

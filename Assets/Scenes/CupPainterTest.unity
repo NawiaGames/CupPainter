@@ -581,7 +581,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 876269870, guid: c54e8f552adaf5940b8f2a214eeb7024, type: 3}
       propertyPath: _isOpenAllLevels
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 876269870, guid: c54e8f552adaf5940b8f2a214eeb7024, type: 3}
       propertyPath: _selectedPaintObjects

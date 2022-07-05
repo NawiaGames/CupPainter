@@ -24,6 +24,7 @@ public class CreateLevel : MonoBehaviour
     private PaintObject[] _selectedSpawnPaintObjects;
     private Texture2D[] _texture2DModelsSample;
     private SelectPaintObjectUI[] _selectedPaintObjects;
+    private SampleObject[] _sampleObjects; 
     private Colors[] _colorsPallet;
     private bool[] _canActivatePallets;
     private int[] _percentLevels;
@@ -35,6 +36,7 @@ public class CreateLevel : MonoBehaviour
     public Colors[] ColorsPallet => _colorsPallet;
     public SelectPaintObjectUI[] SelectPaintObjectUI => _selectedPaintObjects;
     public bool[] CanActivatePallets => _canActivatePallets;
+    public SampleObject[] SampleObjects => _sampleObjects; 
     public Save Save => _save;
 
     private void Awake()
@@ -51,7 +53,8 @@ public class CreateLevel : MonoBehaviour
         _colorsPallet = new Colors[_levelsSO.Length];
         _canActivatePallets = new bool[_levelsSO.Length];
         _selectedPaintObjects = new SelectPaintObjectUI[_levelsSO.Length];
-
+        _sampleObjects = new SampleObject[_levelsSO.Length]; 
+        
         _save.SetPercentLevelsFromSave(_levelsSO.Length);
         _percentLevels = _save.GetPercentLevels();
 
@@ -99,6 +102,7 @@ public class CreateLevel : MonoBehaviour
     {
         var smallPaintSampleObject =
             InstantiateObject(_levelsSO[i].ModelSampleObject, _spawnPaintSampleTransform, false);
+        _sampleObjects[i] = smallPaintSampleObject.GetComponent<SampleObject>(); 
         _smallPaintSampleObjects[i] = smallPaintSampleObject;
         _smallPaintSampleObjects[i].transform.localRotation = Quaternion.identity;
         var position = new Vector3(0, _downPositionYpaintSample, 0);
