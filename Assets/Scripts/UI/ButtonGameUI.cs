@@ -4,15 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class ButtonGameUI : MonoBehaviour
 {
-    [SerializeField] private CreateLevel _createLevel; 
+    [SerializeField] private CreateLevel _createLevel;
     [SerializeField] private SettingsBrush _settingsBrush;
-    [SerializeField] private BlendColor _blendColor; 
+    [SerializeField] private BlendColor _blendColor;
     [SerializeField] private RandomColor _randomColor;
     [SerializeField] private SelectedPaintObjects _selectedPaintObjects;
-    [SerializeField] private UIPanel _uilngameHUD; 
-    [SerializeField] private UIPanel _panelSelectedPaintObjects; 
-    [SerializeField] private GameObject _debugMenu; 
-    
+    [SerializeField] private UIPanel _uilngameHUD;
+    [SerializeField] private UIPanel _panelSelectedPaintObjects;
+    [SerializeField] private GameObject _debugMenu;
+
     private bool _isOpenDebugMenu;
 
     public void OnOverloadScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -21,8 +21,8 @@ public class ButtonGameUI : MonoBehaviour
 
     public void OnChangeHardness(float value) => _settingsBrush.SetHardness(value);
 
-    public void OnChangeRadius(float value) => _settingsBrush.SetRadius(value); 
-    
+    public void OnChangeRadius(float value) => _settingsBrush.SetRadius(value);
+
     public void OnAddIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(1);
 
     public void OnSubtractIndexPaintObject() => _selectedPaintObjects.UpdateIndexToOnePaintObject(-1);
@@ -32,10 +32,10 @@ public class ButtonGameUI : MonoBehaviour
         var color = _randomColor.ImageColors[index].color;
         _settingsBrush.SetColor(color);
     }
-    
+
     public void ActivateDebugMenu()
     {
-        _isOpenDebugMenu = !_isOpenDebugMenu; 
+        _isOpenDebugMenu = !_isOpenDebugMenu;
         _debugMenu.SetActive(_isOpenDebugMenu);
     }
 
@@ -44,7 +44,7 @@ public class ButtonGameUI : MonoBehaviour
     {
         HapticManager.VibLo(this);
         _blendColor.Reset();
-    } 
+    }
 
     [ContextMenu("Reset Paint Texture")]
     public void ResetPaintTexture()
@@ -55,7 +55,7 @@ public class ButtonGameUI : MonoBehaviour
 
     public void SelectedLevel(int index = 0)
     {
-        _selectedPaintObjects.LoadSelectedPaintObject(index); 
+        _selectedPaintObjects.LoadSelectedPaintObject(index);
         _panelSelectedPaintObjects.DeactivatePanel();
         _uilngameHUD.ActivatePanel();
     }
@@ -82,7 +82,7 @@ public class ButtonGameUI : MonoBehaviour
         {
             _createLevel.SelectedSpawnPaintObjects[i].Renderer.material.mainTexture =
                 materialsClones[i].Renderer.material.mainTexture;
-            
+
             if (i == 0 || percentLevels[i] > PanelMatch.BorderNextLevel)
             {
                 _createLevel.SelectPaintObjectUI[i].UIPanelUnlock.DeactivatePanel();
@@ -96,9 +96,16 @@ public class ButtonGameUI : MonoBehaviour
             }
 
             if (percentLevels[i] > PanelMatch.BorderNextLevel)
-                indexNextLevel = i + 1;
+            {
+                if (i + 1 < materialsClones.Length)
+                    indexNextLevel = i + 1;
+                else
+                {
+                    indexNextLevel = i;
+                }
+            }
         }
-        
+
         _createLevel.SelectPaintObjectUI[indexNextLevel].Text.enabled = true;
         _createLevel.SelectPaintObjectUI[indexNextLevel].Text.text = percentLevels[indexNextLevel] + "%";
         _createLevel.SelectPaintObjectUI[indexNextLevel].UIPanelUnlock.DeactivatePanel();
