@@ -2129,6 +2129,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697f5e0982c14ee4ea5855c49882ab94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1629893974 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1636530440, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
+    type: 3}
+  m_PrefabInstance: {fileID: 8255363180546383686}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f065b1f2d96634cab638812af8798d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1734323767 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3838970031666793443, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
@@ -3147,7 +3159,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _blendColor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1629893974}
     - target: {fileID: 266512697006724928, guid: 5274ad1735f2d8d4095b569618676fb0,
         type: 3}
       propertyPath: _panelMatch
@@ -3463,7 +3475,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _blendColor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1629893974}
     - target: {fileID: 3838970030395262712, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
         type: 3}
       propertyPath: _createLevel
