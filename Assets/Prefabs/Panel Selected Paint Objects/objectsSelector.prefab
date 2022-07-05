@@ -764,6 +764,7 @@ MonoBehaviour:
   _uiPanelUnlock: {fileID: 7962135353223661518}
   _lockedGameObject: {fileID: 7772691383663438994}
   _readyGameObject: {fileID: 3475953300092887801}
+  _spawnPosition: {fileID: 8710717134243734505}
 --- !u!225 &7364161600425158724
 CanvasGroup:
   m_ObjectHideFlags: 0

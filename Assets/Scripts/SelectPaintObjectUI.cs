@@ -10,11 +10,12 @@ public class SelectPaintObjectUI : MonoBehaviour
     [SerializeField] private UIPanel _uiPanelUnlock;
     [SerializeField] private GameObject _lockedGameObject;
     [SerializeField] private GameObject _readyGameObject;
+    [SerializeField] private GameObject _spawnPosition; 
     public Button Button => _button;
     public TMP_Text Text => _text;
     public UIPanel UIPanelUnlock => _uiPanelUnlock;
     public GameObject LockedGameObject =>_lockedGameObject;
     public GameObject ReadyGameObject => _readyGameObject;
 
-
+    public GameObject SpawnPosition => _spawnPosition; 
 }
