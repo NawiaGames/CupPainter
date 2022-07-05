@@ -96,6 +96,9 @@ public class PanelMatch : MonoBehaviour
     private void ActivatePanelWinOrContinue(float result)
     {
         if (result < _borderNextLevel) return;
+        
+        if (result == 100) VibrateCup.Vibrate();
+        
         _winPanel.ActivatePanel();
         foreach (var particleSystem in _particleSystemWin)
             particleSystem.Play();

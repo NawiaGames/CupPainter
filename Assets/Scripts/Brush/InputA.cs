@@ -26,7 +26,7 @@ public class InputA : MonoBehaviour
     [Header("Particle system")] [SerializeField]
     private GameObject _paticleSystemBrushGameObject;
 
- //   private ParticleSystem _particleSystemBrush;
+    private ParticleSystem _particleSystemBrush;
     private Vector3 _positionFollowerY;
     private Vector3 _positionForwardPaint;
     private Vector3 _upEdge;
@@ -40,14 +40,14 @@ public class InputA : MonoBehaviour
         _positionFollowerY = _paintAndRaycastTransform.position;
         _positionForwardPaint = _raycastTransform.position;
         _upEdge = _camera.ViewportToWorldPoint(new Vector3(0, 1, _camera.transform.position.z));
-    //    _particleSystemBrush = _paticleSystemBrushGameObject.GetComponent<ParticleSystem>();
+        _particleSystemBrush = _paticleSystemBrushGameObject.GetComponent<ParticleSystem>();
     }
 
     private void Update()
     {
         if (!_isUIMenu)
             Controller();
-        
+
         MoveBrush();
     }
 
@@ -62,9 +62,9 @@ public class InputA : MonoBehaviour
                 CanDraw();
             }
         }
-        
-        if(Input.GetMouseButtonDown(0))
-            if(!_isLimitPosition && _canDraw)
+
+        if (Input.GetMouseButtonDown(0))
+            if (!_isLimitPosition && _canDraw)
                 VibrateCup.Vibrate();
 
         if (Input.GetMouseButtonUp(0))
@@ -81,9 +81,13 @@ public class InputA : MonoBehaviour
 
 
         _settingsBrush.SetOpacityFromSlider();
-        _paticleSystemBrushGameObject.SetActive(true);
-      //    var main = _particleSystemBrush.main;
-     //   main.startColor = _settingsBrush.ColorBrush;
+        if (_paticleSystemBrushGameObject.activeSelf == false)
+        {
+            _paticleSystemBrushGameObject.SetActive(true);
+        }
+
+        var main = _particleSystemBrush.main;
+        main.startColor = _settingsBrush.ColorBrush;
         _valueSkinnedMeshBrush = 100f;
     }
 
@@ -136,8 +140,11 @@ public class InputA : MonoBehaviour
         _positionForwardPaint = _raycastTransform.position;
         _valueSkinnedMeshBrush = 0;
         _canDraw = false;
-        _paticleSystemBrushGameObject.SetActive(false);
-        if (borderForwardInfo.collider == null) return;
+        if (borderForwardInfo.collider == null)
+        {
+            _paticleSystemBrushGameObject.SetActive(false);
+            return;
+        }
 
         _canDraw = true;
         _positionForwardPaint = borderForwardInfo.point;

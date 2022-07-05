@@ -85,6 +85,7 @@ public class ButtonGameUI : MonoBehaviour
             
             if (i == 0 || percentLevels[i] > PanelMatch.BorderNextLevel)
             {
+                _createLevel.SelectPaintObjectUI[i].UIPanelUnlock.DeactivatePanel();
                 _createLevel.SelectPaintObjectUI[i].Text.enabled = true;
                 _createLevel.SelectPaintObjectUI[i].Text.text = percentLevels[i] + "%";
             }
