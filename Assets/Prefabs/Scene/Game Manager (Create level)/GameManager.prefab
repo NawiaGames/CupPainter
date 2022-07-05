@@ -78,7 +78,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 83204c05ce28f224b95adb644c6cb7d2, type: 2}
   _paintObjectsTransform: {fileID: 0}
   _spawnPaintSampleTransform: {fileID: 0}
-  _scaleSmallPaintSampleObject: 65
+  _scaleSmallPaintSampleObject: 50
   _downPositionYpaintSample: -50
   _selectedSpawnPaintObjectsTransform: {fileID: 0}
   _templateCreatePaintObject: {fileID: 384824227728330770, guid: 749fcbfeaa00d0a48bf16f96881b86da,
@@ -86,4 +86,4 @@ MonoBehaviour:
   _scaleSelectedPaintObject: 30
   _downPositionYPaintSelected: -50
   _buttonGameUI: {fileID: 0}
-  _save: {fileID: 876269870, guid: c54e8f552adaf5940b8f2a214eeb7024, type: 3}
+  _save: {fileID: 0}
