@@ -6,25 +6,13 @@ public class TutorialCup : MonoBehaviour
 {
     [SerializeField] private InputOverlayTutorial _inputOverlayTutorial;
     [SerializeField] private float _timeNextStep = 3f;
-    [SerializeField] private float _beginWaitTimeTutorial = 1f; 
     [SerializeField] private Transform _compareTransform; 
     [SerializeField] private Transform _colorPaintPallet;
     [SerializeField] private Transform _mixColorsTransform;
     [SerializeField] private Transform _waterCupTransform;
 
     private bool _nextStep = true;
-    private int _counterStep;
-
-    private Vector3[] positionsLevelOne;
-    private Vector3[] positionsLevelTwo;
-    private Vector3[] positionsLevelEight;
-
-    private void Awake()
-    {
-        positionsLevelOne = new Vector3[]{ Vector3.zero, _compareTransform.position};
-        positionsLevelTwo = new Vector3[] { _colorPaintPallet.position };
-        positionsLevelEight = new Vector3[] { _mixColorsTransform.position, _waterCupTransform.position };
-    }
+    private int _counterStep; 
 
     public void StartTutorial()
     {
@@ -34,27 +22,27 @@ public class TutorialCup : MonoBehaviour
         {
             case 0:
             {
-                
-                StartCoroutine(StartTutorialLevelCoroutine(positionsLevelOne));
+                var positions = new Vector3[]{ Vector3.zero, _compareTransform.position};
+                StartCoroutine(StartTutorialLevelCoroutine(positions));
                 break;
             }
             case 1:
             {
-
-                StartCoroutine(StartTutorialLevelCoroutine(positionsLevelTwo, _beginWaitTimeTutorial));
+                var positions = new Vector3[] { _colorPaintPallet.position };
+                StartCoroutine(StartTutorialLevelCoroutine(positions));
                 break;
             }
             case 7:
             {
-                StartCoroutine(StartTutorialLevelCoroutine(positionsLevelEight, _beginWaitTimeTutorial));
+                var positions = new Vector3[] { _mixColorsTransform.position, _waterCupTransform.position };
+                StartCoroutine(StartTutorialLevelCoroutine(positions));
                 break;
             }
         }
     }
 
-    private IEnumerator StartTutorialLevelCoroutine(Vector3[] positions, float waitTime = 0)
+    private IEnumerator StartTutorialLevelCoroutine(Vector3[] positions)
     {
-        yield return new WaitForSeconds(waitTime); 
         _nextStep = true;
         _counterStep = 0;
         while (_counterStep < positions.Length)

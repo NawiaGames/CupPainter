@@ -8,11 +8,11 @@ public class SelectedPaintObjects : MonoBehaviour
     [SerializeField] private BlendColor _blendColor;
     [SerializeField] private ExampleTextureDraw _exampleTextureDraw;
     [SerializeField] private PanelMatch _panelMatch;
-    [SerializeField] private TutorialCup _tutorialCup; 
+    [SerializeField] private TutorialCup _tutorialCup;
     [SerializeField] private int _currentPaintObject = 0;
 
     [Header("Change materials")] [SerializeField]
-    private Renderer _rendererColorMatch; 
+    private Renderer _rendererColorMatch;
 
     private int _lengthPaintObjects = 0;
 
@@ -28,7 +28,7 @@ public class SelectedPaintObjects : MonoBehaviour
         _lengthPaintObjects = _createLevel.PaintObjects.Length;
         CurrentPaintObjectIndex = _currentPaintObject;
         ActivateSelectedObject();
-        
+
         SetSettingsLevel();
     }
 
@@ -37,13 +37,14 @@ public class SelectedPaintObjects : MonoBehaviour
         for (var i = 0; i < _lengthPaintObjects; i++)
         {
             var isPaintObject = _currentPaintObject == i;
-            
+
             _createLevel.PaintObjects[i].gameObject.SetActive(isPaintObject);
             if (isPaintObject)
             {
                 var height = _createLevel.PaintObjects[i].MeshCollider.bounds.size.y;
                 _exampleTextureDraw.SetHeight(height);
             }
+
             _createLevel.SmallPaintSampleObjects[i].SetActive(isPaintObject);
         }
     }
@@ -62,10 +63,10 @@ public class SelectedPaintObjects : MonoBehaviour
 
     public void LoadSelectedPaintObject(int index)
     {
-        CurrentPaintObjectIndex = index; 
+        CurrentPaintObjectIndex = index;
         _currentPaintObject = index;
         ActivateSelectedObject();
-        
+
         SetSettingsLevel();
     }
 
@@ -82,14 +83,16 @@ public class SelectedPaintObjects : MonoBehaviour
         _colorsPallet.SettingsBrush.SetColorSmoothness(smoothness, colorSmoothness);
         UpdateMaterialColorMatch(smoothness);
         _colorsPallet.SetSmoothness(smoothness);
-
-        _tutorialCup.StartTutorial();
+        
+        Invoke("StartTutorial", 1f);
     }
+
+    private void StartTutorial() => _tutorialCup.StartTutorial();
+
 
     private void UpdateMaterialColorMatch(float smoothness)
     {
         const string nameSmoothness = "_Smoothness";
         _rendererColorMatch.material.SetFloat(nameSmoothness, smoothness);
-        
     }
 }
