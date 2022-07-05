@@ -3,36 +3,39 @@ using UnityEngine;
 public class CreateLevel : MonoBehaviour
 {
     [SerializeField] private Level[] _levelsSO;
-    [Header("Paint Sample")]
-    [SerializeField] private Transform _paintObjectsTransform;
+
+    [Header("Paint Sample")] [SerializeField]
+    private Transform _paintObjectsTransform;
+
     [SerializeField] private Transform _spawnPaintSampleTransform;
     [SerializeField] private int _scaleSmallPaintSampleObject = 50;
-    [SerializeField] private float _downPositionYpaintSample = -60; 
-    [Header("Paint Selected")]
-    [SerializeField] private Transform _selectedSpawnPaintObjectsTransform;
+    [SerializeField] private float _downPositionYpaintSample = -60;
+
+    [Header("Paint Selected")] [SerializeField]
+    private Transform _selectedSpawnPaintObjectsTransform;
+
     [SerializeField] private SelectPaintObjectUI _templateCreatePaintObject;
     [SerializeField] private int _scaleSelectedPaintObject = 30;
     [SerializeField] private ButtonGameUI _buttonGameUI;
-    [Space]
-    [SerializeField] private Save _save;
+    [Space] [SerializeField] private Save _save;
     private UnityEngine.Events.UnityAction _buttonCallback;
     private PaintObject[] _paintObjects;
     private GameObject[] _smallPaintSampleObjects;
     private PaintObject[] _selectedSpawnPaintObjects;
     private Texture2D[] _texture2DModelsSample;
-    private SelectPaintObjectUI[] _selectedPaintObjects; 
+    private SelectPaintObjectUI[] _selectedPaintObjects;
     private Colors[] _colorsPallet;
     private bool[] _canActivatePallets;
     private int[] _percentLevels;
-   
+
     public PaintObject[] PaintObjects => _paintObjects;
     public PaintObject[] SelectedSpawnPaintObjects => _selectedSpawnPaintObjects;
     public GameObject[] SmallPaintSampleObjects => _smallPaintSampleObjects;
     public Texture2D[] Texture2DModelsSample => _texture2DModelsSample;
     public Colors[] ColorsPallet => _colorsPallet;
-    public SelectPaintObjectUI[] SelectPaintObjectUI => _selectedPaintObjects; 
+    public SelectPaintObjectUI[] SelectPaintObjectUI => _selectedPaintObjects;
     public bool[] CanActivatePallets => _canActivatePallets;
-    public Save Save => _save; 
+    public Save Save => _save;
 
     private void Awake()
     {
@@ -48,10 +51,10 @@ public class CreateLevel : MonoBehaviour
         _colorsPallet = new Colors[_levelsSO.Length];
         _canActivatePallets = new bool[_levelsSO.Length];
         _selectedPaintObjects = new SelectPaintObjectUI[_levelsSO.Length];
-        
+
         _save.SetPercentLevelsFromSave(_levelsSO.Length);
         _percentLevels = _save.GetPercentLevels();
-        
+
         for (var i = 0; i < _levelsSO.Length; i++)
         {
             CreatePaintObject(i);
@@ -64,7 +67,7 @@ public class CreateLevel : MonoBehaviour
             _canActivatePallets[i] = _levelsSO[i].ActivatePalletBlend;
             _colorsPallet[i] = new Colors(_levelsSO[i].ColorsPallet);
         }
-        
+
         _save.SetPaintObjectsSelectedObjects(_selectedSpawnPaintObjects);
     }
 
@@ -76,14 +79,15 @@ public class CreateLevel : MonoBehaviour
         templateGameObject.transform.localRotation = Quaternion.identity;
         templateGameObject.transform.localPosition = Vector3.zero;
         template.UIPanelUnlock.Initialize();
-        
-        _selectedPaintObjects[i] = template; 
+
+        _selectedPaintObjects[i] = template;
         _buttonCallback = null;
         _buttonCallback = () => _buttonGameUI.SelectedLevel(i);
         template.Button.onClick.AddListener(_buttonCallback);
-        template.Text.text = _percentLevels[i] + "%"; 
+        template.Text.text = _percentLevels[i] + "%";
 
-        var selectedPaintObject = InstantiateObject(_levelsSO[i].ModelObject.gameObject, template.SpawnPosition.transform, true);
+        var selectedPaintObject =
+            InstantiateObject(_levelsSO[i].ModelObject.gameObject, template.SpawnPosition.transform, true);
         _selectedSpawnPaintObjects[i] = selectedPaintObject.GetComponent<PaintObject>();
         _selectedSpawnPaintObjects[i].transform.localRotation = Quaternion.identity;
         _selectedSpawnPaintObjects[i].transform.localPosition = Vector3.zero;
@@ -97,7 +101,7 @@ public class CreateLevel : MonoBehaviour
             InstantiateObject(_levelsSO[i].ModelSampleObject, _spawnPaintSampleTransform, false);
         _smallPaintSampleObjects[i] = smallPaintSampleObject;
         _smallPaintSampleObjects[i].transform.localRotation = Quaternion.identity;
-        var position = new Vector3(0, _downPositionYpaintSample , 0);
+        var position = new Vector3(0, _downPositionYpaintSample, 0);
         _smallPaintSampleObjects[i].transform.localPosition = position;
         _smallPaintSampleObjects[i].transform.localScale = new Vector3(_scaleSmallPaintSampleObject,
             _scaleSmallPaintSampleObject, _scaleSmallPaintSampleObject);

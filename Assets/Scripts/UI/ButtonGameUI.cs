@@ -109,5 +109,7 @@ public class ButtonGameUI : MonoBehaviour
         _createLevel.SelectPaintObjectUI[indexNextLevel].Text.enabled = true;
         _createLevel.SelectPaintObjectUI[indexNextLevel].Text.text = percentLevels[indexNextLevel] + "%";
         _createLevel.SelectPaintObjectUI[indexNextLevel].UIPanelUnlock.DeactivatePanel();
+        
+        _createLevel.Save.SetRenderPaintObjects(_createLevel.PaintObjects);
     }
 }

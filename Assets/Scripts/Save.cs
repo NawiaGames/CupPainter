@@ -9,16 +9,26 @@ public class Save : MonoBehaviour
     private int[] _percentLevels;
     private PaintObject[] _paintObjectsSelectedObjects;
 
-    public void SetPaintObjectsSelectedObjects(PaintObject[] materialCloners)
+    public void SetPaintObjectsSelectedObjects(PaintObject[] paintObjects)
     {
-        _paintObjectsSelectedObjects = new PaintObject[materialCloners.Length];
-        for (var i = 0; i < materialCloners.Length; i++)
-            _paintObjectsSelectedObjects[i] = materialCloners[i];
+        _paintObjectsSelectedObjects = new PaintObject[paintObjects.Length];
+        for (var i = 0; i < paintObjects.Length; i++)
+            _paintObjectsSelectedObjects[i] = paintObjects[i];
     }
 
-    public void SetPaintObjectsSelectedObject(int index, PaintObject renderer) =>
-        _paintObjectsSelectedObjects[index] = renderer;
+    public void SetPaintObjectsSelectedObject(int index, PaintObject paintObject) =>
+        _paintObjectsSelectedObjects[index] = paintObject;
 
+    public void SetRenderPaintObjects(PaintObject[] paintObjects)
+    {
+        for (var i = 0; i < paintObjects.Length; i++)
+        {
+            if(_percentLevels[i] > PanelMatch.BorderNextLevel)
+            _paintObjectsSelectedObjects[i].Renderer.material.mainTexture =
+                paintObjects[i].Renderer.material.mainTexture;
+        }
+    }
+    
     public PaintObject[] GetPaintObjectsSelectedObjects() => _paintObjectsSelectedObjects;
 
     public void SetPercentLevelsFromSave(int length)
