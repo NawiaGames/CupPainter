@@ -97,7 +97,6 @@ public class PanelMatch : MonoBehaviour
     {
         if (result < _borderNextLevel) return;
         _winPanel.ActivatePanel();
-        _continuePanel.DeactivatePanel();
         foreach (var particleSystem in _particleSystemWin)
             particleSystem.Play();
         
