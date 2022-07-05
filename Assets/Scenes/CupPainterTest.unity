@@ -3685,7 +3685,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _mixColorsTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1080426402}
     - target: {fileID: 4543748742974355615, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
         type: 3}
       propertyPath: m_IsActive

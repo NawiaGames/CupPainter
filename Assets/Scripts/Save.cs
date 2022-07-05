@@ -41,7 +41,7 @@ public class Save : MonoBehaviour
         SaveInfo();
     }
 
-    private void SaveInfo()
+    public void SaveInfo()
     {
         for (var i = 0; i < _percentLevels.Length; i++)
         {

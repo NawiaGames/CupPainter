@@ -89,6 +89,7 @@ public class PanelMatch : MonoBehaviour
         var index = SelectedPaintObjects.CurrentPaintObjectIndex;
         _save.SetPercentLevel(index, result);
         _save.SetPaintObjectsSelectedObject(index, _comparisonTexture.CreateLevel.PaintObjects[index]);
+        _save.SaveInfo();
         ActivatePanelWinOrContinue(result);
     }
 
