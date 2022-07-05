@@ -3481,7 +3481,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _blendColor
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1636530438}
     - target: {fileID: 3838970030395262712, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
         type: 3}
       propertyPath: _createLevel
