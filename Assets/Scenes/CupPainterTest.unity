@@ -3921,6 +3921,11 @@ PrefabInstance:
       propertyPath: _frames.Array.data[5]
       value: 
       objectReference: {fileID: 1361026142}
+    - target: {fileID: 6057685239170756431, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 869.8301
+      objectReference: {fileID: 0}
     - target: {fileID: 6230714449719294200, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
         type: 3}
       propertyPath: m_IsActive
