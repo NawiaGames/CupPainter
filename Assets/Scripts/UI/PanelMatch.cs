@@ -96,7 +96,13 @@ public class PanelMatch : MonoBehaviour
 
     private void ActivatePanelWinOrContinue(float result)
     {
-        if (result < _borderNextLevel) return;
+        if (result < _borderNextLevel)
+        {
+            EventManager.OnLevelFail?.Invoke(SelectedPaintObjects.CurrentPaintObjectIndex);
+            return;
+        }
+        
+        EventManager.OnLevelSuccessed?.Invoke(SelectedPaintObjects.CurrentPaintObjectIndex);
         
         if (result == 100) VibrateCup.Vibrate();
         

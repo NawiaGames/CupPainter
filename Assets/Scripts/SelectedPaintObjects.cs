@@ -94,6 +94,8 @@ public class SelectedPaintObjects : MonoBehaviour
         _colorsPallet.SetSmoothness(smoothness);
         
         Invoke("StartTutorial", 1f);
+        
+        EventManager.OnLevelStart?.Invoke(_currentPaintObject);
     }
 
     private void StartTutorial() => _tutorialCup.StartTutorial();
