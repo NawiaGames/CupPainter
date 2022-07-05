@@ -3,6 +3,7 @@ using UnityEngine;
 [DefaultExecutionOrder(-5)]
 public class Save : MonoBehaviour
 {
+    private const string _percentSaveName = "Percent";
     private int[] _percentLevels;
     private PaintObject[] _paintObjectsSelectedObjects;
 
@@ -18,16 +19,33 @@ public class Save : MonoBehaviour
 
     public PaintObject[] GetPaintObjectsSelectedObjects() => _paintObjectsSelectedObjects;
 
-    public void SetPercentLevels(int length)
+    public void SetPercentLevelsFromSave(int length)
     {
-        _percentLevels = new int[length]; 
+        _percentLevels = new int[length];
         for (var i = 0; i < length; i++)
         {
-            _percentLevels[i] = 0; 
+            _percentLevels[i] = PlayerPrefs.GetInt(_percentSaveName + i, 0);
         }
     }
 
-    public void SetPercentLevel(int index, int value) => _percentLevels[index] = value; 
+    public void SetPercentLevel(int index, int value)
+    {
+        if (_percentLevels[index] < value)
+            _percentLevels[index] = value;
+    }
 
     public int[] GetPercentLevels() => _percentLevels;
+
+    private void OnDisable()
+    {
+        SaveInfo();
+    }
+
+    private void SaveInfo()
+    {
+        for (var i = 0; i < _percentLevels.Length; i++)
+        {
+            PlayerPrefs.SetInt(_percentSaveName + i, _percentLevels[i]);
+        }
+    }
 }

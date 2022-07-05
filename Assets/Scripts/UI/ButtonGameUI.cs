@@ -56,6 +56,10 @@ public class ButtonGameUI : MonoBehaviour
         _uilngameHUD.ActivatePanel();
     }
 
+    [ContextMenu("Reset Save")]
+    public void DeleteSave() => PlayerPrefs.DeleteAll();
+
+
     [ContextMenu("Open selected panel")]
     public void OpenSelectedPanel()
     {

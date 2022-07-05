@@ -50,7 +50,7 @@ public class CreateLevel : MonoBehaviour
         _canActivatePallets = new bool[_levelsSO.Length];
         _selectedPaintObjects = new SelectPaintObjectUI[_levelsSO.Length];
         
-        _save.SetPercentLevels(_levelsSO.Length);
+        _save.SetPercentLevelsFromSave(_levelsSO.Length);
         _percentLevels = _save.GetPercentLevels();
         
         for (var i = 0; i < _levelsSO.Length; i++)
