@@ -40,7 +40,11 @@ public class ButtonGameUI : MonoBehaviour
     }
 
     [ContextMenu("Reset Blend")]
-    public void OnResetBlend() => _blendColor.Reset();
+    public void OnResetBlend()
+    {
+        VibrateCup.Vibrate();
+        _blendColor.Reset();
+    } 
 
     [ContextMenu("Reset Paint Texture")]
     public void ResetPaintTexture()

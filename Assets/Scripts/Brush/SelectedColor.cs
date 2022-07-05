@@ -21,6 +21,7 @@ public class SelectedColor : MonoBehaviour
 
     private void GetColorBlend(BlendColor blendColor)
     {
+        VibrateCup.Vibrate();
         var colorBrush = _settingsBrush.ColorBrush;
         var colorBlend = blendColor.GetColorBlend(colorBrush);
         _settingsBrush.SetColor(colorBlend);
@@ -29,6 +30,7 @@ public class SelectedColor : MonoBehaviour
 
     private void GetColorPallets(ColorPallet colorPallet)
     {
+        VibrateCup.Vibrate();
         var color = colorPallet.GetColor();
         _settingsBrush.SetColor(color);
         var index = colorPallet.GetIndex();

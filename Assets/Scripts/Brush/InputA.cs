@@ -62,6 +62,10 @@ public class InputA : MonoBehaviour
                 CanDraw();
             }
         }
+        
+        if(Input.GetMouseButtonDown(0))
+            if(!_isLimitPosition && _canDraw)
+                VibrateCup.Vibrate();
 
         if (Input.GetMouseButtonUp(0))
         {
@@ -75,7 +79,7 @@ public class InputA : MonoBehaviour
         if ((!(_painTransform.position.x <= _positionForwardPaint.x + _distanceDraw) ||
              !(_painTransform.position.x >= _positionForwardPaint.x - _distanceDraw)) || !_canDraw) return;
 
-        Handheld.Vibrate();
+
         _settingsBrush.SetOpacityFromSlider();
         _paticleSystemBrushGameObject.SetActive(true);
       //    var main = _particleSystemBrush.main;
