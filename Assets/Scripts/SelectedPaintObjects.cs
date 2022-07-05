@@ -63,11 +63,20 @@ public class SelectedPaintObjects : MonoBehaviour
 
     public void LoadSelectedPaintObject(int index)
     {
-        CurrentPaintObjectIndex = index;
-        _currentPaintObject = index;
+        SetCurrentIndex(index);
+        
         ActivateSelectedObject();
 
         SetSettingsLevel();
+    }
+
+    public void SetCurrentIndex(int index)
+    {
+        if (_createLevel.PaintObjects.Length < index)
+            index = 0;
+        
+        CurrentPaintObjectIndex = index;
+        _currentPaintObject = index;
     }
 
     private void SetSettingsLevel()
@@ -88,7 +97,6 @@ public class SelectedPaintObjects : MonoBehaviour
     }
 
     private void StartTutorial() => _tutorialCup.StartTutorial();
-
 
     private void UpdateMaterialColorMatch(float smoothness)
     {
