@@ -579,6 +579,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 876269870, guid: c54e8f552adaf5940b8f2a214eeb7024, type: 3}
+      propertyPath: _selectedPaintObjects
+      value: 
+      objectReference: {fileID: 1289059994}
     - target: {fileID: 2945168313629213929, guid: c54e8f552adaf5940b8f2a214eeb7024,
         type: 3}
       propertyPath: m_RootOrder
@@ -911,6 +915,12 @@ Transform:
 --- !u!224 &517445167 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4018061750006341423, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
+    type: 3}
+  m_PrefabInstance: {fileID: 8255363180546383686}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &530587270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 696842354586944042, guid: 9f2f27ec7fd7e4447a5f2cc780678b26,
     type: 3}
   m_PrefabInstance: {fileID: 8255363180546383686}
   m_PrefabAsset: {fileID: 0}
@@ -3685,7 +3695,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _mixColorsTransform
       value: 
-      objectReference: {fileID: 1080426402}
+      objectReference: {fileID: 530587270}
     - target: {fileID: 4543748742974355615, guid: ed4e2b760696cff4c8b761cb4b60d9b3,
         type: 3}
       propertyPath: m_IsActive
