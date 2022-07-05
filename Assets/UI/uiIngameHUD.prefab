@@ -23,19 +23,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355627108883936839}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -4.656613e-10, z: -0.05691804, w: 0.9983789}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2716356117288654904}
   m_Father: {fileID: 2659095019890341449}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.526}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 224, y: -858}
-  m_SizeDelta: {x: 400, y: 205}
+  m_AnchoredPosition: {x: 224, y: -871.4}
+  m_SizeDelta: {x: 400, y: 176.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &512520373881580299
 GameObject:
@@ -1183,7 +1183,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9131191891887607760}
-  - component: {fileID: 5198652011228668919}
   m_Layer: 5
   m_Name: BtnResetBrush
   m_TagString: Untagged
@@ -1212,14 +1211,6 @@ RectTransform:
   m_AnchoredPosition: {x: 16, y: -655}
   m_SizeDelta: {x: 205.9, y: 139.7}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5198652011228668919
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5463886034257430048}
-  m_CullTransparentMesh: 1
 --- !u!1 &5617958360448269419
 GameObject:
   m_ObjectHideFlags: 0
