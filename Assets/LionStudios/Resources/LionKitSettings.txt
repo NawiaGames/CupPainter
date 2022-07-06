@@ -4,6 +4,9 @@
 		"androidToken": "94y2tlgspzpc",
 		"environment": 1
 	},
+	"LionFbSdk": {
+		"app_ID": "561691172080935"
+	},
 	"LionMaxSdk": {
 		"sdkKey": "h7Pq0hguT5cxuBidl255rnR8SqwdXiolJAOAFHrshTbDRGGJ4pDWnJf59WyqTR_dyyEnpGrrAdWl3NgTWs825Z"
 	},
