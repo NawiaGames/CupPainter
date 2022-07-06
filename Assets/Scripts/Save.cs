@@ -23,7 +23,7 @@ public class Save : MonoBehaviour
     {
         for (var i = 0; i < sampleObjects.Length; i++)
         {
-            if(_percentLevels[i] > PanelMatch.BorderNextLevel)
+            if(_percentLevels[i] >= PanelMatch.BorderNextLevel)
             _paintObjectsSelectedObjects[i].Renderer.material.mainTexture =
                 sampleObjects[i].Renderer.material.mainTexture;
         }
@@ -40,7 +40,7 @@ public class Save : MonoBehaviour
             for (var i = 0; i < length; i++)
             {
                 _percentLevels[i] = PlayerPrefs.GetInt(_percentSaveName + i, 0);
-                if (_percentLevels[i] > PanelMatch.BorderNextLevel)
+                if (_percentLevels[i] >= PanelMatch.BorderNextLevel)
                     indexLevel = i + 1;
             }
         }

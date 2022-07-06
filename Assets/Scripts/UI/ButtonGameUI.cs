@@ -51,6 +51,7 @@ public class ButtonGameUI : MonoBehaviour
     {
         EventManager.OnLevelRestert?.Invoke(SelectedPaintObjects.CurrentPaintObjectIndex);
         _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].P3dPaintableTexture.Clear();
+        _createLevel.PaintObjects[SelectedPaintObjects.CurrentPaintObjectIndex].P3dPaintableTexture.UpdateMaterial();
         _createLevel.Save.SetPercentLevel(SelectedPaintObjects.CurrentPaintObjectIndex, 0);
     }
 
@@ -78,13 +79,12 @@ public class ButtonGameUI : MonoBehaviour
         var materialsClones = _createLevel.Save.GetPaintObjectsSelectedObjects();
         var percentLevels = _createLevel.Save.GetPercentLevels();
         var indexNextLevel = 0;
-
         for (var i = 0; i < materialsClones.Length; i++)
         {
             _createLevel.SelectedSpawnPaintObjects[i].Renderer.material.mainTexture =
                 materialsClones[i].Renderer.material.mainTexture;
-
-            if (i == 0 || percentLevels[i] > PanelMatch.BorderNextLevel)
+            
+            if (i == 0 || percentLevels[i] >= PanelMatch.BorderNextLevel)
             {
                 _createLevel.SelectPaintObjectUI[i].UIPanelUnlock.DeactivatePanel();
                 _createLevel.SelectPaintObjectUI[i].Text.enabled = true;
@@ -96,13 +96,13 @@ public class ButtonGameUI : MonoBehaviour
                 _createLevel.SelectPaintObjectUI[i].Text.enabled = false;
             }
 
-            if (percentLevels[i] > PanelMatch.BorderNextLevel)
+            if (percentLevels[i] >= PanelMatch.BorderNextLevel)
             {
                 if (i + 1 < materialsClones.Length)
                     indexNextLevel = i + 1;
                 else
                 {
-                    indexNextLevel = i;
+                    indexNextLevel = materialsClones.Length - 1;
                 }
             }
         }

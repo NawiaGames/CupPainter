@@ -29,7 +29,7 @@ public class PanelMatch : MonoBehaviour
     [SerializeField] private ParticleSystem[] _particleSystemWin; 
     private bool _isActivateButtonSample;
 
-    public static float BorderNextLevel = 0;
+    public static float BorderNextLevel = 70;
 
     private void Awake()
     {
