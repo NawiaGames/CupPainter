@@ -1,0 +1,87 @@
+{
+	"LionAdjustSdk": {
+		"iOSToken": "",
+		"androidToken": "94y2tlgspzpc",
+		"environment": 1
+	},
+	"LionMaxSdk": {
+		"sdkKey": "h7Pq0hguT5cxuBidl255rnR8SqwdXiolJAOAFHrshTbDRGGJ4pDWnJf59WyqTR_dyyEnpGrrAdWl3NgTWs825Z"
+	},
+	"LionStudios.Suite.RemoteConfig.RemoteConfig": {
+		"rewardedAdsDisabled": false,
+		"interstitialsDisabled": false,
+		"bannersDisabled": false,
+		"crossPromoDisabled": false,
+		"interstitialTimer": 0,
+		"rvInterstitialTimer": 0,
+		"interstitialStartTimer": 0,
+		"interstitialStartLevel": 0,
+		"remoteValArray": [
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			},
+			{
+				"MaxExperimentVar": "",
+				"varType": 0,
+				"defaultValue": ""
+			}
+		]
+	},
+	"LionStudios.Suite.Analytics.LionAnalytics": {
+		"heartbeatInterval": 60,
+		"enableGameAnalyticsEvents": true
+	},
+	"LionStudios.Suite.Core.LionCore": {
+		"_UseMultiDexSupport": true,
+		"_UseProGuard": true,
+		"_OverrideGradlePluginVersion": false,
+		"_GradlePluginOverride": ""
+	},
+	"LionStudios.Suite.Debugging.LionDebug": {
+		"debuggerEnabled": false,
+		"showDebuggerAtStartup": false,
+		"debugLogLevel": 4
+	}
+}
